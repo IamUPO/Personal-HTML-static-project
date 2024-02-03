@@ -1,0 +1,351 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <meta name="description" content=""> 
+        <meta name="author" content=""> 
+        <title>Social Network</title>         
+        <link href="css/theme.css" rel="stylesheet" type="text/css"> 
+        <link href="css/style.css" rel="stylesheet"> 
+        <link href="fontawesome/css/all.css" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"> 
+        <script defer src="js/script.js"></script>         
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    </head>     
+    <body> 
+        <div class="wrapper"> 
+            <!--===================== Header ===================-->             
+            <header> 
+                <nav> 
+                    <!--===================== Logo ===================-->                     
+                    <h2 class="logo">Social<b>Network</b></h2> 
+                    <!--===================== Searchbar ===================-->                     
+                    <label class="searchbar"> 
+                        <input name="searchbar" type="search" placeholder="Search"> <i class="fa-fw fa-lg fa-search fas"></i>
+                        <a href=""><button name="search_btn" type="submit">Search</button></a> 
+                    </label>                     
+                    <div class="usermenu">
+                        <i class="fa-comment-alt fa-fw fas"><small>5+</small></i>
+                        <i class="fa-envelope fa-fw fas"><small>6+</small></i> <i class="fa-2x fa-fw fa-plus-circle fas"></i> 
+                    </div>                     
+                    <!--=====================Nav-Userinfo ===================-->                     
+                    <div class="user"> <a href=""><img src="img/user.JPG" alt="user-profile"></a> 
+                    </div>                     
+                </nav>                 
+            </header>             
+            <!--===================== Main ===================-->             
+            <main> 
+                <!--===================== Left-Section ===================-->                 
+                <section class="left-section"> 
+                    <!--===================== User Info ===================-->                     <a href="" class="profile"><img src="img/user.JPG" alt="user_profile"> <div class="handle"> 
+                            <h4>Full Name</h4> 
+                            <p>@username</p> 
+                        </div> </a> 
+                    <!--===================== Left-Side-Bar ===================-->                     
+                    <ul class="sidebar"> 
+                        <li>
+                            <a class="active " ref=""><i class="fa-fw fa-home fa-lg fa-pull-left fas"></i>Home</a> 
+                        </li>                         
+                        <li>
+                            <a href=""><i class="fa-compass fa-fw fa-lg fa-pull-left fas"></i>Explore</a> 
+                        </li>                         
+                        <li>
+                            <a href=""><i class="fa-bell fa-fw fa-lg fa-pull-left fas"></i>Notifications</a> 
+                            <div class="sidebar-view-notifications"> 
+                                <div class="notification-content"> 
+                                    <img src="https://pinegrow.com/placeholders/img20.jpg" alt="notification-profile"> 
+                                    <div class="primary-chat-details"> 
+                                        <h3>SocialNetwork</h3> 
+                                        <p>Acces our platform on both apple store</p> 
+                                        <p>and play store.&nbsp; &nbsp;<small>20:23</small></p> 
+                                    </div>                                     
+                                </div>                                 
+                                <!--===================== Tab Content Element ===================-->                                 
+                            </div>                             
+                        </li>                         
+                        <li>
+                            <a href=""><i class="fa-envelope fa-fw fa-lg fa-pull-left fas"></i>Messages</a> 
+                            <div class="sidebar-view-messages"> 
+                                <div class="tab3"> 
+                                    <button class="tablinks3" onclick="openTab3(event, 'general') " type="button" name="tab-button">General</button>                                     
+                                    <button class="tablinks3" onclick="openTab3(event, 'primary')">Primary</button>                                     
+                                    <button class="tablinks3" onclick="openTab3(event, 'groups')">Groups</button>                                     
+                                </div>                                 
+                                <!--===================== Tab Content Element ===================-->                                 
+                                <div id="general" class="tabcontent3"> 
+                                    <div class="general-chat-profile"> 
+                                        <img src="img/profile-4.jpg" alt="general-chat-profile"> 
+                                        <div class="general-chat-details"> 
+                                            <h3>Username</h3> 
+                                            <p>Hi, there I need your help.&nbsp;&nbsp;&nbsp;<small>20:23</small></p> 
+                                        </div>                                         
+                                    </div>                                     
+                                </div>                                 
+                                <div id="primary" class="tabcontent3"> 
+                                    <div class="primary-chat-profile"> 
+                                        <img src="img/profile-4.jpg" alt="primary-chat-profile"> 
+                                        <div class="primary-chat-details"> 
+                                            <h3>Username</h3> 
+                                            <p>Hi, there I need your help.&nbsp;&nbsp;&nbsp;<small>20:23</small></p> 
+                                        </div>                                         
+                                    </div>                                     
+                                </div>                                 
+                                <div id="groups" class="tabcontent3"> 
+                                    <div class="groups-chat-profile"> 
+                                        <img src="img/profile-4.jpg" alt="groups-chat-profile"> 
+                                        <div class="groups-chat-details"> 
+                                            <h3>Username</h3> 
+                                            <p>Hi, there I need your help.&nbsp;&nbsp;&nbsp;<small>20:23</small></p> 
+                                        </div>                                         
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                        </li>                         
+                        <li>
+                            <a href=""><i class="fa-chart-line fa-fw fa-lg fa-pull-left fas"></i>Analytics</a> 
+                        </li>                         
+                        <li>
+                            <a href=""><i class="fa-bookmark fa-fw fa-lg fa-pull-left fas"></i>Bookmark</a> 
+                        </li>                         
+                        <li>
+                            <a href=""><i class="fa-cog fa-fw fa-lg fa-pull-left fas"></i>Settings</a> 
+                        </li>                         
+                    </ul>                     
+                    <!--===================== Theme-Switcher ===================-->                     
+                    <div class="theme"> <a name="anchor" class="theme-btn"><!--i class="fa-fw fa-lg fa-pull-left fa-sun fas"></i--><i class="fa-fw fa-lg fa-moon fa-pull-left fas"></i>Theme</a> 
+                    </div>                     
+                </section>                 
+                <!--===================== Main-Section ===================-->                 
+                <section class="main-section"> 
+                    <!--===================== Story-Post-Elements ===================-->                     
+                    <div class="story-posts"> 
+                        <div class="user-post-story"> <i class="fa-2x fa-fw fa-plus-circle fas"></i> 
+                            <p>Creat Story</p> 
+                        </div>                         
+                        <div class="user-story"> 
+                            <img src="img/profile-1.jpg" alt="user-profile"> 
+                            <div class="username"> 
+                                <p>Username</p> 
+                            </div>                             
+                        </div>                         
+                        <div class="user-story"> 
+                            <img src="img/profile-2.jpg" alt="user-profile"> 
+                            <div class="username"> 
+                                <p>Username</p> 
+                            </div>                             
+                        </div>                         
+                        <div class="user-story"> 
+                            <img src="img/notification-2.jpg" alt="user-profile"> 
+                            <div class="username"> 
+                                <p>Username</p> 
+                            </div>                             
+                        </div>                         
+                        <div class="user-story"> 
+                            <img src="img/profile-4.jpg" alt="user-profile"> 
+                            <div class="username"> 
+                                <p>Username</p> 
+                            </div>                             
+                        </div>                         
+                        <div class="user-story"> 
+                            <img src="img/feed-2.jpeg" alt="user-profile"> 
+                            <div class="username"> 
+                                <p>Username</p> 
+                            </div>                             
+                        </div>                         
+                        <div class="user-story"> 
+                            <img src="img/profile-5.jpg" alt="user-profile"> 
+                            <div class="username"> 
+                                <p>Username</p> 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                    <!--===================== Creat-Feed-Element ===================-->                     
+                    <form class="creat-feeds"> 
+                        <img src="img/user.JPG" alt="user-profile"> 
+                        <input type="text" placeholder="Creat your first post">
+                        <i class="fa-fw fa-lg fa-photo-video fas"></i> 
+                        <button name="create_feed" type="submit">
+                            <i class="fa-feather-alt fa-fw fa-lg fas"></i>Post
+                        </button>                         
+                    </form>                     
+                    <!--=====================Post Feeds Elemenets===================-->                     
+                    <div class="posts-feed"> 
+                        <div class="post-info"> 
+                            <!--=====================Aurthor Elemenets===================-->                             
+                            <div class="author"> 
+                                <img src="img/profile-4.jpg" alt="post author profile"> 
+                                <div class="author-info"> 
+                                    <div class="certified-author"> 
+                                        <h3>Joan&nbsp;</h3>
+                                        <i class="fa-certificate fa-fw fa-xs fas"></i> 
+                                    </div>                                     
+                                    <p>USA, Califonia</p> 
+                                </div>                                 <span class="post-option"><i class="fa-ellipsis-v fa-fw fa-lg fas"></i></span> 
+                            </div>                             
+                            <!--=====================Main Post Elemenets===================-->                             
+                            <div class="main-post"> 
+                                <img src="img/feed-5.jpeg" alt="main_post"> 
+                            </div>                             
+                            <!--============Action ButtonsvElemenets============-->                             
+                            <div class="action-btn"> 
+                                <div class="interaction-btn"> <i class="fa-fw fa-heart fa-lg fas"></i> <i class="fa-comment fa-lg fas"></i> <i class="fa-fw fa-lg fa-paper-plane fas"></i> 
+                                </div>                                 
+                                <div class="bookmark">
+                                    <i class="fa-bookmark fa-fw fa-lg fas"></i> 
+                                </div>                                 
+                            </div>                             
+                            <!--===============PostLikes Elemenets===========-->                             
+                            <div class="post-likedby"> 
+                                <img src="img/profile-6.jpg" alt="userprofile_like"> 
+                                <img src="img/profile-7.jpg" alt="userprofile_like"> 
+                                <img src="img/profile-7.jpg" alt="userprofile_like"> 
+                                <p>Liked by Joe and <b>2,345 Other</b></p> 
+                            </div>                             
+                            <!--================Post Caption Elemenets=============-->                             
+                            <div class="post-caption"> 
+                                <p><b>Joan</b> Really loving this webapp, just like facebook and Instagram. I may
+                                switch to this app soon.</p> 
+                            </div>                             
+                            <!--================Post View CountElemenets==============-->                             
+                            <div class="viewers-count">
+                                <small>Viewall 60 comments</small> 
+                            </div>                             
+                        </div>                         
+                        <!--=====================Post Comments Elemenets===================-->                         
+                    </div>                     
+                </section>                 
+                <!--===================== Right-Section ===================-->                 
+                <section class="right-sidebar"> 
+                    <!--===================== Right-Section-Col-1 ===================-->                     
+                    <div class="rs-col1"> 
+                        <!--===================== Tabs Element ===================-->                         
+                        <div class="tab"> 
+                            <button class="tablinks" onclick="openTab(event, 'likes')">Likes</button>                             
+                            <button class="tablinks" onclick="openTab(event, 'followers')">Followers</button>                             
+                            <button class="tablinks" onclick="openTab(event, 'mentions')">Mentions</button>                             
+                        </div>                         
+                        <!--===================== Tab Content Element ===================-->                         
+                        <div id="likes" class="tabcontent"> 
+                            <!--===================== Followers Tab ===================-->                             
+                            <div class="likes-count"> 
+                                <img src="img/profile-6.jpg" alt="userprofile_like"> 
+                                <img src="img/profile-7.jpg" alt="userprofile_like"> 
+                                <img src="img/profile-7.jpg" alt="userprofile_like"> 
+                                <p>frankjay and <b>252 Other </b>recently liked you post</p> 
+                            </div>                             
+                        </div>                         
+                        <div id="followers" class="tabcontent"> 
+                            <!--===================== Followers Tab ===================-->                             
+                            <div class="followers-count"> 
+                                <img src="img/profile-6.jpg" alt="user-follow-profile"> 
+                                <img src="img/profile-7.jpg" alt="user-follow-profile"> 
+                                <img src="img/profile-7.jpg" alt="user-follow-profile"> 
+                                <p>frankjay and <b>252 Other </b>recently followed you</p> 
+                            </div>                             
+                            <div class="user-follow-request"> 
+                                <div class="request-profile"> 
+                                    <img src="img/profile-5.jpg" alt="user-follow-profile"> 
+                                    <div class="request-details"> 
+                                        <h3>Username</h3> 
+                                        <p>This user just followed you</p> 
+                                    </div>                                     
+                                </div>                                 
+                                <div class="request-action-btn"> 
+                                    <button class="fb-btn">Follow back</button>                                     
+                                    <button class="ig-btn">Ignore</button>                                     
+                                </div>                                 
+                            </div>                             
+                            <div class="user-fb-respond"> 
+                                <img src="img/profile-6.jpg" alt="user-follow-profile"> 
+                                <div class="respond-details"> 
+                                    <h3>Username</h3> 
+                                    <p>This user followed you back</p> 
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                        <!--===================== Mention Tab ===================-->                         
+                        <div id="mentions" class="tabcontent"> 
+                            <div class="user-mention"> 
+                                <img src="img/profile-6.jpg" alt="user-mention-profile"> 
+                                <div class="mention-details"> 
+                                    <h3>Username</h3> 
+                                    <p>This user mentioned you in a comment.</p> 
+                                </div>                                 
+                            </div>                             
+                            <div class="user-mention"> 
+                                <img src="img/profile-6.jpg" alt="user-mention-profile"> 
+                                <div class="mention-details"> 
+                                    <h3>Username</h3> 
+                                    <p>This user tagged you in a post</p> 
+                                </div>                                 
+                            </div>                             
+                            <div class="user-mention"> 
+                                <img src="img/profile-6.jpg" alt="user-mention-profile"> 
+                                <div class="mention-details"> 
+                                    <h3>Username</h3> 
+                                    <p>This reposted your post.</p> 
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                    <!--===================== Right-Section-Col-2 ===================-->                     
+                    <div class="rs-col2"> 
+                        <!--===================== Tabs Element ===================-->                         
+                        <div class="rs-col2-searcharea"> 
+                            <form class="rs-col2-searchbar"> <i class="fa-fw fa-lg fa-search fas"></i> 
+                                <input type="text" name="searchbar" placeholder="Search "> 
+                            </form>                             
+                        </div>                         
+                        <div class="tab2"> 
+                            <button class="tablinks2" onclick="openTab2(event, 'trends')">Trends</button>                             
+                            <button class="tablinks2" onclick="openTab2(event, 'account')">Account</button>                             
+                            <button class="tablinks2" onclick="openTab2(event, 'tags')">Tags</button>                             
+                        </div>                         
+                        <!--===================== Tab Content Element ===================-->                         
+                        <div id="trends" class="tabcontent2"> 
+                            <div class="trending-details"> <small>Trending in Ghana</small> 
+                                <p><b>Sack Lampard</b></p> <small>250k posts</small> 
+                            </div>                             
+                            <div class="trending-details"> <small>Trending in Ghana</small> 
+                                <p><b>Champions League</b></p> <small>300k posts</small> 
+                            </div>                             
+                        </div>                         
+                        <div id="account" class="tabcontent2"> 
+                            <div class="accounts-details"> 
+                                <img src="img/notification-1.jpg" alt="new-account-profile"> 
+                                <div class="account-details-info"> 
+                                    <h3>Full Name</h3> 
+                                    <p>Username</p> <small>smaFollowed by Jack and 26 othersll</small> 
+                                </div>                                 
+                            </div>                             
+                            <div class="accounts-details"> 
+                                <img src="img/notification-1.jpg" alt="user-mention-profile"> 
+                                <div class="account-details-info"> 
+                                    <h3>Full Name</h3> 
+                                    <p>Username</p> <small>smaFollowed by Jack and 26 othersll</small> 
+                                </div>                                 
+                            </div>                             
+                            <div class="accounts-details"> 
+                                <img src="img/notification-1.jpg" alt="user-mention-profile"> 
+                                <div class="account-details-info"> 
+                                    <h3>Full Name</h3> 
+                                    <p>Username</p> <small>smaFollowed by Jack and 26 othersll</small> 
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                        <div id="tags" class="tabcontent2"> 
+                            <div class="tags-details">
+                                <small>Trending in Ghana</small> 
+                                <p><b>#LIVMCU</b></p>
+                                <small>250k posts</small> 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                </section>                 
+            </main>             
+        </div>         
+        <script src="pgia/lib/pgia.js"></script>         
+    </body>     
+</html>

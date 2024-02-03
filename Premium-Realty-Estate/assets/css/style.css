@@ -1,0 +1,10 @@
+.filterblur {
+    height: 50px;
+    width: 50px;
+    background-color: #ffc107;
+    z-index: 0;
+    position: relative;
+    bottom: 561px;
+    border-radius: 50%;
+    left: 518px;
+}

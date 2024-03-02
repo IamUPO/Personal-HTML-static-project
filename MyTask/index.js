@@ -75,7 +75,7 @@ class ToDoApp {
         this.taskDescriptionInput.value = '';
         this.imagePreview.src = '';
         this.taskImageInput.value = '';
-        document.getElementById('taskDateTime').value = ''; // Clear the due date and time input
+        document.getElementById('taskDateTime').value = '';
     }
 }
 

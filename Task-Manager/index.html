@@ -8,11 +8,14 @@
         <script defer src="index.js"></script>
     </head>
     <body>
-        <div class="container"> 
-            <h1>To-Do List</h1> 
-            <input type="text" id="taskInput" placeholder="Add a new task..."> 
-            <button onclick="addTask()">Add Task</button>             
-            <ul id="taskList"></ul>             
+        <div class="container">
+            <h1>To-Do List</h1>
+            <input type="text" id="taskTitle" placeholder="Task Title">
+            <input type="text" id="taskDescription" placeholder="Add a new task...">
+            <input type="file" id="taskImage" accept="image/*" onchange="previewImage()">
+            <img id="imagePreview" alt="Image Preview" style="max-width: 100%; display: none;">
+            <button onclick="addTask()">Add Task</button>
+            <ul id="taskList"></ul>
         </div>
     </body>
 </html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Task Manager</title>
+        <link rel="icon" type="image/x-icon" href="favicon.svg"/>
+        <link href="index.css" rel="stylesheet" type="text/css"/>
+        <script defer src="index.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers:400&display=swap">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
+    </head>
+    <body>
+        <div class="container"> 
+            <div class="wrapper">
+                <h1><img width="50" alt="logo" src="man-doing-yoga-meditation-svgrepo-com.svg">My ToDo</h1> 
+                <div class="actions"> 
+                    <form id="taskForm"> 
+                        <input type="text" id="taskTitle" placeholder="Task Title" name="Title"/> 
+                        <textarea id="taskDescription" placeholder="Add task description..." name="Description"></textarea> 
+                        <div class="task-image-preview"> 
+                            <input type="file" id="taskImage" accept="image/*" onchange="previewImage()"/> 
+                            <img id="imagePreview" alt="Image Preview" width="50" class="imagePreview"/> 
+                        </div>                         
+                        <button type="button" class="addtask" name="addTask" onclick="toDoApp.addTask()">
+                            Add Task<i class="fas fa-tasks"></i>
+                        </button>                         
+                    </form>
+                    <div id="taskList" class="tasklist"></div>                     
+                </div>                 
+            </div>             
+        </div>
+    </body>
+</html>

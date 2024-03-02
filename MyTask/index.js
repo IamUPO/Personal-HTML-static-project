@@ -3,10 +3,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 class Task {
-    constructor(title, description, image, dueDateTime) {
+    constructor(title, description, dueDateTime) {
         this.title = title;
         this.description = description;
-        this.image = image;
         this.dueDateTime = dueDateTime;
         this.completed = false;
     }
@@ -19,8 +18,9 @@ class ToDoApp {
         this.taskList = document.getElementById('taskList');
         this.taskTitleInput = document.getElementById('taskTitle');
         this.taskDescriptionInput = document.getElementById('taskDescription');
-        this.taskImageInput = document.getElementById('taskImage');
-        this.imagePreview = document.getElementById('imagePreview');
+        // Remove the following lines
+        // this.taskImageInput = document.getElementById('taskImage');
+        // this.imagePreview = document.getElementById('imagePreview');
 
         this.taskForm.addEventListener('submit', (event) => {
             event.preventDefault();
@@ -31,11 +31,12 @@ class ToDoApp {
     addTask() {
         const title = this.taskTitleInput.value;
         const description = this.taskDescriptionInput.value;
-        const image = this.imagePreview.src;
+        // Remove the following lines
+        // const image = this.imagePreview.src;
         const dueDateTime = document.getElementById('taskDateTime').value;
 
         if (title.trim() !== '' && dueDateTime.trim() !== '') {
-            const newTask = new Task(title, description, image, dueDateTime);
+            const newTask = new Task(title, description, dueDateTime);
             this.tasks.push(newTask);
             this.renderTasks();
             this.clearForm();
@@ -51,8 +52,7 @@ class ToDoApp {
             listItem.innerHTML = `
                 <h3>${task.title}</h3>
                 ${task.description ? `<p>${task.description}</p>` : ''}
-                ${task.image ? `<img src="${task.image}" alt="Task Image" width="50" class="taskImagePreview" />` : ''}
-                ${task.dueDateTime ? `<p>Due Date and Time: ${task.dueDateTime}</p>` : ''}
+                ${task.dueDateTime ? `<span><i class="fa-clock fa-fw fa-sm fas"></i> Due date: ${task.dueDateTime}</span>` : ''}
                 <button onclick="toDoApp.completeTask(${index})" class="completeButton" ${task.completed ? 'disabled' : ''}>Complete<i class="fa-check-circle fa-fw fas"></i></button>
                 <button onclick="toDoApp.deleteTask(${index})" class="deleteButton">Delete<i class="fa-fw fa-trash-alt fas"></i></button>
             `;
@@ -73,26 +73,11 @@ class ToDoApp {
     clearForm() {
         this.taskTitleInput.value = '';
         this.taskDescriptionInput.value = '';
-        this.imagePreview.src = '';
-        this.taskImageInput.value = '';
+        // Remove the following lines
+        // this.imagePreview.src = '';
+        // this.taskImageInput.value = '';
         document.getElementById('taskDateTime').value = '';
     }
 }
 
 const toDoApp = new ToDoApp();
-
-function previewImage() {
-    const fileInput = document.getElementById('taskImage');
-    const imagePreview = document.getElementById('imagePreview');
-
-    const file = fileInput.files[0];
-
-    if (file) {
-        const reader = new FileReader();
-        reader.onload = function (e) {
-            imagePreview.src = e.target.result;
-            imagePreview.style.display = 'block';
-        };
-        reader.readAsDataURL(file);
-    }
-}

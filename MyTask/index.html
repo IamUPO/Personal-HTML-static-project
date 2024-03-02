@@ -14,14 +14,18 @@
     <body>
         <div class="container"> 
             <div class="wrapper">
-                <h1><img width="50" alt="logo" src="man-doing-yoga-meditation-svgrepo-com.svg">My ToDo</h1> 
+                <h1 class="fade-up"><img width="50" alt="logo" src="man-doing-yoga-meditation-svgrepo-com.svg">My Task</h1> 
                 <div class="actions"> 
-                    <form id="taskForm"> 
-                        <input type="text" id="taskTitle" placeholder="Task Title" name="Title"/> 
-                        <textarea id="taskDescription" placeholder="Add task description..." name="Description"></textarea> 
+                    <form id="taskForm" class="fade-up-slower"> 
+                        <input type="text" id="taskTitle" placeholder="Task Title" name="Title" required="true"/> 
+                        <textarea id="taskDescription" placeholder="Add task description..." name="Description" required="true"></textarea> 
                         <div class="task-image-preview"> 
                             <input type="file" id="taskImage" accept="image/*" onchange="previewImage()"/> 
                             <img id="imagePreview" alt="Image Preview" width="50" class="imagePreview"/> 
+                        </div>
+                        <div class="date-time">
+                            <label for="taskDateTime">Due Date and Time:</label>
+                            <input type="datetime-local" id="taskDateTime" name="DateTime" placeholder="Due date and time"/>
                         </div>                         
                         <button type="button" class="addtask" name="addTask" onclick="toDoApp.addTask()">
                             Add Task<i class="fas fa-tasks"></i>

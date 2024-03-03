@@ -18,9 +18,6 @@ class ToDoApp {
         this.taskList = document.getElementById('taskList');
         this.taskTitleInput = document.getElementById('taskTitle');
         this.taskDescriptionInput = document.getElementById('taskDescription');
-        // Remove the following lines
-        // this.taskImageInput = document.getElementById('taskImage');
-        // this.imagePreview = document.getElementById('imagePreview');
 
         this.taskForm.addEventListener('submit', (event) => {
             event.preventDefault();
@@ -31,8 +28,6 @@ class ToDoApp {
     addTask() {
         const title = this.taskTitleInput.value;
         const description = this.taskDescriptionInput.value;
-        // Remove the following lines
-        // const image = this.imagePreview.src;
         const dueDateTime = document.getElementById('taskDateTime').value;
 
         if (title.trim() !== '' && dueDateTime.trim() !== '') {
@@ -73,9 +68,6 @@ class ToDoApp {
     clearForm() {
         this.taskTitleInput.value = '';
         this.taskDescriptionInput.value = '';
-        // Remove the following lines
-        // this.imagePreview.src = '';
-        // this.taskImageInput.value = '';
         document.getElementById('taskDateTime').value = '';
     }
 }

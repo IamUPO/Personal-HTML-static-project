@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flag {
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: wave 1s infinite alternate;
+    max-width: 400px;
+    width: 100%;
+    position: absolute;
+}
+
+.stripe {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    max-height: 100px;
+}
+
+.stripe-color {
+    max-width: 25%;
+    max-height: 100%;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.red {
+    background-color: red;
+}
+
+.gold {
+    background-color: gold;
+}
+
+.green {
+    background-color: green;
+}
+
+.star {
+    color: black;
+    font-size: clamp(14px, 5vh ,4rem );
+}
+
+.stripe-color:before,
+.stripe-color:after {
+    content: "";
+    width: 100%;
+    height: 20%;
+    position: absolute;
+}
+
+.stripe-color:before {
+    left: 0;
+    top: -20px;
+}
+
+.stripe-color:after {
+    left: 0;
+    bottom: 0;
+}
+
+.stripe-color.red:nth-of-type(1)::before {
+    background-color: red;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.stripe-color.red:nth-of-type(2)::before {
+    background-color: red;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.stripe-color.red:nth-of-type(3)::before {
+    background-color: red;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.stripe-color.red:nth-of-type(4)::before {
+    background-color: red;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.stripe-color.red:nth-of-type(5)::before {
+    background-color: red;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.stripe-color.gold:nth-of-type(1)::before {
+    background-color: gold;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.stripe-color.gold:nth-of-type(2)::before {
+    background-color: gold;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.stripe-color.gold:nth-of-type(3)::before {
+    background-color: gold;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.stripe-color.gold:nth-of-type(4)::before {
+    background-color: gold;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.stripe-color.gold:nth-of-type(5)::before {
+    background-color: gold;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.stripe-color.green:nth-of-type(1)::before {
+    background-color: green;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.stripe-color.green:nth-of-type(2)::before {
+    background-color: green;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.stripe-color.green:nth-of-type(3)::before {
+    background-color: green;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.stripe-color.green:nth-of-type(4)::before {
+    background-color: green;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.stripe-color.green:nth-of-type(5)::before {
+    background-color: green;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.stripe-color.green:nth-of-type(1)::after {
+    background-color: white;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.stripe-color.green:nth-of-type(2)::after {
+    background-color: white;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.stripe-color.green:nth-of-type(3)::after {
+    background-color: white;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.stripe-color.green:nth-of-type(4)::after {
+    background-color: white;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.stripe-color.green:nth-of-type(5)::after {
+    background-color: white;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+
+.flag:before {
+    content: "";
+    width: 5%;
+    height: 243%;
+    background-color: white;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    box-shadow: 0px 1px 50px #878383;
+    top: -13px;
+    border-radius: 50px;
+}

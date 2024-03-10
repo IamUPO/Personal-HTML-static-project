@@ -22,7 +22,8 @@
                     <li>Spock</li>
                 </ul>
                 <!-- Score Display -->
-                <div class="score"><span>Score</span>
+                <div class="score">
+                    <span>Score</span>
                     <div id="score-points">12</div>
                 </div>
             </div>
@@ -49,16 +50,26 @@
                 </div>
             </div>
             <div class="view-rules">
-                <div class="control">
-                    <span>Rules</span>
+                <div class="control"><span>Rules</span>
                     <button id="close">
                         <img src="img/icon-close.svg">
                     </button>                     
                 </div>
                 <img src="img/image-rules-bonus.svg">
+                <button id="close">
+                    <img src="img/icon-close.svg">
+                </button>
             </div>
             <!-- Rules Button -->
             <button id="rules" class="rules">Rules</button>
-        </main>         
+        </main>
+        <!-- Loading Screen-->
+        <div id="loading-screen" class="loading-screen">
+            <div class="loader-wrapper">
+                <img src="img/icon-rock.svg" alt="rock2">
+                <img src="img/icon-paper.svg" alt="paper">
+                <img src="img/icon-scissors.svg" alt="scissors">
+            </div>
+        </div>         
     </body>
 </html>

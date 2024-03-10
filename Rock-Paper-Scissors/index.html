@@ -14,6 +14,10 @@
             <!-- Game Bar Section -->
             <div class="game-bar">
                 <!-- Game List -->
+                <div class="score">
+                    <span>Player</span>
+                    <div id="player-points" class="points">0</div>
+                </div>
                 <ul class="game-list">
                     <li>Rock</li>
                     <li>Paper</li>
@@ -22,8 +26,9 @@
                     <li>Spock</li>
                 </ul>
                 <!-- Score Display -->
-                <div class="score"><span>Score</span>
-                    <div id="score-points" class="points">0</div>
+                <div class="score">
+                    <span>Computer</span>
+                    <div id="computer-points" class="points">0</div>
                 </div>
             </div>
             <!-- Game Play Section -->
@@ -48,28 +53,26 @@
                     </button>
                 </div>
                 <div class="view-play">
-                    <div class="player"><span>You Picked</span>
+                    <div class="player">
+                        <span>You Picked</span>
                         <!-- Player -->
                         <button id="scissors" class="play-btn scissors">
                             <img src="img/icon-scissors.svg" alt="scissors">
                         </button>
                     </div>
-                    <div class="computer">
-                        <span>Computer Picked</span>
+                    <div class="computer"><span>Computer Picked</span>
                         <!-- Computer -->
                         <button id="lizard" class="lizard play-btn">
                             <img src="img/icon-lizard.svg" alt="lizard">
                         </button>
                     </div>
-                    <div id="view-result" class="view-result">
-                        <span id="reult"></span>
+                    <div id="view-result" class="view-result"><span id="reult"></span>
                         <button id="playagin">Play Again</button>
                     </div>
                 </div>
             </div>
             <div id="view-rules" class="view-rules">
-                <div class="control">
-                    <span>Rules</span>
+                <div class="control"><span>Rules</span>
                     <button id="close" class="close">
                         <img src="img/icon-close.svg">
                     </button>                     

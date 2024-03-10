@@ -132,15 +132,11 @@ main {
     border-color: #606e85;
     border-radius: 15px;
     padding: 1rem;
-    gap: 3rem;
     overflow: hidden;
+    gap: 2rem;
 }
 
 /* Game List Styles */
-ul.game-list {
-    padding-left: 1rem;
-}
-
 .game-list > li {
     color: #ffffff;
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -607,6 +603,16 @@ ul.game-list {
 @media (min-width:580px) {
     .view-rules > #close {
         display: none;
+    }
+}
+
+@media (max-width:579px) {
+    .game-list {
+        display: none;
+    }
+
+    .score {
+        padding: 10px;
     }
 }
 

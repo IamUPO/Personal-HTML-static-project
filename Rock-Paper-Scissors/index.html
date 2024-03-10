@@ -7,7 +7,58 @@
         <link href="style.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
         <script defer src="script.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:600,700&display=swap">
     </head>     
-    <body> 
-</body>     
+    <body>
+        <main>
+            <!-- Game Bar Section -->
+            <div class="game-bar">
+                <!-- Game List -->
+                <ul class="game-list">
+                    <li>Rock</li>
+                    <li>Paper</li>
+                    <li>Scissors</li>
+                    <li>Lizard</li>
+                    <li>Spock</li>
+                </ul>
+                <!-- Score Display -->
+                <div class="score"><span>Score</span>
+                    <div id="score-points">12</div>
+                </div>
+            </div>
+            <!-- Game Play Section -->
+            <div class="game-play">
+                <!-- Background Pentagon -->
+                <div class="bg-pentagon">
+                    <!-- Play Buttons -->
+                    <button id="scissors" class="play-btn">
+                        <img src="img/icon-scissors.svg" alt="scissors">
+                    </button>
+                    <button id="paper" class="play-btn">
+                        <img src="img/icon-paper.svg" alt="paper">
+                    </button>
+                    <button id="rock" class="play-btn">
+                        <img src="img/icon-rock.svg" alt="rock">
+                    </button>
+                    <button id="lizard" class="play-btn">
+                        <img src="img/icon-lizard.svg" alt="lizard">
+                    </button>
+                    <button id="spock" class="play-btn">
+                        <img src="img/icon-spock.svg" alt="spock">
+                    </button>
+                </div>
+            </div>
+            <div class="view-rules">
+                <div class="control">
+                    <span>Rules</span>
+                    <button id="close">
+                        <img src="img/icon-close.svg">
+                    </button>                     
+                </div>
+                <img src="img/image-rules-bonus.svg">
+            </div>
+            <!-- Rules Button -->
+            <button id="rules" class="rules">Rules</button>
+        </main>         
+    </body>
 </html>

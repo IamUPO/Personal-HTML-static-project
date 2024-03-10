@@ -51,6 +51,75 @@ main {
     transition: all 0.3s ease-in-out;
 }
 
+.loading-screen {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #f3e1e1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.loader-wrapper {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.loader-wrapper > img {
+    max-width: 50px;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.loader-wrapper > img:first-child {
+    opacity: 1;
+}
+
+.loader-wrapper> img:nth-child(1) {
+    animation: showImage 1.5s ease-in-out 0s 1 forwards;
+}
+
+.loader-wrapper> img:nth-child(2) {
+    animation: showImage 1.5s ease-in-out 1.5s 1 forwards;
+}
+
+.loader-wrapper> img:nth-child(3) {
+    animation: showImage 1.5s ease-in-out 3s 1 forwards;
+    transform: rotate(-45deg);
+}
+
+@keyframes showImage {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 /* Game Bar Styles */
 .game-bar {
     max-width: 44rem;
@@ -113,6 +182,8 @@ ul.game-list {
     text-align: center;
     min-height: 560px;
     overflow: hidden;
+    position: relative;
+    border-radius: 10px;
 }
 
 /* Background Pentagon Styles */
@@ -145,6 +216,42 @@ ul.game-list {
 .play-btn:hover {
     box-shadow: 0px 14px 21px rgba(0, 0, 0, 0.8);
     animation: shadowchange 0.5s infinite;
+}
+
+/* Individual Icon Styles */
+.scissors {
+    background: linear-gradient(#e2e2e2 0 0) padding-box,
+    linear-gradient(to right, #ec9e0e, #eca922) border-box;
+    top: -60px;
+    left: 96px;
+}
+
+.paper {
+    background: linear-gradient(#e2e2e2 0 0) padding-box,
+    linear-gradient(to right, #4865f4, #5671f5) border-box;
+    right: -80px;
+    top: 60px;
+}
+
+.rock {
+    background: linear-gradient(#e2e2e2 0 0) padding-box,
+    linear-gradient(to right, #dc2e4e, #dd405d) border-box;
+    right: -10px;
+    bottom: -80px;
+}
+
+.lizard {
+    background: linear-gradient(#e2e2e2 0 0) padding-box,
+    linear-gradient(to right, #834fe3, #8c5de5) border-box;
+    bottom: -80px;
+    left: -10px;
+}
+
+.spock {
+    background: linear-gradient(#e2e2e2 0 0) padding-box,
+    linear-gradient(to right, #40b9ce, #52bed1) border-box;
+    left: -80px;
+    top: 60px;
 }
 
 /* Keyframes for Play Button Image Rotation */
@@ -186,42 +293,6 @@ ul.game-list {
     100% {
         transform: rotate(90deg);
     }
-}
-
-/* Individual Icon Styles */
-#scissors {
-    background: linear-gradient(#e2e2e2 0 0) padding-box,
-    linear-gradient(to right, #ec9e0e, #eca922) border-box;
-    top: -60px;
-    left: 96px;
-}
-
-#paper {
-    background: linear-gradient(#e2e2e2 0 0) padding-box,
-    linear-gradient(to right, #4865f4, #5671f5) border-box;
-    right: -80px;
-    top: 60px;
-}
-
-#rock {
-    background: linear-gradient(#e2e2e2 0 0) padding-box,
-    linear-gradient(to right, #dc2e4e, #dd405d) border-box;
-    right: -10px;
-    bottom: -80px;
-}
-
-#lizard {
-    background: linear-gradient(#e2e2e2 0 0) padding-box,
-    linear-gradient(to right, #834fe3, #8c5de5) border-box;
-    bottom: -80px;
-    left: -10px;
-}
-
-#spock {
-    background: linear-gradient(#e2e2e2 0 0) padding-box,
-    linear-gradient(to right, #40b9ce, #52bed1) border-box;
-    left: -80px;
-    top: 60px;
 }
 
 /* Rules Button Styles */
@@ -277,7 +348,7 @@ ul.game-list {
     color: var(--Dark-Text);
 }
 
-#close {
+.close {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -291,7 +362,7 @@ ul.game-list {
     }
 }
 
-#close img:hover {
+.close img:hover {
     transform: rotate(-45deg);
 }
 
@@ -301,72 +372,57 @@ ul.game-list {
     justify-content: space-between;
 }
 
-.loading-screen {
+.view-play {
     position: absolute;
     width: 100%;
-    height: 100vh;
-    background-color: #f3e1e1;
+    height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
-    transition: all 0.5s ease-in-out;
+    align-items: center;
 }
 
-.loader-wrapper {
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
+.player,
+.computer {
+    max-width: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #2f2348;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 4rem;
+}
+
+.player > span,
+.computer > span {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.308));
+    letter-spacing: 2px;
+}
+
+.player > .play-btn {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    opacity: 1;
-    transition: all 0.5s ease-in-out;
+    height: 200px;
+    max-width: 200px;
+    border-width: 25px;
+    cursor: none;
 }
 
-.loader-wrapper > img {
-    max-width: 50px;
-    width: 100%;
-    position: absolute;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
+.player > .play-btn:hover {
+    box-shadow: none;
+    animation: none;
 }
 
-.loader-wrapper > img:first-child {
-    opacity: 1;
+.player > .play-btn > img {
+    width: 50%;
 }
 
-.loader-wrapper> img:nth-child(1) {
-    animation: showImage 1.5s ease-in-out 0s 1 forwards;
-}
-
-.loader-wrapper> img:nth-child(2) {
-    animation: showImage 1.5s ease-in-out 1.5s 1 forwards;
-}
-
-.loader-wrapper> img:nth-child(3) {
-    animation: showImage 1.5s ease-in-out 3s 1 forwards;
-    transform: rotate(-45deg);
-}
-
-@keyframes showImage {
-    0% {
-        opacity: 0;
-    }
-
-    25% {
-        opacity: 1;
-    }
-
-    75% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
+.player .play-btn:hover > img {
+    animation: none;
 }
 
 @media (max-width:579px) {
@@ -436,4 +492,5 @@ ul.game-list {
         display: none;
     }
 }
+
 

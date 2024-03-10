@@ -390,7 +390,6 @@ ul.game-list {
     width: 100%;
     height: 100%;
     display: flex;
-    background-color: #2f2348;
     align-items: center;
     flex-direction: column;
     padding-top: 4rem;
@@ -401,7 +400,7 @@ ul.game-list {
 .player > span,
 .computer > span {
     font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 1rem, 0.5rem);
     text-transform: uppercase;
     color: #ffffff;
     filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.308));
@@ -415,10 +414,10 @@ ul.game-list {
     height: 200px;
     max-width: 200px;
     border-width: 25px;
-    cursor: default;
+    cursor: pointer;
     inset: 0;
-    animation-name: win;
     transition: all 0.3s ease-in-out;
+    width: 100%;
 }
 
 .player > .play-btn:hover,
@@ -429,7 +428,8 @@ ul.game-list {
 
 .player > .play-btn > img ,
 .computer > .play-btn > img {
-    width: 50%;
+    max-width: 50%;
+    width: 100%;
 }
 
 .player > .play-btn:hover > img,
@@ -441,19 +441,28 @@ ul.game-list {
     animation-name: win;
     animation-iteration-count: infinite;
     transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 1px 25px #2b3858;
 }
 
-@keyframes win{
+@keyframes win {
     0% {
         box-shadow: 0 0 1px 25px #2b3858;
     }
 
+    25% {
+        box-shadow: 0 0 1px 50px #253453;
+    }
+
     50% {
+        box-shadow: 0 0 1px 75px #223150;
+    }
+
+    75% {
         box-shadow: 0 0 1px 50px #253453;
     }
 
     100% {
-        box-shadow: 0 0 1px 75px #223150;
+        box-shadow: 0 0 1px 25px #2b3858;
     }
 }
 
@@ -522,30 +531,47 @@ ul.game-list {
         box-shadow: inset 0px 5px 0px rgba(0, 0, 0, 0.16);
     }
 
+    .player,
+    .computer {
+    }
+
+    .player > .play-btn,
+    .computer > .play-btn {
+        max-width: 100px;
+        height: 100px;
+        border-width: 10px;
+        left: 0;
+    }
+
+    .player > .play-btn > img ,
+    .computer > .play-btn > img {
+        max-width: 45%;
+    }
+
     .play-btn img {
         width: 45%;
     }
 
-    #scissors {
+    .scissors {
         left: 50px;
     }
 
-    #paper {
+    .paper {
         top: 25px;
         right: -50px;
     }
 
-    #rock {
+    .rock {
         right: -16px;
         bottom: -47px;
     }
 
-    #lizard {
+    .lizard {
         left: -16px;
         bottom: -47px;
     }
 
-    #spock {
+    .spock {
         top: 25px;
         left: -50px;
     }

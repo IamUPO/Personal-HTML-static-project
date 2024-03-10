@@ -22,8 +22,7 @@
                     <li>Spock</li>
                 </ul>
                 <!-- Score Display -->
-                <div class="score">
-                    <span>Score</span>
+                <div class="score"><span>Score</span>
                     <div id="score-points">12</div>
                 </div>
             </div>
@@ -32,31 +31,49 @@
                 <!-- Background Pentagon -->
                 <div class="bg-pentagon">
                     <!-- Play Buttons -->
-                    <button id="scissors" class="play-btn">
+                    <button id="scissors" class="play-btn scissors">
                         <img src="img/icon-scissors.svg" alt="scissors">
                     </button>
-                    <button id="paper" class="play-btn">
+                    <button id="paper" class="paper play-btn">
                         <img src="img/icon-paper.svg" alt="paper">
                     </button>
-                    <button id="rock" class="play-btn">
+                    <button id="rock" class="play-btn rock">
                         <img src="img/icon-rock.svg" alt="rock">
                     </button>
-                    <button id="lizard" class="play-btn">
+                    <button id="lizard" class="lizard play-btn">
                         <img src="img/icon-lizard.svg" alt="lizard">
                     </button>
-                    <button id="spock" class="play-btn">
+                    <button id="spock" class="play-btn spock">
                         <img src="img/icon-spock.svg" alt="spock">
                     </button>
                 </div>
+                <div class="view-play">
+                    <div class="player"><span>You Picked</span>
+                        <button id="scissors" class="play-btn scissors win-animation">
+                            <img src="img/icon-scissors.svg" alt="scissors">
+                        </button>
+                    </div>
+                    <div class="computer">
+                        <span>Computer Picked</span>
+                        <button id="lizard" class="lizard play-btn">
+                            <img src="img/icon-lizard.svg" alt="lizard">
+                        </button>
+                    </div>
+                    <div id="view-result" class="view-result">
+                        <span id="reult"></span>
+                        <button id="playagin">Play Again</button>
+                    </div>
+                </div>
             </div>
-            <div class="view-rules">
-                <div class="control"><span>Rules</span>
+            <div id="view-rules" class="view-rules">
+                <div class="control">
+                    <span>Rules</span>
                     <button id="close">
                         <img src="img/icon-close.svg">
                     </button>                     
                 </div>
                 <img src="img/image-rules-bonus.svg">
-                <button id="close">
+                <button id="close" class="close">
                     <img src="img/icon-close.svg">
                 </button>
             </div>

@@ -380,7 +380,7 @@ main {
     align-content: center;
     align-items: center;
     transition: all 0.3s ease-in-out;
-    display: flex;
+    display: none;
 }
 
 .player,
@@ -522,6 +522,14 @@ main {
         padding: 2rem 0.5rem;
     }
 
+    .game-list {
+        display: none;
+    }
+
+    .score {
+        padding: 10px;
+    }
+
     .bg-pentagon {
         max-width: 200px;
         background-size: contain;
@@ -604,19 +612,8 @@ main {
 }
 
 @media (min-width:580px) {
-    .view-rules > #close {
+    .view-rules > #mobile-close {
         display: none;
     }
 }
-
-@media (max-width:579px) {
-    .game-list {
-        display: none;
-    }
-
-    .score {
-        padding: 10px;
-    }
-}
-
 

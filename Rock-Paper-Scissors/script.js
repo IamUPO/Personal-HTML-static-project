@@ -7,228 +7,141 @@
 // });
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Declare bgPentagon variable globally
-    var bgPentagon = document.querySelector(".bg-pentagon");
-
-    // Set up event listener for the Rules button
-    var rulesButton = document.getElementById("rules");
-    var viewRules = document.querySelector(".view-rules");
-
-    // Show rules immediately after loading screen
-    setTimeout(function () {
-        var loadingScreen = document.getElementById("loading-screen");
-        loadingScreen.style.opacity = "0";
-        loadingScreen.style.display = "none";
-
-        // Display the rules
-        viewRules.style.display = "flex";
-    }, 5000);
-
-    // Event listener for opening and closing rules
-    rulesButton.addEventListener("click", function () {
-        viewRules.style.display = "flex";
-    });
-
-    var closeRulesButton = document.querySelector(".view-rules .close");
-
-    closeRulesButton.addEventListener("click", function () {
-        viewRules.style.display = "none";
-    });
-
-    // Set up event listener for play buttons
-    var playButtons = document.querySelectorAll(".play-btn");
+    // Initial setup
+    var loadingScreen = document.getElementById("loading-screen");
+    var viewRules = document.getElementById("view-rules");
+    var gamePlay = document.querySelector(".game-play");
     var viewPlay = document.querySelector(".view-play");
-    var playerSelection = document.querySelector(".view-play .player .play-btn");
-    var computerSelection = document.querySelector(".view-play .computer .play-btn");
-    var viewResult = document.querySelector(".view-result");
-    var resultText = document.getElementById("reult");
-    var playAgainButton = document.getElementById("playagin");
-    var scorePoints = document.getElementById("score-points");
+    var resultElement = document.getElementById("result");
+    var playerPointsElement = document.getElementById("player-points");
+    var computerPointsElement = document.getElementById("computer-points");
+    var playAgainButton = document.getElementById("play-again");
 
-    // Set initial score
-    var score = 0;
+    // Function to show the rules view
+    function showRules() {
+        viewRules.style.display = "flex";
+    }
 
-    // Event listener for play buttons
-    playButtons.forEach(function (button) {
-        button.addEventListener("click", function () {
-            // Hide the bg-pentagon
-            bgPentagon.style.display = "none";
+    // Function to hide the rules view
+    function hideRules() {
+        viewRules.style.display = "none";
+    }
 
-            // Show the view play section
-            viewPlay.style.display = "flex";
+    // Function to handle game result
+    function handleGameResult(userChoice, computerChoice) {
+        // Compare userChoice and computerChoice to determine the winner, loser, or tie
+        var result = determineWinner(userChoice, computerChoice);
 
-            // Simulate computer selection (replace this with actual random logic)
-            var computerChoices = ["scissors", "rock", "paper", "lizard", "spock"];
-            var randomIndex = Math.floor(Math.random() * computerChoices.length);
-            var computerChoice = computerChoices[randomIndex];
-            computerSelection.className = "play-btn " + computerChoice;
+        // Display the choices made by the user and computer
+        displayChoices(userChoice, computerChoice);
 
-            // Determine winner
-            var userChoice = button.id;
-            playerSelection.className = "play-btn " + userChoice;
-            var winner = determineWinner(userChoice, computerChoice);
+        // Display the game result
+        displayResult(result);
 
-            // Display result
-            viewResult.style.display = "flex";
-            resultText.textContent = winner;
+        // Update the score
+        updateScore(result);
 
-            // Update score and display
-            if (winner === "You Win!") {
-                score++;
-            } else if (winner === "You Lose!") {
-                score--;
-            }
-            scorePoints.textContent = score;
+        // Show the play-again button
+        showPlayAgainButton();
+    }
 
-            // Apply win animation to the winner
-            if (winner === "You Win!") {
-                playerSelection.classList.add("win-animation");
-            } else if (winner === "You Lose!") {
-                computerSelection.classList.add("win-animation");
-            }
-        });
-    });
-
-    // Event listener for play again button
-    playAgainButton.addEventListener("click", function () {
-        // Reset views for a new game
-        playerSelection.classList.remove("win-animation");
-        computerSelection.classList.remove("win-animation");
-        viewPlay.style.display = "none";
-        viewResult.style.display = "none";
-        // Access the bgPentagon variable here
-        bgPentagon.style.display = "block";
-    });
-
-    // Function to determine the winner
-    function determineWinner(player, computer) {
-        // Logic to determine winner, replace this with your game rules
-        // Example: Rock beats Scissors, Scissors beats Paper, etc.
-        if (player === computer) {
-            return "It's a Tie!";
-        } else if (
-            (player === "rock" && (computer === "scissors" || computer === "lizard")) ||
-            (player === "paper" && (computer === "rock" || computer === "spock")) ||
-            (player === "scissors" && (computer === "paper" || computer === "lizard")) ||
-            (player === "lizard" && (computer === "spock" || computer === "paper")) ||
-            (player === "spock" && (computer === "scissors" || computer === "rock"))
-        ) {
-            return "You Win!";
+    // Function to determine the winner, loser, or tie
+    function determineWinner(userChoice, computerChoice) {
+        // Implement your logic here
+        // Return "win" for player win, "lose" for player lose, and "tie" for a tie
+        // Example logic:
+        if (userChoice === computerChoice) {
+            return "tie";
+        } else if (/* your win condition */) {
+            return "win";
         } else {
-            return "You Lose!";
+            return "lose";
         }
     }
-});
 
-document.addEventListener("DOMContentLoaded", function () {
-    // Set up event listener for the Rules button
-    var rulesButton = document.getElementById("rules");
-    var viewRules = document.querySelector(".view-rules");
+    // Function to display the choices made by the user and computer
+    function displayChoices(userChoice, computerChoice) {
+        // Update the HTML content or replace the elements with the user and computer choices
+        // Example:
+        document.querySelector(".player .play-btn img").src = "img/icon-" + userChoice + ".svg";
+        document.querySelector(".computer .play-btn img").src = "img/icon-" + computerChoice + ".svg";
+    }
 
-    // Show rules immediately after loading screen
-    setTimeout(function () {
-        var loadingScreen = document.getElementById("loading-screen");
-        loadingScreen.style.opacity = "0";
-        loadingScreen.style.display = "none";
+    // Function to display the game result
+    function displayResult(result) {
+        // Display the result in the resultElement
+        resultElement.innerText = result;
 
-        // Display the rules
-        viewRules.style.display = "flex";
-    }, 5000);
-
-    // Event listener for opening and closing rules
-    rulesButton.addEventListener("click", function () {
-        viewRules.style.display = "flex";
-    });
-
-    var closeRulesButton = document.querySelector(".view-rules .close");
-
-    closeRulesButton.addEventListener("click", function () {
-        viewRules.style.display = "none";
-    });
-
-    // Set up event listener for play buttons
-    var playButtons = document.querySelectorAll(".play-btn");
-    var viewPlay = document.querySelector(".view-play");
-    var playerSelection = document.querySelector(".view-play .player .play-btn");
-    var computerSelection = document.querySelector(".view-play .computer .play-btn");
-    var viewResult = document.querySelector(".view-result");
-    var resultText = document.getElementById("reult");
-    var playAgainButton = document.getElementById("playagin");
-    var scorePoints = document.getElementById("score-points");
-
-    // Set initial score
-    var score = 0;
-
-    // Event listener for play buttons
-    playButtons.forEach(function (button) {
-        button.addEventListener("click", function () {
-            // Hide the bg-pentagon
-            var bgPentagon = document.querySelector(".bg-pentagon");
-            bgPentagon.style.display = "none";
-
-            // Show the view play section
-            viewPlay.style.display = "flex";
-
-            // Simulate computer selection (replace this with actual random logic)
-            var computerChoices = ["scissors", "rock", "paper", "lizard", "spock"];
-            var randomIndex = Math.floor(Math.random() * computerChoices.length);
-            var computerChoice = computerChoices[randomIndex];
-            computerSelection.className = "play-btn " + computerChoice;
-
-            // Determine winner
-            var userChoice = button.id;
-            playerSelection.className = "play-btn " + userChoice;
-            var winner = determineWinner(userChoice, computerChoice);
-
-            // Display result
-            viewResult.style.display = "flex";
-            resultText.textContent = winner;
-
-            // Update score and display
-            if (winner === "You Win!") {
-                score++;
-            } else if (winner === "You Lose!") {
-                score--;
-            }
-            scorePoints.textContent = score;
-
-            // Apply win animation to the winner
-            if (winner === "You Win!") {
-                playerSelection.classList.add("win-animation");
-            } else if (winner === "You Lose!") {
-                computerSelection.classList.add("win-animation");
-            }
-        });
-    });
-
-    // Event listener for play again button
-    playAgainButton.addEventListener("click", function () {
-        // Reset views for a new game
-        var bgPentagon = document.querySelector(".bg-pentagon");
-        bgPentagon.style.display = "block";
-
-        playerSelection.classList.remove("win-animation");
-        computerSelection.classList.remove("win-animation");
-        viewPlay.style.display = "none";
-        viewResult.style.display = "none";
-    });
-
-    // Function to determine the winner
-    function determineWinner(player, computer) {
-        // Logic to determine winner, replace this with your game rules
-        // Example: Rock beats Scissors, Scissors beats Paper, etc.
-        if (player === computer) {
-            return "It's a Tie!";
-        } else if (
-            (player === "rock" && (computer === "scissors" || computer === "lizard")) ||
-            (player === "paper" && (computer === "rock" || computer === "spock")) ||
-            (player === "scissors" && (computer === "paper" || computer === "lizard")) ||
-            (player === "lizard" && (computer === "spock" || computer === "paper")) ||
-            (player === "spock" && (computer === "scissors" || computer === "rock"))
-        ) {
-            return "You Win!";
+        // Apply win-animation class for a visual effect
+        if (result === "win") {
+            resultElement.classList.add("win-animation");
         } else {
-            return "You Lose!";
+            resultElement.classList.remove("win-animation");
         }
     }
+
+    // Function to update the score
+    function updateScore(result) {
+        // Update the score based on the result
+        if (result === "win") {
+            // Increment player's score
+            playerPointsElement.innerText = parseInt(playerPointsElement.innerText) + 1;
+        } else if (result === "lose") {
+            // Increment computer's score
+            computerPointsElement.innerText = parseInt(computerPointsElement.innerText) + 1;
+        }
+        // If it's a tie, do nothing with the score
+    }
+
+    // Function to show the play-again button
+    function showPlayAgainButton() {
+        playAgainButton.style.display = "block";
+    }
+
+    // Function to reset the game for a new round
+    function resetGame() {
+        // Reset result text and remove win-animation class
+        resultElement.innerText = "";
+        resultElement.classList.remove("win-animation");
+
+        // Hide play-again button
+        playAgainButton.style.display = "none";
+
+        // Reset player and computer choices to default
+        document.querySelector(".player .play-btn img").src = "img/icon-scissors.svg";
+        document.querySelector(".computer .play-btn img").src = "img/icon-lizard.svg";
+    }
+
+    // Event listener for the rules button
+    document.getElementById("rules").addEventListener("click", showRules);
+
+    // Event listener for closing the rules view
+    document.getElementById("close").addEventListener("click", hideRules);
+
+    // Event listener for play-again button
+    playAgainButton.addEventListener("click", function () {
+        // Reset the game for a new round
+        resetGame();
+    });
+
+    // Event listener for player's choice buttons
+    document.querySelectorAll(".play-btn").forEach(function (button) {
+        button.addEventListener("click", function () {
+            // Get the ID of the clicked button (e.g., "scissors", "rock", "paper", etc.)
+            var userChoice = this.id;
+
+            // Implement computer's choice logic (random in this case)
+            var choices = ["scissors", "rock", "paper", "lizard", "spock"];
+            var computerChoice = choices[Math.floor(Math.random() * choices.length)];
+
+            // Handle the game result
+            handleGameResult(userChoice, computerChoice);
+        });
+    });
+    
+    // Remove the loading screen after everything is set up
+    setTimeout(function () {
+        loadingScreen.style.opacity = "0";
+        loadingScreen.style.display = "none";
+    }, 5000);
 });

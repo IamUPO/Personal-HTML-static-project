@@ -380,7 +380,7 @@ main {
     align-content: center;
     align-items: center;
     transition: all 0.3s ease-in-out;
-    display: none;
+    display: flex;
 }
 
 .player,
@@ -419,6 +419,8 @@ main {
     inset: 0;
     transition: all 0.3s ease-in-out;
     width: 100%;
+    border-radius: 50%;
+    background-color: rgba(27, 40, 73, 0.48);
 }
 
 .player > .play-btn:hover,

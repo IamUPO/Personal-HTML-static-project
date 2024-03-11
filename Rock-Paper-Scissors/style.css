@@ -517,6 +517,7 @@ main {
 @media (max-width:579px) {
     main {
         justify-content: space-between;
+        padding: 2rem 0.5rem;
     }
 
     .bg-pentagon {

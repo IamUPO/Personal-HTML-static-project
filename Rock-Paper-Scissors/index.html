@@ -14,8 +14,7 @@
             <!-- Game Bar Section -->
             <div class="game-bar">
                 <!-- Game List -->
-                <div class="score">
-                    <span>Player</span>
+                <div class="score"><span>Player</span>
                     <div id="player-points" class="points">0</div>
                 </div>
                 <ul class="game-list">
@@ -26,8 +25,7 @@
                     <li>Spock</li>
                 </ul>
                 <!-- Score Display -->
-                <div class="score">
-                    <span>Computer</span>
+                <div class="score"><span>Computer</span>
                     <div id="computer-points" class="points">0</div>
                 </div>
             </div>
@@ -36,54 +34,56 @@
                 <!-- Background Pentagon -->
                 <div class="bg-pentagon">
                     <!-- Play Buttons -->
-                    <button id="scissors" class="play-btn scissors">
+                    <button id="scissors" class="play-btn scissors" title="scissors">
                         <img src="img/icon-scissors.svg" alt="scissors">
                     </button>
-                    <button id="paper" class="paper play-btn">
+                    <button id="paper" class="paper play-btn" title="paper">
                         <img src="img/icon-paper.svg" alt="paper">
                     </button>
-                    <button id="rock" class="play-btn rock">
+                    <button id="rock" class="play-btn rock" title="rock">
                         <img src="img/icon-rock.svg" alt="rock">
                     </button>
-                    <button id="lizard" class="lizard play-btn">
+                    <button id="lizard" class="lizard play-btn" title="lizard">
                         <img src="img/icon-lizard.svg" alt="lizard">
                     </button>
-                    <button id="spock" class="play-btn spock">
+                    <button id="spock" class="play-btn spock" title="spock">
                         <img src="img/icon-spock.svg" alt="spock">
                     </button>
                 </div>
                 <div class="view-play">
-                    <div class="player">
-                        <span>You Picked</span>
+                    <div class="player"><span>You Picked</span>
                         <!-- Player -->
-                        <button id="scissors" class="play-btn scissors">
+                        <button id="scissors" class="play-btn scissors" title="scissors">
                             <img src="img/icon-scissors.svg" alt="scissors">
                         </button>
                     </div>
-                    <div class="computer"><span>Computer Picked</span>
+                    <div class="computer">
+                        <span>Computer Picked</span>
                         <!-- Computer -->
-                        <button id="lizard" class="lizard play-btn">
+                        <button id="lizard" class="lizard play-btn" title="lizard">
                             <img src="img/icon-lizard.svg" alt="lizard">
                         </button>
                     </div>
-                    <div id="view-result" class="view-result"><span id="reult"></span>
-                        <button id="playagin">Play Again</button>
+                    <div id="view-result" class="view-result">
+                        <span id="reult"></span>
+                        <button id="playagin" title="Play game again">Play Again</button>
                     </div>
                 </div>
             </div>
             <div id="view-rules" class="view-rules">
-                <div class="control"><span>Rules</span>
-                    <button id="close" class="close">
-                        <img src="img/icon-close.svg">
+                <div class="control">
+                    <span>Rules</span>
+                    <button id="close" class="close" title="Close this window">
+                        <img alt="close" src="img/icon-close.svg">
                     </button>                     
-                </div>
-                <img src="img/image-rules-bonus.svg">
-                <button id="close" class="close">
-                    <img src="img/icon-close.svg">
+                </div>                 
+                <img src="img/image-rules-bonus.svg" alt="image rules">
+                <button id="mobile-close" class="close" title="Close this window">
+                    <img alt="close" src="img/icon-close.svg">
                 </button>
             </div>
             <!-- Rules Button -->
-            <button id="rules" class="rules">Rules</button>
+            <button id="rules" class="rules" title="Close this window">Rules</button>
         </main>
         <!-- Loading Screen-->
         <div id="loading-screen" class="loading-screen">

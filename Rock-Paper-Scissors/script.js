@@ -41,20 +41,17 @@ document.addEventListener("DOMContentLoaded", function () {
     var playButtons = document.querySelectorAll(".play-btn");
     playButtons.forEach(function (button) {
         button.addEventListener("click", function () {
-            // Get the selected play button's ID
-            var selectedPlay = button.id;
-
             // Step 4: Show view-play and update player and computer selections
             var viewPlay = document.querySelector(".view-play");
             var playerSelection = document.getElementById("player");
             var computerSelection = document.getElementById("computer");
 
             // Set the selections in view-play
-            playerSelection.innerHTML = `<div class="play-btn ${selectedPlay}"></div>`;
-            computerSelection.innerHTML = `<div class="play-btn"></div>`;
+            playerSelection.innerHTML = button.innerHTML;
+            computerSelection.innerHTML = `<div class="play-btn ${computerPlay()}"></div>`;
 
             // Step 5: Determine the result (win, lose, or tie)
-            var result = determineResult(selectedPlay, computerPlay());
+            var result = determineResult(button.id, computerPlay());
 
             // Update view-result text and add win-animation class if there's a winner
             var viewResult = document.getElementById("view-result");
@@ -128,3 +125,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
+

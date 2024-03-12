@@ -63,6 +63,8 @@ main {
     opacity: 1;
     transition: all 0.5s ease-in-out;
     z-index: 2;
+
+    /* display: none; */
 }
 
 .loader-wrapper {
@@ -199,15 +201,16 @@ main {
 /* Play Button Styles */
 .play-btn {
     display: inline-block;
+    position: absolute;
     width: 100%;
+    max-width: 148px;
+    height: 148px;
+    margin: auto;
     border: 18px solid transparent;
     border-radius: 50%;
     cursor: pointer;
     box-shadow: inset 0px 8px 0px rgba(0, 0, 0, 0.16) , 0px 10px 19px rgba(0, 0, 0, 0.55);
     transition: all 0.5s ease;
-    position: absolute;
-    max-width: 148px;
-    min-height: 148px;
 }
 
 .play-btn:hover {
@@ -417,54 +420,52 @@ main {
 .player > .player-picked,
 .computer > .computer-picked {
     position: relative;
-    height: 200px;
-    max-width: 200px;
-    border-width: 25px;
-    cursor: none !important;
-    inset: 0;
-    transition: all 0.3s ease-in-out;
     width: 100%;
+    max-width: 148px;
+    height: 148px;
+    border-width: 25px;
     border-radius: 50%;
     background-color: rgba(27, 40, 73, 0.48);
+    transition: all 0.3s ease-in-out;
 }
 
-.player > .play-btn > img ,
-.computer > .play-btn > img {
-    max-width: 50%;
-    width: 100%;
+.player-picked > .play-btn,
+.computer-picked > .play-btn {
+    inset: 0;
 }
 
-.player > .play-btn:hover > img,
-.computer > .play-btn:hover > img {
+.player-picked > .play-btn:hover,
+.computer-picked > .play-btn:hover {
+    box-shadow: inset 0px 8px 0px rgba(0, 0, 0, 0.16) , 0px 10px 19px rgba(0, 0, 0, 0.55);
     animation: none;
 }
 
 .win-animation {
     animation-name: win;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
-    transition: all 0.5s ease-in-out;
     box-shadow: 0 0 1px 25px #2b3858;
 }
 
 @keyframes win {
     0% {
-        box-shadow: 0 0 1px 25px #2b3858;
+        box-shadow: 0 0 1px 10px #253453;
     }
 
     25% {
-        box-shadow: 0 0 1px 50px #253453;
+        box-shadow: 0 0 1px 15px #dc2e4e;
     }
 
     50% {
-        box-shadow: 0 0 1px 75px #223150;
+        box-shadow: 0 0 1px 20px #4865f4;
     }
 
     75% {
-        box-shadow: 0 0 1px 50px #253453;
+        box-shadow: 0 0 1px 25px #40b9ce;
     }
 
     100% {
-        box-shadow: 0 0 1px 25px #2b3858;
+        box-shadow: 0 0 1px 30px #ec9e0e;
     }
 }
 
@@ -536,10 +537,10 @@ main {
     }
 
     .play-btn {
-        max-width: 100px;
-        min-height: 100px;
         border-width: 10px;
         box-shadow: inset 0px 5px 0px rgba(0, 0, 0, 0.16);
+        height: 100px;
+        max-width: 100px;
     }
 
     .player > span,
@@ -615,3 +616,4 @@ main {
         display: none;
     }
 }
+

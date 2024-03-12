@@ -221,12 +221,142 @@
 //     }
 // });
 
+// document.addEventListener("DOMContentLoaded", function () {
+//     // Step 1: Hide view-play and show loading screen
+//     document.querySelector(".view-play").style.display = "none";
+//     setTimeout(function () {
+//         document.querySelector("#loading-screen").style.display = "none";
+//         document.querySelector(".view-rules").style.display = "flex";
+//     }, 4000);
+
+//     // Step 1.1: Add event listeners for rule close buttons
+//     document.getElementById("close").addEventListener("click", toggleRules);
+//     document.getElementById("mobile-close").addEventListener("click", toggleRules);
+
+//     // Step 2: Add event listeners for play buttons
+//     const playButtons = document.querySelectorAll(".play-btn");
+//     playButtons.forEach(function (button) {
+//         button.addEventListener("click", playGame);
+//     });
+
+//     // Step 3: Add event listener for play-again button
+//     document.getElementById("playagin").addEventListener("click", playAgain);
+
+//     function toggleRules() {
+//         document.querySelector(".view-rules").classList.toggle("active");
+//     }
+
+//     function playGame(event) {
+//         // Step 2: Show view-play
+//         document.querySelector(".view-play").style.display = "flex";
+
+//         // Step 2.1: Hide rules
+//         document.querySelector(".view-rules").style.display = "none";
+
+//         // Step 2.2: Get user's choice
+//         const playerChoice = event.currentTarget.id;
+
+//         // Step 2.3: Get computer's choice
+//         const computerChoice = generateComputerChoice();
+
+//         // Step 2.4: Display player and computer choices
+//         displayChoices(playerChoice, computerChoice);
+
+//         // Step 3: Determine the winner and update scores
+//         const result = determineWinner(playerChoice, computerChoice);
+//         updateScores(result);
+
+//         // Step 3.1: Show result and play-again button
+//         document.getElementById("view-result").style.display = "flex";
+//         document.getElementById("result").innerText = result;
+
+//         // Step 3.2: Highlight the winner
+//         if (result === "You Win!") {
+//             document.getElementById("player").classList.add("win-animation");
+//             setTimeout(() => clearHighlights(), 2000);
+//         } else if (result === "You Lose!") {
+//             document.getElementById("computer").classList.add("win-animation");
+//             setTimeout(() => clearHighlights(), 2000);
+//         } else {
+//             setTimeout(() => clearHighlights(), 2000);
+//         }
+//     }
+
+//     function generateComputerChoice() {
+//         const choices = ["rock", "paper", "scissors", "lizard", "spock"];
+//         const randomIndex = Math.floor(Math.random() * choices.length);
+//         return choices[randomIndex];
+//     }
+
+//     function displayChoices(playerChoice, computerChoice) {
+//         // Clear previous highlights
+//         clearHighlights();
+
+//         // Display player choice
+//         const playerDiv = document.getElementById("player");
+//         playerDiv.innerHTML = `<button class="play-btn ${playerChoice}"><img src="img/icon-${playerChoice}.svg" alt="${playerChoice}"></button>`;
+
+//         // Display computer choice
+//         const computerDiv = document.getElementById("computer");
+//         computerDiv.innerHTML = `<button class="play-btn ${computerChoice}"><img src="img/icon-${computerChoice}.svg" alt="${computerChoice}"></button>`;
+//     }
+
+//     function clearHighlights() {
+//         document.getElementById("player").classList.remove("win-animation");
+//         document.getElementById("computer").classList.remove("win-animation");
+//     }
+
+//     function determineWinner(playerChoice, computerChoice) {
+//         // Update this section based on the game rules for each combination
+//         // Return "You Win!", "You Lose!", or "It's a Draw!"
+//         // Example logic for Rock, Paper, Scissors, Lizard, Spock:
+//         if (
+//             (playerChoice === "rock" && (computerChoice === "scissors" || computerChoice === "lizard")) ||
+//             (playerChoice === "paper" && (computerChoice === "rock" || computerChoice === "spock")) ||
+//             (playerChoice === "scissors" && (computerChoice === "paper" || computerChoice === "lizard")) ||
+//             (playerChoice === "lizard" && (computerChoice === "spock" || computerChoice === "paper")) ||
+//             (playerChoice === "spock" && (computerChoice === "scissors" || computerChoice === "rock"))
+//         ) {
+//             return "You Win!";
+//         } else if (playerChoice === computerChoice) {
+//             return "It's a Draw!";
+//         } else {
+//             return "You Lose!";
+//         }
+//     }
+
+//     function updateScores(result) {
+//         // Update scores based on the result
+//         const playerPoints = document.getElementById("player-points");
+//         const computerPoints = document.getElementById("computer-points");
+
+//         if (result === "You Win!") {
+//             playerPoints.innerText = parseInt(playerPoints.innerText) + 1;
+//         } else if (result === "You Lose!") {
+//             computerPoints.innerText = parseInt(computerPoints.innerText) + 1;
+//         }
+//     }
+
+//     function playAgain() {
+//         // Step 4: Reset the game to play again
+//         document.querySelector(".view-play").style.display = "none";
+//         document.getElementById("view-result").style.display = "none";
+
+//         // Clear previous choices
+//         document.getElementById("player").innerHTML = "";
+//         document.getElementById("computer").innerHTML = "";
+//     }
+// });
+
 document.addEventListener("DOMContentLoaded", function () {
     // Step 1: Hide view-play and show loading screen
     document.querySelector(".view-play").style.display = "none";
     setTimeout(function () {
-        document.querySelector("#loading-screen").style.display = "none";
-        document.querySelector(".view-rules").style.display = "flex";
+        document.querySelector("#loading-screen").style.opacity = "0";
+        setTimeout(function () {
+            document.querySelector("#loading-screen").style.display = "none";
+            document.querySelector(".view-rules").style.display = "flex";
+        }, 500); // Adjust the timing based on your preference
     }, 4000);
 
     // Step 1.1: Add event listeners for rule close buttons
@@ -243,6 +373,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("playagin").addEventListener("click", playAgain);
 
     function toggleRules() {
+        // Toggle the active class to show/hide rules
         document.querySelector(".view-rules").classList.toggle("active");
     }
 
@@ -268,6 +399,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Step 3.1: Show result and play-again button
         document.getElementById("view-result").style.display = "flex";
+
+        // Update the #result span with the game result
         document.getElementById("result").innerText = result;
 
         // Step 3.2: Highlight the winner
@@ -340,11 +473,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function playAgain() {
         // Step 4: Reset the game to play again
         document.querySelector(".view-play").style.display = "none";
+        // document.querySelector(".view-rules").style.display = "flex";
         document.getElementById("view-result").style.display = "none";
-
-        // Clear previous choices
-        document.getElementById("player").innerHTML = "";
-        document.getElementById("computer").innerHTML = "";
     }
 });
-

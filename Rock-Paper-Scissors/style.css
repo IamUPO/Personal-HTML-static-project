@@ -517,6 +517,18 @@ main {
     box-shadow: none;
 }
 
+@keyframes rotateFadeOut {
+    0% {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(360deg);
+    }
+}
+
+
 @media (max-width:579px) {
     main {
         justify-content: space-between;
@@ -618,13 +630,3 @@ main {
     }
 }
 
-@keyframes rotateFadeOut {
-    0% {
-        opacity: 1;
-        transform: rotate(0deg);
-    }
-    100% {
-        opacity: 0;
-        transform: rotate(360deg);
-    }
-}

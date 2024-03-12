@@ -239,7 +239,7 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(() => {
             bgPentagon.style.display = "none"; // Hide the bg-pentagon after animation
             viewPlay.style.display = "flex"; // Show view-play
-        }, 1000); // Adjust timing as needed
+        }, 500); // Adjust timing as needed
     }
 
     // Function to generate a random choice for the computer
@@ -283,15 +283,19 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Function to update scores
-    function updateScores(result) {
-        // Update scores based on the result
-        if (result === "You Win!") {
+// Function to update scores with a delay
+function updateScores(result) {
+    // Update scores based on the result with a delay
+    setTimeout(function() {
+        if (result === "You Win! 😁") {
             playerPoints.innerText = parseInt(playerPoints.innerText) + 1;
-        } else if (result === "You Lose!") {
+        } else if (result === "You Lose! 😓") {
             computerPoints.innerText = parseInt(computerPoints.innerText) + 1;
         }
-    }
+    }, 1000); // 1000 milliseconds = 1 second delay
+}
+
+
 
    // Function to reset the game
 function playAgain() {

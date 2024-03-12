@@ -442,6 +442,7 @@ main {
 
 .win-animation {
     animation-name: win;
+    animation-delay: 0.3s;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     box-shadow: 0 0 1px 25px #2b3858;
@@ -617,3 +618,13 @@ main {
     }
 }
 
+@keyframes rotateFadeOut {
+    0% {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(360deg);
+    }
+}

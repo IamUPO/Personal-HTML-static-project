@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tic Tac Toe</title>
+        <style>body { font-family: Arial, sans-serif; text-align: center; } .container { display: inline-block; margin-top: 50px; } .row { clear: both; } .cell { width: 100px; height: 100px; float: left; border: 1px solid #000; box-sizing: border-box; font-size: 36px; line-height: 100px; cursor: pointer; } .cell.X { color: blue;  /* Change X color to blue */ } .cell.O { color: red;  /* Change O color to red */ }</style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="cell" onclick="makeMove(0, 0)"></div>
+                <div class="cell" onclick="makeMove(0, 1)"></div>
+                <div class="cell" onclick="makeMove(0, 2)"></div>
+            </div>
+            <div class="row">
+                <div class="cell" onclick="makeMove(1, 0)"></div>
+                <div class="cell" onclick="makeMove(1, 1)"></div>
+                <div class="cell" onclick="makeMove(1, 2)"></div>
+            </div>
+            <div class="row">
+                <div class="cell" onclick="makeMove(2, 0)"></div>
+                <div class="cell" onclick="makeMove(2, 1)"></div>
+                <div class="cell" onclick="makeMove(2, 2)"></div>
+            </div>
+        </div>
+        <script>
+  let currentPlayer = 'X';
+  let board = [
+    ['', '', ''],
+    ['', '', ''],
+    ['', '', '']
+  ];
+
+  function makeMove(row, col) {
+    if (board[row][col] === '') {
+      board[row][col] = currentPlayer;
+      document.querySelector('.row:nth-child(' + (row + 1) + ') .cell:nth-child(' + (col + 1) + ')').innerText = currentPlayer;
+      document.querySelector('.row:nth-child(' + (row + 1) + ') .cell:nth-child(' + (col + 1) + ')').classList.add(currentPlayer);
+      if (checkWinner(row, col)) {
+        alert(currentPlayer + ' wins!');
+        resetGame();
+      } else if (checkDraw()) {
+        alert('It\'s a draw!');
+        resetGame();
+      } else {
+        currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+      }
+    }
+  }
+
+  function checkWinner(row, col) {
+    return (
+      checkLine(0, col, 1, 0) ||  // Check vertical
+      checkLine(row, 0, 0, 1) ||  // Check horizontal
+      checkLine(0, 0, 1, 1) ||  // Check diagonal
+      checkLine(0, 2, 1, -1)     // Check anti-diagonal
+    );
+  }
+
+  function checkLine(startRow, startCol, rowDelta, colDelta) {
+    for (let i = 0; i < 3; i++) {
+      const row = startRow + i * rowDelta;
+      const col = startCol + i * colDelta;
+      if (board[row][col] !== currentPlayer) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  function checkDraw() {
+    for (let row = 0; row < 3; row++) {
+      for (let col = 0; col < 3; col++) {
+        if (board[row][col] === '') {
+          return false;
+        }
+      }
+    }
+    return true;
+  }
+
+  function resetGame() {
+    board = [
+      ['', '', ''],
+      ['', '', ''],
+      ['', '', '']
+    ];
+    document.querySelectorAll('.cell').forEach(cell => {
+      cell.innerText = '';
+      cell.classList.remove('X', 'O');
+    });
+    currentPlayer = 'X';
+  }
+</script>
+    </body>
+</html>

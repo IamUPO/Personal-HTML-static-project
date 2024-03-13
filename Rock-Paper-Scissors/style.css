@@ -133,9 +133,9 @@ main {
     border-style: solid;
     border-color: #606e85;
     border-radius: 15px;
-    padding: 1rem;
     overflow: hidden;
     gap: 2rem;
+    padding: 1rem;
 }
 
 /* Game List Styles */
@@ -175,14 +175,12 @@ main {
 .game-play {
     max-width: 44rem;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 560px;
     overflow: hidden;
     position: relative;
     border-radius: 10px;
+    display: grid;
+    place-items: center;
+    height: 100%;
 }
 
 /* Background Pentagon Styles */
@@ -195,7 +193,8 @@ main {
     width: 100%;
     position: relative;
     transition: all 0.3s ease-in-out;
-    min-height: 320px;
+    max-height: 320px;
+    height: 100%;
 }
 
 /* Play Button Styles */
@@ -384,7 +383,8 @@ main {
     align-items: center;
     transition: all 0.3s ease-in-out;
     display: flex;
-    background: linear-gradient(45deg, #245d81, #0c324c);
+
+    /* background: linear-gradient(45deg, #245d81, #0c324c) */
     border-radius: 25px;
     backdrop-filter: blur(10px);
 }
@@ -520,12 +520,12 @@ main {
         opacity: 1;
         transform: rotate(0deg);
     }
+
     100% {
         opacity: 0;
         transform: rotate(360deg);
     }
 }
-
 
 @media (max-width:579px) {
     main {
@@ -544,7 +544,7 @@ main {
     .bg-pentagon {
         max-width: 200px;
         background-size: contain;
-        min-height: 200px;
+        max-height: 200px;
     }
 
     .play-btn {

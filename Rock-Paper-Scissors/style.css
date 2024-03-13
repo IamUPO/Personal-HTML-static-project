@@ -387,8 +387,6 @@ main {
     background: linear-gradient(45deg, #245d81, #0c324c);
     border-radius: 25px;
     backdrop-filter: blur(10px);
-
-    /* Adjust the blur value as needed */
 }
 
 .player,

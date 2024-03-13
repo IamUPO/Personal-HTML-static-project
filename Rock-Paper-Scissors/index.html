@@ -13,7 +13,8 @@
             <!-- Game Bar Section -->
             <div class="game-bar">
                 <!-- Game List -->
-                <div class="score"><span>Player</span>
+                <div class="score">
+                    <span>Player</span>
                     <div id="player-points" class="points">0</div>
                 </div>
                 <ul class="game-list">
@@ -24,7 +25,8 @@
                     <li>Spock</li>
                 </ul>
                 <!-- Score Display -->
-                <div class="score"><span>Computer</span>
+                <div class="score">
+                    <span>Computer</span>
                     <div id="computer-points" class="points">0</div>
                 </div>
             </div>
@@ -50,22 +52,24 @@
                     </button>
                 </div>
                 <div class="view-play">
-                    <div class="player"><span>You Picked</span>
+                    <div class="player">
+                        <span>You Picked</span>
                         <!-- Player -->
                         <div id="player" class="player-picked"></div>
                     </div>
                     <div class="computer">
-                        <!-- Computer --><span>Computer Picked</span>
+                        <!-- Computer -->
+                        <span>Computer Picked</span>
                         <div id="computer" class="computer-picked"></div>
                     </div>
-                    <div id="view-result" class="view-result"><span id="result"></span>
+                    <div id="view-result" class="view-result">
+                        <span id="result"></span>
                         <button id="playagin" title="Play game again">Play Again</button>
                     </div>
                 </div>
             </div>
             <div id="view-rules" class="view-rules">
-                <div class="control">
-                    <span>Rules</span>
+                <div class="control"><span>Rules</span>
                     <button id="close" class="close" title="Close this window">
                         <img alt="close" src="img/icon-close.svg">
                     </button>                     
@@ -77,7 +81,7 @@
             </div>
             <!-- Rules Button -->
             <button id="rules" class="rules" title="Close this window">Rules</button>
-            <audio src="theme%20song/yt1s.com%20-%20Temple%20Run%20iOS%20Music%20Running%20Music.mp3" volume="1" loop="true" autoplay="true">Your browser doesn't support HTML5 audio tag.</audio>
+            <audio id="themeSong" src="theme%20song/yt1s.com%20-%20Temple%20Run%20iOS%20Music%20Running%20Music.mp3" volume="1" loop="true" autoplay="true">Your browser doesn't support HTML5 audio tag.</audio>
         </main>
         <!-- Loading Screen-->
         <div id="loading-screen" class="loading-screen">

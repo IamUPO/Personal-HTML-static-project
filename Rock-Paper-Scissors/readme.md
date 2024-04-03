@@ -57,6 +57,13 @@ Feel free to explore the code in the `scripts` and `styles` directories for more
 
 Contributions are welcome! If you have any suggestions, bug fixes, or enhancements, please open an issue or submit a pull request.
 
+## Connect with Me
+
+Feel free to connect with me on:
+
+- [LinkedIn](https://www.linkedin.com/in/iamupo/)
+- [x](https://www.x.com/iamupo/)
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).

@@ -4,10 +4,10 @@ This repository contains my solutions to various static HTML projects I've creat
 
 ## Projects
 
-1. [Ghana@67](link-to-ghana@67)
-2. [MyTask](link-to-mytask)
-3. [Rock-Paper-Scissors](link-to-rock-paper-scissors)
-4. [Social-WebApp](link-to-social-webapp)
+1. [Ghana@67](https://github.com/iamupo/Personal-HTML-static-project/tree/main/Ghana%4067)
+2. [MyTask](https://github.com/iamupo/Personal-HTML-static-project/tree/main/MyTask)
+3. [Rock-Paper-Scissors](https://github.com/iamupo/Personal-HTML-static-project/tree/main/Rock-Paper-Scissors)
+4. [Social-WebApp](https://github.com/iamupo/Personal-HTML-static-project/tree/main/Social-WebApp)
 
 ## Purpose
 

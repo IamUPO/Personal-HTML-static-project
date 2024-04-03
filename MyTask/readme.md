@@ -29,7 +29,7 @@ The MyTask project is a static HTML project that allows users to manage tasks. I
 
 ## Live Site
 
-You can access the live version of MyTask [here](https://your-username.github.io/Personal-HTML-static-project/MyTask/index.html).
+You can access the live version of MyTask [here](https://iamupo.github.io/Personal-HTML-static-project/MyTask/index.html).
 
 ## How to Use
 

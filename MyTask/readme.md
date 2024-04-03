@@ -24,7 +24,7 @@ The MyTask project is a static HTML project that allows users to manage tasks. I
 
 ## Screenshots
 
-![MyTask Interface](screenshots/mytask-interface.png)
+![MyTask Interface](screenshot.png)
 *Screenshot of the MyTask task management interface.*
 
 ## Live Site

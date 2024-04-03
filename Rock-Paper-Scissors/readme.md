@@ -16,7 +16,7 @@ Welcome to the Rock Paper Scissors Lizard Spock game! This is a static web game 
 
 You can play the game [here](link-to-your-game).
 
-![Game Screenshot](screenshot.png)
+![Game Screenshot](img/rock-paper-scissors.png)
 
 ## Features
 

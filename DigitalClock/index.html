@@ -9,23 +9,28 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700,500,400&display=swap">
     </head>     
     <body>
-        <header>
-            <img src="img/favicon.png" alt="logo" width="50px">
-        </header>
-        <main>
-            <div class="clock-container"> 
-                <div class="clock"> <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span> 
-                </div>                 
-                <div class="date-display"> <span id="day">Monday</span>, <span id="month">January</span> <span id="date">01</span>, <span id="year">2024</span> 
-                </div>                 
-            </div>
-            <div class="calendar-widget"> 
-                <!-- Calendar will be dynamically generated here -->                 
-            </div>
-            <div class="event-display"> 
-                <!-- Event display content goes here -->                 
-            </div>
-        </main>                                    
+        <div class="container">
+            <header>
+                <img src="img/favicon.png" alt="logo" width="50px">
+            </header>
+            <main>
+                <div class="event-display"> 
+                    <!-- Event display content goes here -->                     
+                </div>
+                <div class="clock-calender-display">
+                    <div class="clock-container"> 
+                        <div class="clock"> <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span> 
+                        </div>                         
+                        <div class="date-display"> <span id="day">Monday</span>, <span id="month">January</span> <span id="date">01</span>, <span id="year">2024</span> 
+                        </div>                         
+                    </div>
+                    <div class="calendar-widget"> 
+                        <!-- Calendar will be dynamically generated here -->                         
+                    </div>
+                </div>
+                <div data-empty-placeholder class="customisation-display"></div>
+            </main>
+        </div>                                    
         <script src="app.js"></script>         
     </body>     
 </html>

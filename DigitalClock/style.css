@@ -143,6 +143,7 @@ main {
     flex-direction: row;
     gap: 1rem;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .calendar > .month {
@@ -153,7 +154,8 @@ main {
     background-color: var(--bg-light);
     border-radius: 15px;
     box-shadow: 0px 14px 25px rgba(0, 0, 0, 0.48);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    flex-grow: 2rem;
 }
 
 .month > .days {

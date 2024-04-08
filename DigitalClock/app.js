@@ -24,6 +24,7 @@ function generateCalendar() {
     const currentDate = new Date();
     const currentYear = currentDate.getFullYear();
     const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    const daysOfWeek = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
 
     let calendarHTML = '<div class="calendar">';
     for (let month = 0; month < 12; month++) {
@@ -31,8 +32,22 @@ function generateCalendar() {
                             <h3>${months[month]}</h3>
                             <div class="days">`;
         const daysInMonth = new Date(currentYear, month + 1, 0).getDate();
+        const firstDayOfMonth = new Date(currentYear, month, 1).getDay();
+        
+        // Add days of the week
+        for (let i = 0; i < daysOfWeek.length; i++) {
+            calendarHTML += `<span>${daysOfWeek[i]}</span>`;
+        }
+        
+        // Add empty cells for days before the first day of the month
+        for (let i = 0; i < firstDayOfMonth; i++) {
+            calendarHTML += `<span></span>`;
+        }
+        
+        // Add days of the month
         for (let day = 1; day <= daysInMonth; day++) {
-            calendarHTML += `<span>${day}</span>`;
+            const isCurrentDay = day === currentDate.getDate() && month === currentDate.getMonth();
+            calendarHTML += `<span class="${isCurrentDay ? 'current-day' : ''}">${day}</span>`;
         }
         calendarHTML += `</div></div>`;
     }

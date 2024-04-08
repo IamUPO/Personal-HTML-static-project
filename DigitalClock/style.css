@@ -175,21 +175,21 @@ main {
 .calendar::-webkit-scrollbar {
     width: 8px;
     height: 8px;
-    border-radius: 50px;
 }
 
 .calendar::-webkit-scrollbar-track {
-    background-color: transparent; /* Set the background color of the scrollbar track */
+    background-color: transparent;
 }
 
 .calendar::-webkit-scrollbar-thumb {
-    background-color: var(--highlight-light); /* Set the color of the scrollbar thumb */
-    border-radius: 25px; /* Set the border radius of the scrollbar thumb */
+    background-color: var(--highlight-light);
+    border-radius: 50px;
     cursor: pointer;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
     transition: all 0.3s;
+    backdrop-filter: blur(10px); 
 }
 
 .calendar::-webkit-scrollbar-thumb:hover {
-    background-color: var(--highlight-dark); /* Set the color of the scrollbar thumb on hover */
+    background-color: var(--highlight-dark);
 }

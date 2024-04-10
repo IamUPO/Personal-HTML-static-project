@@ -1,38 +1,89 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-    <head> 
-        <meta charset="UTF-8"/> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
-        <link rel="icon" type="image/x-icon" href="img/favicon.svg"/> 
-        <title>Digital Clock and Calendar</title>         
-        <link rel="stylesheet" href="style.css"/> 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700,500,400&display=swap">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
-    </head>     
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="icon" type="image/x-icon" href="img/favicon.svg"/>
+        <title>Digital Clock and Calendar</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700,500,400&display=swap"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"/>
+    </head>
     <body>
         <div class="container">
             <header>
-                <img src="img/favicon.png" alt="logo" width="50px">
+                <img src="img/favicon.png" alt="logo" width="50px"/>
             </header>
             <main>
-                <div class="event-display"> 
-                    <!-- Event display content goes here -->                     
-                </div>
-                <div class="clock-calender-display">
-                    <div class="clock-container"> 
-                        <div class="clock"> <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span> 
-                        </div>                         
-                        <div class="date-display"> <span id="day">Monday</span>, <span id="month">January</span> <span id="date">01</span>, <span id="year">2024</span> 
-                        </div>                         
+                <section class="event-display">
+                    <!-- Event display content goes here -->
+                </section>
+                <section class="clock-calender-display">
+                    <div class="clock-container">
+                        <div class="clock">
+                            <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+                        </div>
+                        <div class="date-display">
+                            <span id="day">Monday</span>, <span id="month">January</span>
+                            <span id="date">01</span>, <span id="year">2024</span>
+                        </div>
                     </div>
-                    <div class="calendar-widget"> 
-                        <!-- Calendar will be dynamically generated here -->                         
+                    <div class="calender-nav">
+                        <p>Calender</p>
+                        <div class="navigate">
+                            <button id="navleft">
+                                <i class="fa-angle-left fa-fw fa-lg fas"></i>
+                            </button>
+                            <button id="navright">
+                                <i class="fa-angle-right fa-fw fa-lg fas"></i>
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <div data-empty-placeholder class="customisation-display"></div>
+                    <div class="calendar-widget">
+                        <!-- Calendar will be dynamically generated here -->
+                    </div>
+                </section>
+                <section class="customisation-display">
+                    <!-- Settings Panel for Time and Date Format -->
+                    <div class="customization">
+                        <h2>Settings Panel</h2>
+                        <div class="time-option">
+                            <label for="time-format">Time Format:</label>
+                            <select id="time-format" name="SeelectTimeFormat" value="Select Time Format">
+                                <option value="12-hour">12-hour</option>
+                                <option value="24-hour">24-hour</option>
+                            </select>
+                        </div>
+                        <div class="date-option">
+                            <label for="date-format">Date Format:</label>
+                            <select id="date-format">
+                                <option value="dd-mm-yyyy">DD/MM/YYYY</option>
+                                <option value="mm-dd-yyyy">MM/DD/YYYY</option>
+                            </select>
+                        </div>
+                        <h2>Theme Settings</h2>
+                        <div class="background-option">
+                            <label for="background-image-selector">Select Background Image:</label>
+                            <input type="file" id="background-image-selector" accept="image/*">
+                        </div>
+                        <div class="font-option">
+                            <label for="font-style">Font Style:</label>
+                            <select id="font-style">
+                                <option value="sans-serif">Sans Serif</option>
+                                <option value="serif">Serif</option>
+                                <option value="monospace">Monospace</option>
+                            </select>
+                        </div>
+                        <div class="color-option">
+                            <label for="date-color-picker">Date Display Color:</label>
+                            <input type="color" id="date-color-picker" name="date-color" value="#000000"/>
+                        </div>
+                    </div>
+                    <!-- Theme Settings Panel -->
+                </section>
             </main>
-        </div>         
-        <script src="app.js"></script>         
-    </body>     
+        </div>
+        <script src="app.js"></script>
+    </body>
 </html>

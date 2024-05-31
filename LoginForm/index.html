@@ -7,33 +7,23 @@
         <script src="https://cdn.tailwindcss.com/"></script>         
     </head>     
     <body> 
-        <main class="bg-gray-900 flex h-screen items-center justify-center w-screen">
-            <div class="bg-gray-300 flex flex-col gap-5 m-4 p-4 rounded-xl">
-                <h2 class="font-extrabold font-sans text-3xl text-center text-gray-900 uppercase">Sign In</h2>
-                <p class="font-semibold text-center">Use this awesome form to sign in users.</p>
-                <form> 
-                    <div class="flex mb-4 text-sm"><span class="bg-gray-50 border border-gray-300 border-r-0 inline-flex items-center px-3 py-2 rounded-l-md text-gray-600"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
-                                <g>
-                                    <path fill="none" d="M0 0h24v24H0z"></path>
-                                    <path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm17 4.238l-7.928 7.1L4 7.216V19h16V7.238zM4.511 5l7.55 6.662L19.502 5H4.511z"></path>
-                                </g>
-                            </svg></span>
-                        <input type="email" class="block border border-gray-300 flex-1 px-3 py-2 rounded-r-md w-full" placeholder="Email" aria-label="Email" required>
-                    </div>
-                    <div class="flex mb-4 text-sm"><span class="bg-gray-50 border border-gray-300 border-r-0 inline-flex items-center px-3 py-2 rounded-l-md text-gray-600"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
-                                <g>
-                                    <path fill="none" d="M0 0h24v24H0z"></path>
-                                    <path d="M10.758 11.828l7.849-7.849 1.414 1.414-1.414 1.415 2.474 2.474-1.414 1.415-2.475-2.475-1.414 1.414 2.121 2.121-1.414 1.415-2.121-2.122-2.192 2.192a5.002 5.002 0 0 1-7.708 6.294 5 5 0 0 1 6.294-7.708zm-.637 6.293A3 3 0 1 0 5.88 13.88a3 3 0 0 0 4.242 4.242z"></path>
-                                </g>
-                            </svg></span>
-                        <input type="password" class="block border border-gray-300 flex-1 px-3 py-2 rounded-r-md w-full" placeholder="Password" aria-label="Password" required>
+        <main class="bg-gray-900 flex h-screen items-center justify-center relative w-screen">
+            <div class="flex gap-20 justify-center z-0 2xl:gap-10">
+                <img src="img/Coin1.png" alt="coin1" class="mb-80 w-3/12">
+                <img src="img/Coin2.png" alt="coin2" width="100" class="mt-80 w-3/12">
+            </div>
+            <div class="absolute backdrop-blur-md bg-opacity-30 bg-pink-700 m-5 p-5 rounded-lg z-10"> 
+                <h1 class="capitalize font-bold leading-10 mb-10 mx-5 text-3xl text-center text-white">Be among the <b class="text-yellow-300 uppercase">crypto Fam</b></h1> 
+                <form class="flex flex-col gap-5"> 
+                    <input class="bg-transparent border-2 border-opacity-50 border-solid border-white focus:bg-white focus:border-blue-300 focus:outline-none focus:text-gray-800 font-semibold p-3 placeholder-opacity-50 placeholder-white rounded-full text-gray-50 text-lg text-opacity-80" type="text" placeholder="Enter Fullname" required="true">
+                    <input class="bg-transparent border-2 border-opacity-50 border-solid border-white focus:bg-white focus:border-blue-300 focus:outline-none focus:text-gray-800 font-semibold p-3 placeholder-opacity-50 placeholder-white rounded-full text-gray-50 text-lg text-opacity-80" type="text" placeholder="Enter Username" required="true">
+                    <input class="bg-transparent border-2 border-opacity-50 border-solid border-white focus:bg-white focus:border-blue-300 focus:outline-none focus:text-gray-800 font-semibold p-3 placeholder-opacity-50 placeholder-white rounded-full text-gray-50 text-lg text-opacity-80" type="password" placeholder="Enter Password" required="true">
+                    <div class="flex gap-2 items-center">
+                        <input type="checkbox" name="terms">
+                        <span class="text-gray-200">Accept Terms and Conditions</span>
                     </div>                     
-                    <div class="flex items-center mb-4">
-                        <input id="remember_me" name="remember_me" type="checkbox" class="border-gray-300 focus:ring-indigo-500 h-4 rounded text-indigo-600 w-4">
-                        <label for="remember_me" class="block ml-2 text-sm">Remember me</label>
-                    </div>
-                    <button type="submit" class="bg-blue-600 font-medium hover:bg-blue-700 inline-block px-6 py-2 rounded-md text-center text-white w-full">Sign In</button>                     
-                </form>
+                    <button class="bg-yellow-200 duration-300 ease-linear font-bold hover:bg-yellow-300 mt-4 px-4 py-3 rounded-full text-gray-800 transition-all">Join Now</button>                     
+                </form>                 
             </div>
         </main>
     </body>     

@@ -7,10 +7,12 @@
         <script src="https://cdn.tailwindcss.com/"></script>         
         <link href="style.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
+        <link href="style.css" rel="stylesheet" type="text/css">
     </head>     
     <body class="bg-gray-900 flex flex-col gap-10 h-screen items-center overflow-x-hidden w-screen">
         <header class="backdrop-blur-md bg-gray-900 bg-opacity-0 px-3 py-4 shadow sticky top-0 w-screen z-10">
-            <div class="flex items-center justify-end justify-items-center max-w-6xl mx-auto w-full sm:justify-between" data-pg-name="Header-ontainer"><a href="#" class="mr-auto sm:mr-0"><img src="assets/logo/Tonkeeper-logo.svg" alt="Tonkeeper-logo" width="35"></a>
+            <div class="flex items-center justify-end justify-items-center max-w-6xl mx-auto w-full sm:justify-between" data-pg-name="Header-ontainer">
+                <a href="#" class="mr-auto sm:mr-0"><img src="assets/logo/Tonkeeper-logo.svg" alt="Tonkeeper-logo" width="35"></a>
                 <nav class="flex relative">
                     <button class="block duration-200 transition-all sm:hidden" name="navigation-menu-btn" type="button">
                         <i class="fa-bars fa-fw fas text-2xl text-gray-50"></i>
@@ -128,15 +130,15 @@
             <section class="flex flex-col gap-20 h-screen items-center justify-center justify-items-center max-w-6xl p-5 w-screen md:flex-row" data-pg-name="Overview"> 
                 <div class="container flex flex-wrap w-full" id="tabs-id"> 
                     <div class="bg-gray-800 flex flex-col gap-10 overflow-hidden p-5 rounded-2xl w-full md:flex-row md:gap-0 md:pl-0 md:pr-10 md:py-10"> 
-                        <ul class="flex flex-row gap-5 items-center justify-center list-none w-full md:flex-col md:items-start md:justify-start md:max-w-xs md:w-full"> 
-                            <li class="last:mr-0 w-auto md:w-full"> <a class="bg-gray-700 bg-opacity-20 block cursor-pointer duration-300 font-semibold hover:bg-blue-900 hover:bg-opacity-40 p-3 rounded-full text-base text-blue-50 text-left transition-all md:bg-opacity-0 md:bg-transparent md:border-r md:border-transparent md:hover:border-blue-500 md:hover:border-r md:hover:pl-12 md:pl-10 md:rounded-none md:text-lg" onclick="changeActiveTab(event, 'tab-top-up')"> <i class="fa-charging-station fa-fw fas hidden mr-2 text-base md:inline-block"></i>Top Up </a> 
-                            </li>                             
-                            <li class="last:mr-0 w-auto md:w-full"> <a class="bg-gray-700 bg-opacity-20 block cursor-pointer duration-300 font-semibold hover:bg-blue-900 hover:bg-opacity-40 p-3 rounded-full text-base text-blue-50 text-left transition-all md:bg-opacity-0 md:bg-transparent md:border-r md:border-transparent md:hover:border-blue-500 md:hover:border-r md:hover:pl-12 md:pl-10 md:rounded-none md:text-lg" onclick="changeActiveTab(event, 'tab-receive-tokens')"> <i class="fa-exchange-alt fa-fw fas hidden mr-2 text-base md:inline-block"></i>Receive Tokens </a> 
-                            </li>                             
-                            <li class="last:mr-0 w-auto md:w-full"> <a class="bg-gray-700 bg-opacity-20 block cursor-pointer duration-300 font-semibold hover:bg-blue-900 hover:bg-opacity-40 p-3 rounded-full text-base text-blue-50 text-left transition-all md:bg-opacity-0 md:bg-transparent md:border-r md:border-transparent md:hover:border-blue-500 md:hover:border-r md:hover:pl-12 md:pl-10 md:rounded-none md:text-lg" onclick="changeActiveTab(event, 'tab-automated')"> <i class="fa-fw fa-magic fas hidden mr-2 text-base md:inline-block"></i>Automated </a> 
-                            </li>                             
-                            <li class="last:mr-0 w-auto md:w-full"> <a class="bg-gray-700 bg-opacity-20 block cursor-pointer duration-300 font-semibold hover:bg-blue-900 hover:bg-opacity-40 p-3 rounded-full text-base text-blue-50 text-left transition-all md:bg-opacity-0 md:bg-transparent md:border-r md:border-transparent md:hover:border-blue-500 md:hover:border-r md:hover:pl-12 md:pl-10 md:rounded-none md:text-lg" onclick="changeActiveTab(event, 'tab-battery-status')"> <i class="fa-battery-three-quarters fa-fw fas hidden mr-2 text-base md:inline-block"></i>Battery Status </a> 
-                            </li>                             
+                        <ul class="flex flex-nowrap flex-row gap-5 gradient-border items-center justify-start list-none overflow-x-scroll pb-5 w-full md:flex-col md:items-start md:justify-start md:max-w-xs md:overflow-hidden md:pb-0 md:w-full"> 
+                            <li class="last:mr-0 w-auto md:w-full"><a class="bg-gray-700 bg-opacity-20 block cursor-pointer duration-300 font-semibold hover:bg-blue-900 hover:bg-opacity-40 px-6 py-3 rounded-full text-base text-blue-50 text-left transition-all w-full whitespace-nowrap md:bg-opacity-0 md:bg-transparent md:border-r md:border-transparent md:hover:border-blue-500 md:hover:border-r md:hover:pl-12 md:pl-10 md:rounded-none md:text-lg" onclick="changeActiveTab(event, 'tab-top-up')"> <i class="fa-charging-station fa-fw fas hidden mr-2 text-base md:inline-block"></i>Top Up </a>
+                            </li>
+                            <li class="last:mr-0 w-auto md:w-full"><a class="bg-gray-700 bg-opacity-20 block cursor-pointer duration-300 font-semibold hover:bg-blue-900 hover:bg-opacity-40 px-6 py-3 rounded-full text-base text-blue-50 text-left transition-all w-full whitespace-nowrap md:bg-opacity-0 md:bg-transparent md:border-r md:border-transparent md:hover:border-blue-500 md:hover:border-r md:hover:pl-12 md:pl-10 md:rounded-none md:text-lg" onclick="changeActiveTab(event, 'tab-receive-tokens')"> <i class="fa-exchange-alt fa-fw fas hidden mr-2 text-base md:inline-block"></i>Receive Tokens </a>
+                            </li>
+                            <li class="last:mr-0 w-auto md:w-full"><a class="bg-gray-700 bg-opacity-20 block cursor-pointer duration-300 font-semibold hover:bg-blue-900 hover:bg-opacity-40 px-6 py-3 rounded-full text-base text-blue-50 text-left transition-all w-full whitespace-nowrap md:bg-opacity-0 md:bg-transparent md:border-r md:border-transparent md:hover:border-blue-500 md:hover:border-r md:hover:pl-12 md:pl-10 md:rounded-none md:text-lg" onclick="changeActiveTab(event, 'tab-automated')"> <i class="fa-fw fa-magic fas hidden mr-2 text-base md:inline-block"></i>Automated </a>
+                            </li>
+                            <li class="last:mr-0 w-auto md:w-full"><a class="bg-gray-700 bg-opacity-20 block cursor-pointer duration-300 font-semibold hover:bg-blue-900 hover:bg-opacity-40 px-6 py-3 rounded-full text-base text-blue-50 text-left transition-all w-full whitespace-nowrap md:bg-opacity-0 md:bg-transparent md:border-r md:border-transparent md:hover:border-blue-500 md:hover:border-r md:hover:pl-12 md:pl-10 md:rounded-none md:text-lg" onclick="changeActiveTab(event, 'tab-battery-status')"> <i class="fa-battery-three-quarters fa-fw fas hidden mr-2 text-base md:inline-block"></i>Battery Status </a>
+                            </li>
                         </ul>                         
                         <div class="break-words flex flex-col min-w-0 overflow-hidden relative w-full md:border-blue-900 md:border-l md:pl-10"> 
                             <div class="flex gap-20 w-full"> 
@@ -187,31 +189,53 @@
                                     </div>                                     
                                 </div>                                 
                             </div>                             
-                        </div>                         
+                        </div>
                     </div>                     
                 </div>
             </section>
-            <section class="flex flex-col gap-10 h-screen items-center justify-center max-w-6xl p-5 w-screen" data-pg-name="How it works">
-                <div class="flex flex-col gap-5 items-center justify-center">
-                    <h3 class="font-bold text-4xl text-center text-gray-50">How It Works</h3>
+            <section class="flex flex-col gap-10 h-screen items-start justify-center max-w-6xl p-5 relative w-screen" data-pg-name="How it works">
+                <div class="flex flex-col gap-5 items-center justify-center self-center">
+                    <h3 class="font-bold text-4xl text-center text-gray-50">Getting Started</h3>
                     <p class="duration-300 font-normal text-base text-blue-200 text-center transition-all">Getting started with Tonkeeper Battery is easy. Follow these simple steps to enjoy seamless and fee-free crypto transactions.</p>
                 </div>
-                <div class="duration-200 flex flex-col gap-0 items-center justify-between relative transition-all w-full md:flex-row md:gap-5 lg:gap-10">
-                    <div class="backdrop-blur bg-gradient-to-bl bg-opacity-50 border-none border-transparent duration-300 flex flex-col from-blue-900 gap-5 items-center p-10 relative rounded-2xl shadow-xl text-center to-gray-500 transition-all w-full">
-                        <i class="fa-3x fa-charging-station fas text-blue-100"></i>
-                        <h4 class="text-blue-300 text-xl" style="color: ##0AEFF;">Select Your Operation</h4>
-                        <p class="text-lg">Send USDt, jUSDT, or NOT to the battery.ton domain, or buy it via the App Store on iOS</p>
+                <div class="relative flex items-center justify-center w-full group fade-overlay-container">
+                    <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-3 rounded-full z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" onclick="customScrollLeft()">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div id="scroll-container" class="flex gap-10 overflow-x-auto p-5 w-full scrollbar-hide snap-x snap-mandatory">
+                        <div class="bg-blue-400 flex flex-col flex-none gap-10 h-96 overflow-hidden p-5 rounded-t-3xl snap-start w-96">
+                            <div class="flex flex-col gap-2 text-center">
+                                <h6 class="font-semibold text-2xl text-white">Download the App</h6>
+                                <p class="font-medium text-white">Get the Tonkeeper app from the App Store or Google Play. Install it on your mobile device to start using Tonkeeper Battery.</p>
+                            </div>
+                            <img src="assets/Download%20the%20App.png" class="w-full">
+                        </div>
+                        <div class="bg-blue-400 flex flex-col-reverse flex-none gap-10 h-96 overflow-hidden p-5 rounded-t-3xl snap-start w-96">
+                            <div class="flex flex-col gap-2 text-center">
+                                <h6 class="font-semibold text-2xl text-white">Create or import Wallet</h6>
+                                <p class="font-medium text-white">Open the app and follow the on-screen instructions to create your Tonkeeper account. Secure your account with a strong password and backup your recovery phrase.</p>
+                            </div>
+                            <img src="assets/Create%20New%20Wallet.png" class="w-full">
+                        </div>
+                        <div class="p-5 w-96 flex-none snap-start">
+                            <img src="assets/Create%20New%20Wallet.png" class="w-full">
+                        </div>
+                        <div class="p-5 w-96 flex-none snap-start">
+                            <img src="assets/Open%20Settings.png" class="w-full">
+                        </div>
+                        <div class="p-5 w-96 flex-none snap-start">
+                            <img src="assets/Open%20Battery.png" class="w-full">
+                        </div>
+                        <div class="p-5 w-96 flex-none snap-start">
+                            <img src="assets/Inapp%20purchase.png" class="w-full">
+                        </div>
+                        <div class="p-5 w-96 flex-none snap-start">
+                            <img src="assets/Purchase.png" class="w-full">
+                        </div>
                     </div>
-                    <div class="backdrop-blur bg-gradient-to-bl bg-opacity-50 border-none border-transparent duration-300 flex flex-col from-blue-900 gap-5 items-center p-10 relative rounded-2xl shadow-xl text-center to-gray-500 top-10 transition-all w-full">
-                        <i class="fa-3x fa-exchange-alt fas text-blue-100"></i>
-                        <h4 class="text-blue-300 text-xl">Select Your Operation</h4>
-                        <p class="text-lg">Choose the type of transaction you want to perform &ndash; token swap, token transfer, or NFT transfer.</p>
-                    </div>
-                    <div class="backdrop-blur bg-gradient-to-bl bg-opacity-50 border-none border-transparent duration-300 flex flex-col from-blue-900 gap-5 items-center p-10 relative rounded-2xl shadow-xl text-center to-gray-500 top-20 transition-all w-full">
-                        <i class="fa-3x fa-smile-beam fas text-blue-100"></i>
-                        <h4 class="text-blue-300 text-xl">Select Your Operation</h4>
-                        <p class="text-lg">Complete your transaction without worrying about gas fees. It&apos;s that simple!</p>
-                    </div>
+                    <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-3 rounded-full z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" onclick="customScrollRight()">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
                 </div>
             </section>
         </main>         
@@ -256,4 +280,37 @@
             }
         }
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.addEventListener('keydown', function(event) {
+                if (event.key === "ArrowLeft") {
+                    scrollLeft();
+                } else if (event.key === "ArrowRight") {
+                    scrollRight();
+                }
+            });
+        });
+    </script>
+    <script>
+function customScrollLeft() {
+    const container = document.getElementById('scroll-container');
+    container.scrollBy({ left: -500, behavior: 'smooth' });
+}
+
+function customScrollRight() {
+    const container = document.getElementById('scroll-container');
+    container.scrollBy({ left: 500, behavior: 'smooth' });
+}
+</script>
+    <script>
+function customScrollLeft() {
+    const container = document.getElementById('scroll-container');
+    container.scrollBy({ left: -500, behavior: 'smooth' });
+}
+
+function customScrollRight() {
+    const container = document.getElementById('scroll-container');
+    container.scrollBy({ left: 500, behavior: 'smooth' });
+}
+</script>
 </html>

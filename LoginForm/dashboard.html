@@ -7,19 +7,20 @@
         <script src="https://cdn.tailwindcss.com/"></script>         
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
         <link href="style.css" rel="stylesheet" type="text/css">
+        <script defer src="index.js"></script>
     </head>     
     <body class="bg-gradient-to-br from-blue-500 h-screen relative to-purple-800 via-indigo-700">
         <header class="backdrop-blur bg-opacity-0 bg-pink-700 fixed flex items-center justify-between p-2 shadow-xl top-0 w-screen z-10"> <a href="" class="flex font-bold items-center text-white"> <img src="img/Coin1.png" class="mr-2 w-8">Crypto<span class="text-yellow-400">Fam</span> </a> 
-            <nav id="navMenu" class="absolute backdrop-blur-md bg-gray-200 flex-col gap-8 hidden list-none p-2 right-16 rounded-xl shadow-xl top-16 w-64 sm:bg-transparent sm:flex sm:flex-row sm:gap-10 sm:shadow-none sm:static sm:w-auto"> 
-                <li class="duration-200 my-2 p-1 transition-all sm:m-0 sm:p-0"> <a href="" class="bg-gray-300 duration-300 flex font-semibold gap-2 hover:shadow-lg items-center justify-items-center justify-start px-4 py-3 rounded-full transition-all sm:bg-transparent sm:hover:shadow-none sm:hover:text-gray-200 sm:p-0 sm:rounded-none sm:text-white"> <i class="block fa-fw fa-search fas sm:hidden"></i>Discover </a> 
+            <nav id="navMenu" class="absolute backdrop-blur-md bg-gray-200 flex flex-row flex-wrap gap-3 items-center justify-start list-none p-3 right-16 rounded-xl shadow-xl top-16 w-60 sm:bg-transparent sm:flex sm:flex-row sm:gap-2 sm:py-2 sm:shadow-none sm:static sm:w-auto"> 
+                <li class="duration-200 transition-all"> <a href="" class="bg-gray-300 duration-300 flex flex-col font-semibold gap-1 h-16 hover:shadow-lg items-center justify-center justify-items-center rounded-md text-sm transition-all w-16 sm:bg-transparent sm:h-auto sm:hover:shadow-none sm:hover:text-gray-200 sm:rounded-none sm:text-white"> <i class="block fa-fw fa-lg fa-search fas sm:hidden"></i>Discover </a> 
                 </li>                 
-                <li class="duration-200 my-2 p-1 transition-all sm:m-0 sm:p-0"> <a href="" class="bg-gray-300 duration-300 flex font-semibold gap-2 hover:shadow-lg items-center justify-items-center justify-start px-4 py-3 rounded-full transition-all sm:bg-transparent sm:hover:shadow-none sm:hover:text-gray-200 sm:p-0 sm:rounded-none sm:text-white"> <i class="block fa-chart-line fa-fw fas sm:hidden"></i>Trade </a> 
+                <li class="duration-200 transition-all"> <a href="" class="bg-gray-300 duration-300 flex flex-col font-semibold gap-1 h-16 hover:shadow-lg items-center justify-center justify-items-center rounded-md text-sm transition-all w-16 sm:bg-transparent sm:h-auto sm:hover:shadow-none sm:hover:text-gray-200 sm:rounded-none sm:text-white"> <i class="block fa-chart-line fa-fw fa-lg fas sm:hidden"></i>Trade </a> 
                 </li>                 
-                <li class="duration-200 my-2 p-1 transition-all sm:m-0 sm:p-0"> <a href="" class="bg-gray-300 duration-300 flex font-semibold gap-2 hover:shadow-lg items-center justify-items-center justify-start px-4 py-3 rounded-full transition-all sm:bg-transparent sm:hover:shadow-none sm:hover:text-gray-200 sm:p-0 sm:rounded-none sm:text-white"> <i class="block fa-fw fa-wallet fas sm:hidden"></i>Wallet </a> 
+                <li class="duration-200 transition-all"> <a href="" class="bg-gray-300 duration-300 flex flex-col font-semibold gap-1 h-16 hover:shadow-lg items-center justify-center justify-items-center rounded-md text-sm transition-all w-16 sm:bg-transparent sm:h-auto sm:hover:shadow-none sm:hover:text-gray-200 sm:rounded-none sm:text-white"> <i class="block fa-fw fa-lg fa-wallet fas sm:hidden"></i>Wallet </a> 
                 </li>                 
-                <li class="duration-200 my-2 p-1 transition-all sm:m-0 sm:p-0"> <a href="" class="bg-gray-300 duration-300 flex font-semibold gap-2 hover:shadow-lg items-center justify-items-center justify-start px-4 py-3 rounded-full transition-all sm:bg-transparent sm:hover:shadow-none sm:hover:text-gray-200 sm:p-0 sm:rounded-none sm:text-white"> <i class="block fa-fw fa-hard-hat fas sm:hidden"></i>Build </a> 
+                <li class="duration-200 transition-all"> <a href="" class="bg-gray-300 duration-300 flex flex-col font-semibold gap-1 h-16 hover:shadow-lg items-center justify-center justify-items-center rounded-md text-sm transition-all w-16 sm:bg-transparent sm:h-auto sm:hover:shadow-none sm:hover:text-gray-200 sm:rounded-none sm:text-white"> <i class="block fa-fw fa-hard-hat fa-lg fas sm:hidden"></i>Build </a> 
                 </li>                 
-                <li class="duration-200 my-2 p-1 transition-all sm:m-0 sm:p-0"> <a href="" class="bg-gray-300 duration-300 flex font-semibold gap-2 hover:shadow-lg items-center justify-items-center justify-start px-4 py-3 rounded-full transition-all sm:bg-transparent sm:hover:shadow-none sm:hover:text-gray-200 sm:p-0 sm:rounded-none sm:text-white"> <i class="block fa-fw fa-shield-alt fas sm:hidden"></i>Privacy </a> 
+                <li class="duration-200 transition-all"> <a href="" class="bg-gray-300 duration-300 flex flex-col font-semibold gap-1 h-16 hover:shadow-lg items-center justify-center justify-items-center rounded-md text-sm transition-all w-16 sm:bg-transparent sm:h-auto sm:hover:shadow-none sm:hover:text-gray-200 sm:rounded-none sm:text-white"> <i class="block fa-fw fa-lg fa-shield-alt fas sm:hidden"></i>Privacy </a> 
                 </li>                 
             </nav>             
             <div class="gap-5 inline-flex relative"> 
@@ -41,21 +42,20 @@
                         </li>                         
                     </nav>                     
                     <div class="border-gray-400 border-solid border-t"> 
-                        <button class="cursor-pointer duration-200 flex font-semibold gap-2 hover:bg-gray-200 items-center justify-start mt-3 p-3 rounded-lg text-gray-900 transition-all w-full">
-                            <i class="fa-fw fa-sign-in-alt fas"></i>Logout
+                        <button class="cursor-pointer duration-200 flex font-semibold gap-2 hover:bg-gray-200 items-center justify-start mt-3 p-3 rounded-lg text-gray-900 transition-all w-full"><i class="fa-fw fa-sign-in-alt fas"></i>Logout
                         </button>                         
                     </div>                     
                 </div>                 
             </div>             
         </header>
         <main class="flex flex-col gap-10 m-auto max-w-5xl pb-20 pt-32 px-2 w-full z-0">
-            <section class="backdrop-blur bg-gray-900 bg-opacity-20 flex items-center p-2 rounded-xl shadow-xl w-full"><i class="fa-bell fas p-5 text-4xl text-gray-200"></i>
+            <section class="backdrop-blur bg-gray-900 bg-opacity-20 flex items-center p-2 rounded-xl shadow-xl w-full">
+                <i class="fa-bell fas p-5 text-4xl text-gray-200"></i>
                 <div>
                     <h1 class="font-extrabold text-white text-xl">Get the best from us</h1>
                     <p class="font-semibold text-gray-300">Find any coin or tokens you want to monitor</p>
                 </div>
-                <button class="ml-auto">
-                    <i class="fa-arrow-right fa-lg fas p-3 text-gray-300"></i>
+                <button class="ml-auto"><i class="fa-arrow-right fa-lg fas p-3 text-gray-300"></i>
                 </button>
             </section>
             <section class="flex flex-col gap-5 w-full md:flex-row">
@@ -66,11 +66,13 @@
                     <img src="img/medal-champion-award-winner-olympic-svgrepo-com.svg" alt="admin" class="-right-20 -top-2 absolute blur-sm w-40">
                 </div>
                 <div class="backdrop-blur bg-gray-100 bg-opacity-75 duration-300 overflow-auto rounded-xl shadow-lg transition-all w-full">
-                    <div class="bg-gradient-to-bl flex from-gray-300 gap-5 items-center justify-between p-3 to-blue-300 via-red-200"><a href="" class="duration-300 flex hover:bg-gray-100 hover:bg-opacity-40 hover:shadow-lg items-center rounded-xl transition-all w-full"> <i class="fa-users fas p-3 text-4xl text-gray-900"></i> <div>
+                    <div class="bg-gradient-to-bl flex from-gray-300 gap-5 items-center justify-between p-3 to-blue-300 via-red-200">
+                        <a href="" class="duration-300 flex hover:bg-gray-100 hover:bg-opacity-40 hover:shadow-lg items-center rounded-xl transition-all w-full"> <i class="fa-users fas p-3 text-4xl text-gray-900"></i> <div>
                                 <h2 class="font-bold text-xl">Users</h2>
                                 <p>Added new user</p>
                             </div> </a>
-                        <button class="duration-300 h-12 hover:bg-gray-100 hover:bg-opacity-40 hover:shadow-xl rounded-lg transition-all w-12"><i class="fa-edit fa-lg fas text-gray-900"></i>
+                        <button class="duration-300 h-12 hover:bg-gray-100 hover:bg-opacity-40 hover:shadow-xl rounded-lg transition-all w-12">
+                            <i class="fa-edit fa-lg fas text-gray-900"></i>
                         </button>
                     </div>
                     <div class="bg-gray-100 overflow-x-auto">
@@ -109,7 +111,8 @@
                 </div>
             </section>
         </main>
-        <footer class="backdrop-blur bg-gray-200 bg-opacity-25 bottom-0 fixed flex justify-center p-2 shadow-lg w-full"><a href="" class="flex font-bold items-center text-gray-900"> <img src="img/Coin1.png" class="mr-2 w-8">Crypto<span class="text-yellow-400">Fam</span> </a>
+        <footer class="backdrop-blur bg-gray-200 bg-opacity-25 bottom-0 fixed flex justify-center p-2 shadow-lg w-full">
+            <a href="" class="flex font-bold items-center text-gray-900"> <img src="img/Coin1.png" class="mr-2 w-8">Crypto<span class="text-yellow-400">Fam</span> </a>
         </footer>         
         <script>
     document.addEventListener('DOMContentLoaded', function () {

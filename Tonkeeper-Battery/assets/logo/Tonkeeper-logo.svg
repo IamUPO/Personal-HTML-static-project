@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="85.334" height="86.666" viewBox="0 0 85.334 86.666">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: #45aef5;
+      }
+
+      .cls-1 {
+        opacity: 0.75;
+      }
+
+      .cls-2 {
+        opacity: 0.5;
+      }
+    </style>
+  </defs>
+  <g id="Group_1" data-name="Group 1" transform="translate(-5.833 -6.667)">
+    <path id="Path_1" data-name="Path 1" class="cls-1" d="M48.5,45.333,91.167,26,48.5,93.333Z"/>
+    <path id="Path_2" data-name="Path 2" class="cls-2" d="M48.5,45.333,5.833,26,48.5,93.333Z"/>
+    <path id="Path_3" data-name="Path 3" class="cls-3" d="M48.5,45.333,5.833,26,48.5,6.667,91.167,26Z"/>
+  </g>
+</svg>

@@ -141,7 +141,7 @@ body {
 }
 
 /* Faded transparent effect on the sides */
-.fade-overlay-container::before,
+/* .fade-overlay-container::before,
 .fade-overlay-container::after {
     content: '';
     position: absolute;
@@ -149,19 +149,19 @@ body {
     bottom: 0;
     width: 50px;
 
-    /* Adjust width as needed */
+    ||*| Adjust width as needed |*||
     pointer-events: none;
 
     /* Allow clicks to pass through */
-    z-index: 1;
-}
-
+/* z-index: 1 */
+*/
 .fade-overlay-container::before {
-    left: 0;
+    /* left: 0 */
     background: linear-gradient(90deg, rgb(17, 24, 39) 0%, rgba(17, 24, 39, 0) 100%);
 }
 
-.fade-overlay-container::after {
+/* .fade-overlay-container::after {
     right: 0;
     background: linear-gradient(270deg, rgb(17, 24, 39) 0%, rgba(17, 24, 39, 0) 100%);
+} */
 }

@@ -1,17 +1,4 @@
-.bolt {
-    animation: battery-bolt 2s linear infinite;
-}
-
-@keyframes battery-bolt {
-    50% {
-        transform: scale(1.2);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
+/* Animated Gradient Text */
 .animated-text {
     font-size: 2rem;
     text-align: center;
@@ -37,6 +24,22 @@
     }
 }
 
+/* Battery Bolt Animation */
+.bolt {
+    animation: battery-bolt 2s linear infinite;
+}
+
+@keyframes battery-bolt {
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Battery Charge Animation */
 .charge {
     animation: battery-charge 8s linear infinite;
 }
@@ -44,124 +47,207 @@
 @keyframes battery-charge {
     0% {
         height: 0%;
-        background: #0AEFFF;
+        background: #007BFF;
+
+        /* Blue shade */
         opacity: 50%;
     }
 
     25% {
         height: 25%;
-        background: #39FF14;
+        background: #0056b3;
+
+        /* Darker blue shade */
         opacity: 50%;
     }
 
     50% {
         height: 50%;
-        background: #BC13FE;
+        background: #004085;
+
+        /* Even darker blue shade */
         opacity: 50%;
     }
 
     75% {
         height: 75%;
-        background: #CCCCCC;
+        background: #0069d9;
+
+        /* Medium blue shade */
+        opacity: 50%;
     }
 
     100% {
         height: 85%;
-        background: #0AEFFF;
+        background: #007BFF;
+
+        /* Original blue shade */
         opacity: 50%;
     }
 }
 
-/* For WebKit-based browsers */
+/* General Scrollbar Settings */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #888 transparent;
+}
+
+body {
+    scrollbar-gutter: stable both-edges;
+}
+
+/* Scrollbar Styling */
 ::-webkit-scrollbar {
     width: 8px;
-
-    /* Width of the scrollbar */
     height: 8px;
-
-    /* Height of the scrollbar */
 }
 
 ::-webkit-scrollbar-track {
     background: transparent;
-
-    /* Remove background of the scrollbar track */
     margin: 4px 0;
-
-    /* Margin to add space around the scrollbar track vertically */
 }
 
 ::-webkit-scrollbar-thumb {
     background: #888;
-
-    /* Color of the scrollbar thumb */
     border-radius: 10px;
-
-    /* Roundness of the scrollbar thumb */
     width: 6px;
-
-    /* Width of the scrollbar thumb */
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
-
-    /* Color of the scrollbar thumb when hovered */
 }
 
-/* For Firefox */
-* {
-    scrollbar-width: thin;
-
-    /* Width of the scrollbar */
-    scrollbar-color: #888 transparent;
-
-    /* Color of the scrollbar thumb and remove background */
-}
-
-/* Add margin to the scrollbar in Firefox */
-body {
-    scrollbar-gutter: stable both-edges;
-
-    /* Adds space on both edges of the scrollbar */
-}
-
-/* Hide scrollbar for the specific container */
+/* Hide Scrollbar */
 .scrollbar-hide::-webkit-scrollbar {
     display: none;
 }
 
 .scrollbar-hide {
     -ms-overflow-style: none;
-
-    /* IE and Edge */
     scrollbar-width: none;
-
-    /* Firefox */
 }
 
-/* Faded transparent effect on the sides */
-/* .fade-overlay-container::before,
-.fade-overlay-container::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 50px;
-
-    ||*| Adjust width as needed |*||
-    pointer-events: none;
-
-    /* Allow clicks to pass through */
-/* z-index: 1 */
-*/
+/* Fade Overlay Container */
 .fade-overlay-container::before {
-    /* left: 0 */
     background: linear-gradient(90deg, rgb(17, 24, 39) 0%, rgba(17, 24, 39, 0) 100%);
 }
 
-/* .fade-overlay-container::after {
-    right: 0;
-    background: linear-gradient(270deg, rgb(17, 24, 39) 0%, rgba(17, 24, 39, 0) 100%);
-} */
+/* Parent Container Hover Effect */
+.parent-container:hover .child {
+    transform: translate(0, 0);
+    margin-top: 0;
+}
+
+/* Keyframes for different animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFromDown {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFromUp {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Page load animations */
+.fade-in {
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+.fade-in-left {
+    animation: fadeInFromLeft 1s ease-out forwards;
+}
+
+.fade-in-right {
+    animation: fadeInFromRight 1s ease-out forwards;
+}
+
+.fade-in-down {
+    animation: fadeInFromDown 1s ease-out forwards;
+}
+
+.fade-in-up {
+    animation: fadeInFromUp 1s ease-out forwards;
+}
+
+/* Scroll animations */
+.fade-in-scroll,
+.fade-in-left-scroll,
+.fade-in-right-scroll,
+.fade-in-down-scroll,
+.fade-in-up-scroll {
+    opacity: 0;
+}
+
+.fade-in-scroll.visible {
+    animation: fadeIn 1s ease-out forwards;
+    opacity: 1;
+}
+
+.fade-in-left-scroll.visible {
+    animation: fadeInFromLeft 1s ease-out forwards;
+    opacity: 1;
+}
+
+.fade-in-right-scroll.visible {
+    animation: fadeInFromRight 1s ease-out forwards;
+    opacity: 1;
+}
+
+.fade-in-down-scroll.visible {
+    animation: fadeInFromDown 1s ease-out forwards;
+    opacity: 1;
+}
+
+.fade-in-up-scroll.visible {
+    animation: fadeInFromUp 1s ease-out forwards;
+    opacity: 1;
 }

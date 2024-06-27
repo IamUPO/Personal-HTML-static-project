@@ -1,0 +1,130 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+        <title>New page</title>         
+        <script src="https://cdn.tailwindcss.com/"></script>         
+        <style>
+        /* Keyframes for different animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInFromLeft {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes fadeInFromRight {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes fadeInFromDown {
+            from { transform: translateY(100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeInFromUp {
+            from { transform: translateY(-100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Page load animations */
+        .fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        .fade-in-left {
+            animation: fadeInFromLeft 1s ease-out forwards;
+        }
+
+        .fade-in-right {
+            animation: fadeInFromRight 1s ease-out forwards;
+        }
+
+        .fade-in-down {
+            animation: fadeInFromDown 1s ease-out forwards;
+        }
+
+        .fade-in-up {
+            animation: fadeInFromUp 1s ease-out forwards;
+        }
+
+        /* Scroll animations */
+        .fade-in-scroll, .fade-in-left-scroll, .fade-in-right-scroll, .fade-in-down-scroll, .fade-in-up-scroll {
+            opacity: 0;
+        }
+
+        .fade-in-scroll.visible {
+            animation: fadeIn 1s ease-out forwards;
+            opacity: 1;
+        }
+
+        .fade-in-left-scroll.visible {
+            animation: fadeInFromLeft 1s ease-out forwards;
+            opacity: 1;
+        }
+
+        .fade-in-right-scroll.visible {
+            animation: fadeInFromRight 1s ease-out forwards;
+            opacity: 1;
+        }
+
+        .fade-in-down-scroll.visible {
+            animation: fadeInFromDown 1s ease-out forwards;
+            opacity: 1;
+        }
+
+        .fade-in-up-scroll.visible {
+            animation: fadeInFromUp 1s ease-out forwards;
+            opacity: 1;
+        }
+    </style>
+    </head>
+    <body class="bg-grey-900 text-white">
+        <!-- Elements with page load animations -->
+        <div class="fade-in p-4 m-4 bg-blue-500">Fade In Animation</div>
+        <div class="fade-in-left p-4 m-4 bg-green-500">Fade In From Left Animation</div>
+        <div class="fade-in-right p-4 m-4 bg-yellow-500">Fade In From Right Animation</div>
+        <div class="fade-in-down p-4 m-4 bg-red-500">Fade In From Down Animation</div>
+        <div class="fade-in-up p-4 m-4 bg-purple-500">Fade In From Up Animation</div>
+        <!-- Elements with scroll animations -->
+        <div class="fade-in-scroll p-4 m-4 bg-blue-500">Fade In on Scroll</div>
+        <div class="fade-in-left-scroll p-4 m-4 bg-green-500">Fade In From Left on Scroll</div>
+        <div class="fade-in-right-scroll p-4 m-4 bg-yellow-500">Fade In From Right on Scroll</div>
+        <div class="fade-in-down-scroll p-4 m-4 bg-red-500">Fade In From Down on Scroll</div>
+        <div class="fade-in-up-scroll p-4 m-4 bg-purple-500">Fade In From Up on Scroll</div>
+        <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Trigger page load animations
+            document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right, .fade-in-down, .fade-in-up').forEach(el => {
+                el.classList.add('opacity-100');
+            });
+
+            // Observer for scroll animations
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observerCallback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    } else {
+                        entry.target.classList.remove('visible');
+                    }
+                });
+            };
+
+            const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+            document.querySelectorAll('.fade-in-scroll, .fade-in-left-scroll, .fade-in-right-scroll, .fade-in-down-scroll, .fade-in-up-scroll').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+    </body>
+</html>

@@ -5,183 +5,176 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
         <title>New page</title>         
         <script src="https://cdn.tailwindcss.com/"></script>         
-        <link href="style.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
         <link href="style.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="assets/logo/Tonkeeper-logo.svg" type="image/svg+xml">
+        <meta name="description" content="Tonkeeper Battery">
+        <meta name="keywords" content="Tonkeeper Battery">
+        <meta name="author" content="Promise Uzor Okwudiri">
     </head>     
-    <body class="bg-gray-900 flex flex-col gap-10 h-screen items-center overflow-x-hidden w-screen">
-        <header class="backdrop-blur-md bg-gray-900 bg-opacity-0 px-3 py-4 shadow sticky top-0 w-screen z-10">
-            <div class="flex items-center justify-end justify-items-center max-w-6xl mx-auto w-full sm:justify-between" data-pg-name="Header-ontainer">
-                <a href="#" class="mr-auto sm:mr-0"><img src="assets/logo/Tonkeeper-logo.svg" alt="Tonkeeper-logo" width="35"></a>
+    <body class="bg-gradient-to-t flex flex-col from-gray-900 h-full items-center overflow-x-hidden relative to-gray-800 via-gray-900 w-screen">
+        <img src="assets/logo/Tonkeeper-logo.svg" class="absolute animate-pulse opacity-40 right-20 top-0 w-60 md:opacity-70 lg:duration-300 lg:opacity-100 lg:transition-all">
+        <img src="assets/logo/Tonkeeper-logo.svg" class="absolute animate-pulse bottom-96 opacity-60 right-20 w-60 sm:opacity-80 lg:opacity-100">
+        <img src="assets/logo/Tonkeeper-logo.svg" class="absolute animate-pulse bottom-1/2 left-20 opacity-60 w-60 sm:opacity-80 md:opacity-100">
+        <header class="backdrop-blur-lg bg-gray-900 bg-opacity-10 px-3 py-4 w-screen">
+            <div class="fade-in-up flex items-center justify-end justify-items-center max-w-6xl mx-auto w-full sm:justify-between" data-pg-name="Header-ontainer"><a href="#" class="animate-bounce mr-auto sm:mr-0"><img src="assets/logo/Tonkeeper-logo.svg" alt="Tonkeeper-logo" width="35"></a>
                 <nav class="flex relative">
-                    <button class="block duration-200 transition-all sm:hidden" name="navigation-menu-btn" type="button">
-                        <i class="fa-bars fa-fw fas text-2xl text-gray-50"></i>
+                    <button class="block duration-200 transition-all sm:hidden" name="navigation-menu-btn" type="button"><i class="fa-bars fa-fw fas text-2xl text-gray-50"></i>
                     </button>
-                    <ul id="navigation-menu" class="absolute bg-gray-800 flex-col gap-2 hidden items-center justify-center justify-items-center p-2 right-0 rounded-md shadow-xl top-14 sm:bg-transparent sm:flex sm:flex-row sm:gap-6 sm:p-0 sm:relative sm:right-0 sm:rounded-none sm:shadow-none sm:top-0">
-                        <li class="w-full sm:w-auto"><a href="" class="block capitalize duration-200 font-semibold hover:bg-gray-700 hover:rounded-md hover:text-white p-2 text-base text-gray-300 transition-all sm:hover:bg-transparent sm:hover:rounded-none sm:p-0">FAQ</a>
+                    <ul id="navigation-menu" class="absolute bg-gray-700 flex-col gap-2 hidden items-center justify-center justify-items-center p-2 right-0 rounded-md shadow-xl top-14 sm:bg-transparent sm:flex sm:flex-row sm:gap-6 sm:p-0 sm:relative sm:right-0 sm:rounded-none sm:shadow-none sm:top-0">
+                        <li class="w-full sm:w-auto">
+                            <a href="" class="block capitalize duration-200 font-semibold hover:bg-gray-700 hover:rounded-md hover:text-white p-2 text-base text-gray-300 transition-all sm:hover:bg-transparent sm:hover:rounded-none sm:p-0">FAQ</a>
                         </li>
-                        <li class="w-full sm:w-auto"><a href="" class="block capitalize duration-200 font-semibold hover:bg-gray-700 hover:rounded-md hover:text-white p-2 text-base text-gray-300 transition-all sm:hover:bg-transparent sm:hover:rounded-none sm:p-0">Support</a>
+                        <li class="w-full sm:w-auto">
+                            <a href="" class="block capitalize duration-200 font-semibold hover:bg-gray-700 hover:rounded-md hover:text-white p-2 text-base text-gray-300 transition-all sm:hover:bg-transparent sm:hover:rounded-none sm:p-0">Support</a>
                         </li>
-                        <li class="w-full sm:w-auto"><a href="" class="block capitalize duration-200 font-semibold hover:bg-gray-700 hover:rounded-md hover:text-white p-2 text-base text-gray-300 transition-all sm:hover:bg-transparent sm:hover:rounded-none sm:p-0">Documentation</a>
+                        <li class="w-full sm:w-auto">
+                            <a href="" class="block capitalize duration-200 font-semibold hover:bg-gray-700 hover:rounded-md hover:text-white p-2 text-base text-gray-300 transition-all sm:hover:bg-transparent sm:hover:rounded-none sm:p-0">Documentation</a>
                         </li>
-                        <li class="w-full sm:w-auto"><a href="" class="block capitalize duration-200 font-semibold hover:bg-gray-700 hover:rounded-md hover:text-white p-2 text-base text-gray-300 transition-all sm:hover:bg-transparent sm:hover:rounded-none sm:p-0">Bug Bounty</a>
+                        <li class="w-full sm:w-auto">
+                            <a href="" class="block capitalize duration-200 font-semibold hover:bg-gray-700 hover:rounded-md hover:text-white p-2 text-base text-gray-300 transition-all sm:hover:bg-transparent sm:hover:rounded-none sm:p-0">Bug Bounty</a>
                         </li>
-                        <li class="w-full sm:w-auto"><a href="" class="block capitalize duration-200 font-semibold hover:bg-gray-700 hover:rounded-md hover:text-white p-2 text-base text-gray-300 transition-all sm:hover:bg-transparent sm:hover:rounded-none sm:p-0">Github</a>
+                        <li class="w-full sm:w-auto">
+                            <a href="" class="block capitalize duration-200 font-semibold hover:bg-gray-700 hover:rounded-md hover:text-white p-2 text-base text-gray-300 transition-all sm:hover:bg-transparent sm:hover:rounded-none sm:p-0">Github</a>
                         </li>
                     </ul>
                 </nav>
                 <div class="flex flex-col ml-3 relative sm:ml-0">
-                    <button class="capitalize duration-200 flex font-semibold gap-1 hover:bg-gray-800 hover:rounded-lg items-center px-3 py-2 text-base text-gray-100 transition-all" name="language-btn" type="button">
-                        <i class="fa-language fas"></i>                                                                                                                                                                                                                                                                                                                                    Eng
+                    <button class="capitalize duration-200 flex font-semibold gap-1 hover:bg-gray-700 hover:rounded-lg items-center px-3 py-2 text-base text-gray-100 transition-all" name="language-btn" type="button"><i class="fa-fw fa-language fa-pull-left fas"></i>                                                                                                                                                                                                                                                                                                                                    Eng
                     </button>
-                    <div id="language-menu" class="absolute backdrop-blur bg-gray-800 hidden right-0 rounded-lg shadow-xl top-16">
+                    <div id="language-menu" class="absolute backdrop-blur bg-gray-700 hidden right-0 rounded-lg shadow-xl top-16">
                         <ul class="capitalize duration-200 flex flex-col font-semibold gap-2 items-center justify-items-start justify-start list-none p-2 text-base text-center text-white transition-all w-40">
-                            <li class="cursor-pointer duration-200 hover:bg-gray-700 hover:rounded-lg hover:text-gray-50 p-2 text-gray-300 transition-all w-full">English</li>
-                            <li class="cursor-pointer duration-200 hover:bg-gray-700 hover:rounded-lg hover:text-gray-50 p-2 text-gray-300 transition-all w-full">Español</li>
-                            <li class="cursor-pointer duration-200 hover:bg-gray-700 hover:rounded-lg hover:text-gray-50 p-2 text-gray-300 transition-all w-full">हिन्दी</li>
-                            <li class="cursor-pointer duration-200 hover:bg-gray-700 hover:rounded-lg hover:text-gray-50 p-2 text-gray-300 transition-all w-full">中文</li>
-                            <li class="cursor-pointer duration-200 hover:bg-gray-700 hover:rounded-lg hover:text-gray-50 p-2 text-gray-300 transition-all w-full">Português</li>
-                            <li class="cursor-pointer duration-200 hover:bg-gray-700 hover:rounded-lg hover:text-gray-50 p-2 text-gray-300 transition-all w-full">Русский</li>
-                            <li class="cursor-pointer duration-200 hover:bg-gray-700 hover:rounded-lg hover:text-gray-50 p-2 text-gray-300 transition-all w-full">Bahasa Indonesia</li>
-                            <li class="cursor-pointer duration-200 hover:bg-gray-700 hover:rounded-lg hover:text-gray-50 p-2 text-gray-300 transition-all w-full">Turkish</li>
-                            <li class="cursor-pointer duration-200 hover:bg-gray-700 hover:rounded-lg hover:text-gray-50 p-2 text-gray-300 transition-all w-full">Українська</li>
-                            <li class="cursor-pointer duration-200 hover:bg-gray-700 hover:rounded-lg hover:text-gray-50 p-2 text-gray-300 transition-all w-full">한국어</li>
+                            <li class="cursor-pointer duration-200 hover:bg-gray-800 hover:rounded-lg hover:text-gray-50 p-2 text-gray-300 transition-all w-full">English</li>
+                            <li class="cursor-pointer duration-200 hover:bg-gray-800 hover:rounded-lg hover:text-gray-50 p-2 text-gray-300 transition-all w-full">Español</li>
+                            <li class="cursor-pointer duration-200 hover:bg-gray-800 hover:rounded-lg hover:text-gray-50 p-2 text-gray-300 transition-all w-full">हिन्दी</li>
+                            <li class="cursor-pointer duration-200 hover:bg-gray-800 hover:rounded-lg hover:text-gray-50 p-2 text-gray-300 transition-all w-full">中文</li>
+                            <li class="cursor-pointer duration-200 hover:bg-gray-800 hover:rounded-lg hover:text-gray-50 p-2 text-gray-300 transition-all w-full">Português</li>
+                            <li class="cursor-pointer duration-200 hover:bg-gray-800 hover:rounded-lg hover:text-gray-50 p-2 text-gray-300 transition-all w-full">Русский</li>
+                            <li class="cursor-pointer duration-200 hover:bg-gray-800 hover:rounded-lg hover:text-gray-50 p-2 text-gray-300 transition-all w-full">Bahasa Indonesia</li>
+                            <li class="cursor-pointer duration-200 hover:bg-gray-800 hover:rounded-lg hover:text-gray-50 p-2 text-gray-300 transition-all w-full">Turkish</li>
+                            <li class="cursor-pointer duration-200 hover:bg-gray-800 hover:rounded-lg hover:text-gray-50 p-2 text-gray-300 transition-all w-full">Українська</li>
+                            <li class="cursor-pointer duration-200 hover:bg-gray-800 hover:rounded-lg hover:text-gray-50 p-2 text-gray-300 transition-all w-full">한국어</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </header>
-        <main class="backdrop-blur-md bg-gray-900 bg-opacity-0 flex flex-col gap-10 items-center justify-center w-screen">
-            <section class="flex flex-col gap-10 h-screen items-center justify-center max-w-6xl p-5 w-screen" id="hero-section" data-pg-name="hesro-section" title="Hero-section">
-                <div class="flex flex-col gap-6 items-center">
-                    <h1 data-pg-name="Title" class="duration-300 font-extrabold leading-normal px-5 text-5xl text-center text-gray-50 transition-all sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">Tonkeeper Battery</h1>
-                    <h2 class="animated-text bg-clip-text bg-gradient-to-r duration-300 font-bold from-purple-400 leading-normal px-5 text-2xl text-center text-transparent to-red-500 transition-all via-pink-500 sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"> 
-    Effortless transactions without gas fees.</h2>
-                    <p class="duration-300 font-normal leading-relaxed px-10 text-base text-blue-200 text-center transition-all w-full">Swap tokens, transfer assets, and handle NFTs seamlessly</p>
-                </div>
-                <div class="duration-300 flex gap-5 p-2 transition-all sm:flex-row"> 
-                    <button class="bg-blue-200 duration-300 font-semibold hover:bg-blue-100 px-6 py-2 rounded-full text-base text-gray-900 transition-all sm:px-9 sm:py-3 sm:text-lg"> 
+        <main class="backdrop-blur-lg bg-gray-900 bg-opacity-10 flex flex-col gap-10 h-auto items-center justify-center pb-40 w-screen">
+            <section class="flex flex-col gap-10 h-auto items-center justify-center max-w-6xl my-10 p-5 w-screen" id="hero-section" data-pg-name="hero-section" title="Hero-section"> 
+                <div class="flex flex-col gap-6 items-center text-center"> 
+                    <h1 data-pg-name="Title" class="duration-300 fade-in-up font-extrabold leading-normal px-5 text-[8vw] text-gray-50 transition-all sm:text-[6vw] md:text-[5vw] lg:text-[4vw] xl:text-[3vw]">Tonkeeper Battery</h1> 
+                    <h2 class="animated-text bg-clip-text bg-gradient-to-r duration-300 fade-in-up font-bold from-purple-400 leading-normal px-5 text-transparent to-red-500 transition-all via-pink-500 sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl"> 
+            Effortless transactions without gas fees. </h2> 
+                    <p class="duration-300 fade-in-up font-normal leading-relaxed px-10 text-[4vw] text-blue-200 transition-all w-full sm:text-[3.5vw] md:text-[3vw] lg:text-[2.5vw] xl:text-[2vw]"> 
+            Swap tokens, transfer assets, and handle NFTs seamlessly </p> 
+                </div>                 
+                <div class="duration-300 flex flex-col gap-5 justify-center p-2 transition-all w-8/12 sm:flex-row sm:w-auto"> 
+                    <button class="bg-blue-200 duration-300 fade-in font-semibold hover:bg-blue-100 px-8 py-3 rounded-full text-gray-900 transition-all"> 
                         Learn More
 </button>                     
-                    <button class="bg-blue-200 duration-300 font-semibold hover:bg-blue-100 px-6 py-2 rounded-full text-base text-gray-900 transition-all sm:px-9 sm:py-3 sm:text-lg"> 
+                    <button class="bg-blue-200 duration-300 fade-in font-semibold hover:bg-blue-100 px-8 py-3 rounded-full text-gray-900 transition-all"> 
                         Get Started
 </button>                     
-                </div>
-                <div class="flex flex-col items-center"> 
+                </div>                 
+                <div class="fade-in-down flex flex-col items-center"> 
                     <div class="bg-blue-200 duration-300 h-4 rounded-t-3xl shadow-inner transition-all w-8 sm:h-5 sm:w-14"></div>                     
-                    <div data-pg-name="Battery" class="battery bg-blue-200 bg-opacity-25 duration-300 flex h-40 items-center justify-center overflow-hidden relative rounded-3xl shadow-inner shadow-purple-200 transition-all w-24 sm:h-48 sm:w-32 md:h-56 md:w-40 lg:h-64 lg:w-48 xl:h-72 xl:w-52 2xl:h-80 2xl:w-56"> 
-                        <img src="assets/logo/Tonkeeper-logo.svg" alt="Tonkeeper-logo" class="block bolt w-14 sm:w-20 md:w-24 lg:w-28 xl:w-32 2xl:w-36"> 
-                        <div class="absolute bottom-0 charge mb-5 rounded-2xl w-10/12 z-10"></div>                         
+                    <div data-pg-name="Battery" class="battery bg-blue-200 bg-opacity-25 duration-300 flex h-44 items-center justify-center overflow-hidden relative rounded-[35px] shadow-inner shadow-purple-200 transition-all w-32 sm:h-48 md:h-56 md:rounded-[50px] md:w-40 lg:h-60 lg:w-40 xl:h-72 2xl:w-48"> 
+                        <img src="assets/logo/Tonkeeper-logo.svg" alt="Tonkeeper-logo" class="block bolt duration-300 transition-all w-16 sm:w-16 md:w-24"> 
+                        <div class="absolute bottom-0 charge mb-4 rounded-3xl w-10/12 z-10 md:rounded-[50px]"></div>                         
                     </div>                     
-                </div>
-                <div class="flex flex-col gap-5 items-center">
-                    <p class="font-normal leading-relaxed px-10 text-base text-blue-200 text-center w-full">Browsers extensions</p>
-                    <div class="flex gap-5 pb-10 px-10">
-                        <button class="bg-gray-400 bg-opacity-30 duration-300 hover:bg-opacity-100 p-2 rounded-full shadow-2xl transition-all">
-                            <img src="assets/brave-svgrepo-com.svg" alt="brave-extention" width="30" class="md:block">
-                        </button>
-                        <button class="bg-gray-400 bg-opacity-30 duration-300 hover:bg-opacity-100 p-2 rounded-full shadow-2xl transition-all">
-                            <img src="assets/logo/edge-svgrepo-com.svg" alt="brave-extention" width="30" class="md:block">
-                        </button>
-                        <button class="bg-gray-400 bg-opacity-30 duration-300 hover:bg-opacity-100 p-2 rounded-full shadow-2xl transition-all">
-                            <img src="assets/logo/firefox-svgrepo-com.svg" alt="brave-extention" width="30" class="md:block">
-                        </button>
-                        <button class="bg-gray-400 bg-opacity-30 duration-300 hover:bg-opacity-100 p-2 rounded-full shadow-2xl transition-all">
-                            <img src="assets/brave-svgrepo-com.svg" alt="brave-extention" width="30" class="md:block">
-                        </button>
+                </div>                 
+            </section>
+            <section class="flex flex-col gap-10 items-center justify-center max-w-6xl my-10 p-5 w-screen" data-pg-name="Features"> 
+                <div class="flex flex-col gap-5"> 
+                    <h3 class="fade-in-scroll font-bold leading-relaxed text-2xl text-center text-gray-50 transition-all sm:text-left md:text-4xl lg:text-4xl xl:text-5xl">Experience Hassle-Free Crypto Transactions</h3> 
+                </div>                 
+                <div class="duration-200 flex flex-col gap-5 items-center justify-center parent-container relative self-center transition-all w-full sm:flex-row"> 
+                    <div class="bg-gray-700 border-2 border-gray-400 border-opacity-40 child duration-300 fade-in-scroll flex flex-col gap-1 max-w-max overflow-hidden p-5 rounded-3xl shadow-2xl transition-all w-72 z-0 sm:hover:translate-y-5 sm:mt-0 sm:translate-y-0 sm:w-full"> 
+                        <h4 class="font-medium text-gray-50 text-lg md:text-xl lg:text-2xl xl:text-3xl">Token Swaps</h4> 
+                        <p class="text-sm text-blue-200">Swap tokens seamlessly without gas fees.</p> 
+                        <img src="assets/token%20swap.png" class="mt-5" alt="Token Swap"> 
+                    </div>                     
+                    <div class="-translate-y-96 bg-gray-700 border-2 border-gray-400 border-opacity-40 card child duration-300 fade-in-scroll flex flex-col gap-1 max-w-max overflow-hidden p-5 rounded-3xl shadow-2xl transition-all w-72 z-10 sm:hover:translate-y-5 sm:mt-0 sm:translate-y-0 sm:w-full"> 
+                        <h4 class="font-medium text-gray-50 text-lg md:text-xl lg:text-2xl xl:text-3xl">Token Transfers</h4> 
+                        <p class="text-sm text-blue-200">Transfer tokens quickly and efficiently.</p> 
+                        <img src="assets/Token%20Transfers.png" class="mt-5" alt="Token Transfers"> 
+                    </div>                     
+                    <div class="-mt-96 -translate-y-96 bg-gray-700 border-2 border-gray-400 border-opacity-40 child duration-300 fade-in-scroll flex flex-col gap-1 max-w-max overflow-hidden p-5 rounded-3xl shadow-2xl transition-all w-72 z-20 sm:hover:translate-y-5 sm:mt-0 sm:translate-y-0 sm:w-full"> 
+                        <h4 class="font-medium text-gray-50 text-lg md:text-xl lg:text-2xl xl:text-3xl">NFT Transfers</h4> 
+                        <p class="text-sm text-blue-200">Handle NFT transfers effortlessly.</p> 
+                        <img src="assets/NFTs.png" class="mt-5" alt="NFT Transfers"> 
+                    </div>                     
+                </div>                 
+            </section>
+            <section class="flex flex-col gap-40 h-auto items-center justify-between max-w-6xl my-10 p-5 w-screen" data-pg-name="Overview">
+                <div class="flex flex-col gap-20 h-auto items-center justify-between justify-items-center w-full md:flex-row"> 
+                    <div class="container fade-in-scroll overflow-hidden rounded-2xl"> 
+                        <video autoplay muted loop class="w-full"> 
+                            <source src="assets/video/Battery%20EN.mp4" type="video/mp4"> 
+                            Your browser doesn't support HTML5 video tag.
+                        </video>                         
                     </div>
-                </div>
-            </section>
-            <section class="flex flex-col gap-10 h-screen items-center justify-center max-w-6xl p-5 w-screen" data-pg-name="Features">
-                <div class="flex flex-col gap-5">
-                    <h3 class="font-bold leading-relaxed text-center text-gray-50 text-xl transition-all sm:text-left sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">Experience Hassle-Free Crypto Transactions</h3>
-                    <!-- <p class="duration-300 font-normal leading-relaxed text-base text-blue-200 text-center transition-all w-full sm:text-left sm:w-full md:text-left md:w-9/12 lg:text-left lg:w-10/12 xl:text-left xl:w-11/12">Tonkeeper Battery is designed to simplify your crypto experience. No more worrying about gas fees. Easily swap tokens, transfer assets, and handle NFTs with our innovative off-chain account.</p> -->
-                </div>
-                <div class="cards-container duration-200 flex gap-8 items-center justify-center relative self-center transition-all md:flex md:gap-5 md:max-w-max md:w-full"> 
-                    <div class="-rotate-2 absolute bg-gray-700 border-0 card duration-300 flex flex-col gap-1 max-w-max overflow-hidden p-5 rounded-3xl shadow-2xl top-10 transition-all w-72 z-30 md:left-0 md:relative md:rotate-0 md:top-0 md:w-full"> 
-                        <h4 class="font-medium text-gray-50 text-xl">Token Swaps</h4> 
-                        <p class="text-base text-blue-50">Swap tokens seamlessly without gas fees.</p> 
-                        <img src="assets/token%20swap.png" class="mt-5"> 
-                    </div>                     
-                    <div class="absolute bg-gray-700 border-0 card duration-300 flex flex-col gap-1 max-w-max overflow-hidden p-5 rotate-3 rounded-3xl shadow-2xl top-10 transition-all w-72 z-20 md:left-0 md:relative md:rotate-0 md:top-0 md:w-full"> 
-                        <h4 class="font-medium text-gray-50 text-xl">Token Transfers</h4> 
-                        <p class="text-base text-blue-50">Transfer tokens quickly and efficiently.</p> 
-                        <img src="assets/Token%20Transfers.png" class="mt-5"> 
-                    </div>                     
-                    <div class="absolute bg-gray-700 border-0 card duration-300 flex flex-col gap-1 max-w-max overflow-hidden p-5 rotate-12 rounded-3xl shadow-2xl top-10 transition-all w-72 z-10 md:left-0 md:relative md:rotate-0 md:top-0 md:w-full"> 
-                        <h4 class="font-medium text-gray-50 text-xl">NFT Transfers</h4> 
-                        <p class="text-base text-blue-50">Handle NFT transfers effortlessly.</p> 
-                        <img src="assets/NFTs.png" class="mt-5"> 
+                    <div class="flex flex-col gap-5 w-full"> 
+                        <h3 class="fade-in-scroll font-bold leading-relaxed text-2xl text-center text-gray-50 transition-all sm:text-left md:text-3xl lg:text-4xl xl:text-5xl">What is Tonkeeper Battery?</h3> 
+                        <p class="fade-in-scroll font-normal leading-relaxed mb-5 text-base text-blue-200 text-center transition-all sm:text-left">The Battery is an off-chain account in Tonkeeper that eliminates the need for TON to pay gas fees, simplifying cryptocurrency transactions.</p>
+                        <button class="bg-blue-200 duration-300 fade-in-scroll font-semibold hover:bg-blue-100 px-6 py-2 rounded-full text-base text-gray-900 transition-all w-full sm:px-9 sm:py-2 sm:text-lg md:w-52">Get Tonkeeper</button>                         
                     </div>                     
                 </div>
-            </section>
-            <section class="flex flex-col gap-20 h-screen items-center justify-center justify-items-center max-w-6xl p-5 w-screen md:flex-row" data-pg-name="Overview">
-                <div class="flex flex-col gap-5 w-full">
-                    <h3 class="font-bold leading-relaxed text-gray-50 text-left text-xl transition-all sm:text-left sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">What is Tonkeeper Battery?</h3>
-                    <p class="font-normal leading-relaxed mb-5 text-base text-blue-200 text-left w-full">The Battery is an off-chain account in Tonkeeper that eliminates the need for TON to pay gas fees, simplifying cryptocurrency transactions.</p>
-                    <button class="bg-blue-200 duration-300 font-semibold hover:bg-blue-100 px-6 py-2 rounded-full text-base text-gray-900 transition-all w-52 sm:px-9 sm:py-3 sm:text-lg">Get Tonkeeper</button>
-                    <!-- <p class="duration-300 font-normal leading-relaxed text-base text-blue-200 text-center transition-all w-full sm:text-left sm:w-full md:text-left md:w-9/12 lg:text-left lg:w-10/12 xl:text-left xl:w-11/12">Tonkeeper Battery is designed to simplify your crypto experience. No more worrying about gas fees. Easily swap tokens, transfer assets, and handle NFTs with our innovative off-chain account.</p> -->
-                </div>
-                <div class="flex flex-col gap-5 overflow-hidden rounded-2xl w-full">
-                    <video autoplay="true" src="assets/video/Battery%20EN.mp4" loop="true">Your browser doesn't support HTML5 video tag.</video>
-                    <!-- <p class="duration-300 font-normal leading-relaxed text-base text-blue-200 text-center transition-all w-full sm:text-left sm:w-full md:text-left md:w-9/12 lg:text-left lg:w-10/12 xl:text-left xl:w-11/12">Tonkeeper Battery is designed to simplify your crypto experience. No more worrying about gas fees. Easily swap tokens, transfer assets, and handle NFTs with our innovative off-chain account.</p> -->
-                </div>
-            </section>
-            <section class="flex flex-col gap-20 h-screen items-center justify-center justify-items-center max-w-6xl p-5 w-screen md:flex-row" data-pg-name="Overview"> 
-                <div class="container flex flex-wrap w-full" id="tabs-id"> 
-                    <div class="bg-gray-800 flex flex-col gap-10 overflow-hidden p-5 rounded-2xl w-full md:flex-row md:gap-0 md:pl-0 md:pr-10 md:py-10"> 
+                <div class="flex flex-wrap gap-10 items-center justify-items-center justify-start w-full" id="tabs-id"> 
+                    <h3 class="fade-in-scroll font-bold text-4xl text-gray-50">Get More With Your Tonkeeper Battery</h3> 
+                    <div class="backdrop-blur bg-gray-800 bg-opacity-80 fade-in-scroll flex flex-col gap-10 overflow-hidden p-5 rounded-2xl w-full md:flex-row md:gap-0 md:pl-0 md:pr-10 md:py-10"> 
                         <ul class="flex flex-nowrap flex-row gap-5 gradient-border items-center justify-start list-none overflow-x-scroll pb-5 w-full md:flex-col md:items-start md:justify-start md:max-w-xs md:overflow-hidden md:pb-0 md:w-full"> 
-                            <li class="last:mr-0 w-auto md:w-full"><a class="bg-gray-700 bg-opacity-20 block cursor-pointer duration-300 font-semibold hover:bg-blue-900 hover:bg-opacity-40 px-6 py-3 rounded-full text-base text-blue-50 text-left transition-all w-full whitespace-nowrap md:bg-opacity-0 md:bg-transparent md:border-r md:border-transparent md:hover:border-blue-500 md:hover:border-r md:hover:pl-12 md:pl-10 md:rounded-none md:text-lg" onclick="changeActiveTab(event, 'tab-top-up')"> <i class="fa-charging-station fa-fw fas hidden mr-2 text-base md:inline-block"></i>Top Up </a>
-                            </li>
-                            <li class="last:mr-0 w-auto md:w-full"><a class="bg-gray-700 bg-opacity-20 block cursor-pointer duration-300 font-semibold hover:bg-blue-900 hover:bg-opacity-40 px-6 py-3 rounded-full text-base text-blue-50 text-left transition-all w-full whitespace-nowrap md:bg-opacity-0 md:bg-transparent md:border-r md:border-transparent md:hover:border-blue-500 md:hover:border-r md:hover:pl-12 md:pl-10 md:rounded-none md:text-lg" onclick="changeActiveTab(event, 'tab-receive-tokens')"> <i class="fa-exchange-alt fa-fw fas hidden mr-2 text-base md:inline-block"></i>Receive Tokens </a>
-                            </li>
-                            <li class="last:mr-0 w-auto md:w-full"><a class="bg-gray-700 bg-opacity-20 block cursor-pointer duration-300 font-semibold hover:bg-blue-900 hover:bg-opacity-40 px-6 py-3 rounded-full text-base text-blue-50 text-left transition-all w-full whitespace-nowrap md:bg-opacity-0 md:bg-transparent md:border-r md:border-transparent md:hover:border-blue-500 md:hover:border-r md:hover:pl-12 md:pl-10 md:rounded-none md:text-lg" onclick="changeActiveTab(event, 'tab-automated')"> <i class="fa-fw fa-magic fas hidden mr-2 text-base md:inline-block"></i>Automated </a>
-                            </li>
-                            <li class="last:mr-0 w-auto md:w-full"><a class="bg-gray-700 bg-opacity-20 block cursor-pointer duration-300 font-semibold hover:bg-blue-900 hover:bg-opacity-40 px-6 py-3 rounded-full text-base text-blue-50 text-left transition-all w-full whitespace-nowrap md:bg-opacity-0 md:bg-transparent md:border-r md:border-transparent md:hover:border-blue-500 md:hover:border-r md:hover:pl-12 md:pl-10 md:rounded-none md:text-lg" onclick="changeActiveTab(event, 'tab-battery-status')"> <i class="fa-battery-three-quarters fa-fw fas hidden mr-2 text-base md:inline-block"></i>Battery Status </a>
-                            </li>
+                            <li class="last:mr-0 w-auto md:w-full"><a class="bg-gray-700 bg-opacity-20 block cursor-pointer duration-300 font-semibold hover:bg-blue-900 hover:bg-opacity-40 px-6 py-3 rounded-full text-base text-blue-50 text-left transition-all w-full whitespace-nowrap md:bg-opacity-0 md:bg-transparent md:border-r md:border-transparent md:hover:border-blue-500 md:hover:border-r md:hover:pl-12 md:pl-10 md:rounded-none md:text-lg" onclick="changeActiveTab(event, 'tab-top-up')"> <i class="fa-charging-station fa-fw fas hidden mr-2 text-base md:inline-block"></i>Top Up </a> 
+                            </li>                             
+                            <li class="last:mr-0 w-auto md:w-full"><a class="bg-gray-700 bg-opacity-20 block cursor-pointer duration-300 font-semibold hover:bg-blue-900 hover:bg-opacity-40 px-6 py-3 rounded-full text-base text-blue-50 text-left transition-all w-full whitespace-nowrap md:bg-opacity-0 md:bg-transparent md:border-r md:border-transparent md:hover:border-blue-500 md:hover:border-r md:hover:pl-12 md:pl-10 md:rounded-none md:text-lg" onclick="changeActiveTab(event, 'tab-receive-tokens')"> <i class="fa-exchange-alt fa-fw fas hidden mr-2 text-base md:inline-block"></i>Receive Tokens </a> 
+                            </li>                             
+                            <li class="last:mr-0 w-auto md:w-full"><a class="bg-gray-700 bg-opacity-20 block cursor-pointer duration-300 font-semibold hover:bg-blue-900 hover:bg-opacity-40 px-6 py-3 rounded-full text-base text-blue-50 text-left transition-all w-full whitespace-nowrap md:bg-opacity-0 md:bg-transparent md:border-r md:border-transparent md:hover:border-blue-500 md:hover:border-r md:hover:pl-12 md:pl-10 md:rounded-none md:text-lg" onclick="changeActiveTab(event, 'tab-automated')"> <i class="fa-fw fa-magic fas hidden mr-2 text-base md:inline-block"></i>Automated </a> 
+                            </li>                             
+                            <li class="last:mr-0 w-auto md:w-full"><a class="bg-gray-700 bg-opacity-20 block cursor-pointer duration-300 font-semibold hover:bg-blue-900 hover:bg-opacity-40 px-6 py-3 rounded-full text-base text-blue-50 text-left transition-all w-full whitespace-nowrap md:bg-opacity-0 md:bg-transparent md:border-r md:border-transparent md:hover:border-blue-500 md:hover:border-r md:hover:pl-12 md:pl-10 md:rounded-none md:text-lg" onclick="changeActiveTab(event, 'tab-battery-status')"> <i class="fa-battery-three-quarters fa-fw fas hidden mr-2 text-base md:inline-block"></i>Battery Status </a> 
+                            </li>                             
                         </ul>                         
                         <div class="break-words flex flex-col min-w-0 overflow-hidden relative w-full md:border-blue-900 md:border-l md:pl-10"> 
                             <div class="flex gap-20 w-full"> 
                                 <div class="tab-content tab-space"> 
-                                    <div id="tab-top-up" class="flex flex-col gap-20 justify-center sm:flex-col md:flex-col lg:flex-row"> 
+                                    <div id="tab-top-up" class="fade-in-down flex flex-col gap-20 justify-center sm:flex-col md:flex-col lg:flex-row"> 
                                         <div class="flex flex-col gap-5 w-11/12"> 
                                             <h4 class="font-semibold text-2xl text-gray-50">Top Up Your Battery</h4> 
                                             <p class="text-blue-50"> 
                                 Start by topping up your Tonkeeper Battery using in-app purchases, TON, or stablecoins. Go to Settings &rarr; Battery in your app and follow the instructions to add funds. <br><br> 
-                                This ensures you have enough charges to cover gas fees. </p> 
+                                This ensures you have enough charges to cover gas fees.  </p> 
                                         </div>                                         
                                         <div class="w-full lg:w-8/12"> 
                                             <img src="assets/photo_2024-06-24_15-53-58.png" class="block rounded-3xl w-full"> 
                                         </div>                                         
                                     </div>                                     
-                                    <div class="flex-col gap-20 hidden sm:flex-col md:flex-col lg:flex-row" id="tab-receive-tokens"> 
+                                    <div class="fade-in-down flex-col gap-20 hidden sm:flex-col md:flex-col lg:flex-row" id="tab-receive-tokens"> 
                                         <div class="flex flex-col gap-5 w-11/12"> 
                                             <h4 class="font-semibold text-2xl text-gray-50">Token Exchange</h4> 
                                             <p class="text-blue-50"> 
                                 Receive stablecoins, NFTs, and other tokens directly without worrying about gas fees.<br><br> 
-                                Tonkeeper Battery lets you accept assets without needing native coins for transaction fees. </p> 
+                                Tonkeeper Battery lets you accept assets without needing native coins for transaction fees.  </p> 
                                         </div>                                         
                                         <div class="w-full lg:w-8/12"> 
                                             <img src="assets/Receive%20Tokens.png" class="block rounded-3xl w-full"> 
                                         </div>                                         
                                     </div>                                     
-                                    <div class="flex-col gap-20 hidden sm:flex-col md:flex-col lg:flex-row" id="tab-automated"> 
+                                    <div class="fade-in-down flex-col gap-20 hidden sm:flex-col md:flex-col lg:flex-row" id="tab-automated"> 
                                         <div class="flex flex-col gap-5 w-11/12"> 
                                             <h4 class="font-semibold text-2xl text-gray-50">Automatic Gas Payments</h4> 
                                             <p class="text-blue-50"> 
                                 Your Tonkeeper Battery automatically covers gas fees for all your transactions. Make payments and transfers seamlessly without manually providing gas fees.<br><br> 
-                                The battery deducts charges based on transaction complexity. </p> 
+                                The battery deducts charges based on transaction complexity.  </p> 
                                         </div>                                         
                                         <div class="w-full lg:w-8/12"> 
                                             <img src="assets/Automated.png" class="block rounded-3xl w-full"> 
                                         </div>                                         
                                     </div>                                     
-                                    <div class="flex-col gap-20 hidden sm:flex-col md:flex-col lg:flex-row" id="tab-battery-status"> 
+                                    <div class="fade-in-down flex-col gap-20 hidden sm:flex-col md:flex-col lg:flex-row" id="tab-battery-status"> 
                                         <div class="flex flex-col gap-5 w-11/12"> 
                                             <h4 class="font-semibold text-2xl text-gray-50">Battery Status</h4> 
                                             <p class="text-blue-50"> 
                                 Keep track of your Tonkeeper Battery status from the main screen. Monitor available charges and recharge as needed.<br><br> 
-                                The app notifies you when your battery is low, ensuring uninterrupted transactions. </p> 
+                                The app notifies you when your battery is low, ensuring uninterrupted transactions.  </p> 
                                         </div>                                         
                                         <div class="w-full lg:w-8/12"> 
                                             <img src="assets/photo_2024-05-01_15-21-35.png" class="block rounded-3xl w-full"> 
@@ -189,70 +182,169 @@
                                     </div>                                     
                                 </div>                                 
                             </div>                             
-                        </div>
+                        </div>                         
                     </div>                     
                 </div>
             </section>
-            <section class="flex flex-col gap-10 h-screen items-start justify-center max-w-6xl p-5 relative w-screen" data-pg-name="How it works">
-                <div class="flex flex-col gap-5 items-center justify-center self-center">
-                    <h3 class="font-bold text-4xl text-center text-gray-50">Getting Started</h3>
-                    <p class="duration-300 font-normal text-base text-blue-200 text-center transition-all">Getting started with Tonkeeper Battery is easy. Follow these simple steps to enjoy seamless and fee-free crypto transactions.</p>
+            <section class="flex flex-col gap-10 h-auto items-start justify-center max-w-6xl my-10 p-5 relative w-screen" data-pg-name="How to charge">
+                <div class="flex flex-col gap-5 items-center justify-center self-center"> 
+                    <h3 class="fade-in-scroll font-bold text-4xl text-center text-gray-50">Getting Started</h3> 
+                    <p class="duration-300 fade-in-scroll font-normal text-base text-blue-200 text-center transition-all">Getting started with Tonkeeper Battery is easy. Follow these simple steps to enjoy seamless and fee-free crypto transactions.</p> 
                 </div>
-                <div class="relative flex items-center justify-center w-full group fade-overlay-container">
-                    <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-3 rounded-full z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" onclick="customScrollLeft()">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <div id="scroll-container" class="flex gap-10 overflow-x-auto p-5 w-full scrollbar-hide snap-x snap-mandatory">
-                        <div class="bg-gray-800 flex flex-col flex-none gap-10 h-auto max-w-xs overflow-hidden p-5 rounded-3xl snap-start w-full">
-                            <div class="flex flex-col gap-2 text-center">
-                                <h6 class="font-semibold text-2xl text-white">Download the App</h6>
-                                <p class="font-medium text-white">Get Tonkeeper from the App Store or Google Play and install it on your mobile device.</p>
-                            </div>
-                            <img src="assets/Download%20the%20App.png" class="w-full">
-                        </div>
-                        <div class="bg-gray-800 flex flex-col-reverse flex-none gap-10 h-auto max-w-xs overflow-hidden p-5 rounded-3xl snap-start w-full">
-                            <div class="flex flex-col gap-2 text-center">
-                                <h6 class="font-semibold text-2xl text-white">Create or import Wallet</h6>
-                                <p class="font-medium text-white">Open the app and follow the instructions to create a new wallet or import an existing one.</p>
-                            </div>
-                            <img src="assets/Create%20New%20Wallet.png" class="w-full">
-                        </div>
-                        <div class="bg-gray-800 flex flex-col flex-none gap-10 h-auto max-w-xs overflow-hidden p-5 rounded-3xl snap-start w-full">
-                            <div class="flex flex-col gap-2 text-center">
-                                <h6 class="font-semibold text-2xl text-white">Locate to Settings</h6>
-                                <p class="font-medium text-white">Find the gear icon at the top right corner of the app to access settings.</p>
-                            </div>
-                            <img src="assets/Open%20Settings.png" class="w-full">
-                        </div>
-                        <div class="bg-gray-800 flex flex-col-reverse flex-none gap-10 h-auto max-w-xs overflow-hidden p-5 rounded-3xl snap-start w-full">
-                            <div class="flex flex-col gap-2 text-center">
-                                <h6 class="font-semibold text-2xl text-white">Navigate to Battery</h6>
-                                <p class="font-medium text-white">In settings, navigate to the Battery section to manage your Tonkeeper Battery.</p>
-                            </div>
-                            <img src="assets/Open%20Battery.png" class="w-full">
-                        </div>
-                        <div class="bg-gray-800 flex flex-col flex-none gap-10 h-auto max-w-xs overflow-hidden p-5 rounded-3xl snap-start w-full">
-                            <div class="flex flex-col gap-2 text-center">
-                                <h6 class="font-semibold text-2xl text-white">In-App Purchase</h6>
-                                <p class="font-medium text-white">Top up your battery using in-app purchases, TON, USDt etc to cover transaction fees.</p>
-                            </div>
-                            <img src="assets/Inapp%20purchase.png" class="w-full">
-                        </div>
-                        <div class="bg-gray-800 flex flex-col-reverse flex-none gap-10 h-auto max-w-xs overflow-hidden p-5 rounded-3xl snap-start w-full">
-                            <div class="flex flex-col gap-2 text-center">
-                                <h6 class="font-semibold text-2xl text-white">Start Using Tonkeeper Battery</h6>
-                                <p class="font-medium text-white">Make transactions without gas fees. Enjoy a hassle-free experience</p>
-                            </div>
-                            <img src="assets/Purchase.png" class="w-full">
-                        </div>
-                    </div>
-                    <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-3 rounded-full z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" onclick="customScrollRight()">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
+                <div class="fade-in-scroll fade-overlay-container flex group items-center justify-center relative w-full"> 
+                    <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-3 rounded-full z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" onclick="customScrollLeft()"> <i class="fas fa-chevron-left"></i> 
+                    </button>                     
+                    <div id="scroll-container" class="flex gap-10 overflow-x-auto w-full scrollbar-hide snap-x snap-mandatory"> 
+                        <div class="backdrop-blur-md bg-gray-800 bg-opacity-80 fade-in flex flex-col flex-none gap-10 h-auto justify-between max-w-xs overflow-hidden p-5 rounded-3xl snap-start w-full"> 
+                            <div class="flex flex-col gap-2 text-center"> 
+                                <h6 class="font-semibold text-2xl text-white">Download the App</h6> 
+                                <p class="font-medium text-white">Get Tonkeeper from the App Store or Google Play and install it on your mobile device.</p> 
+                            </div>                             
+                            <img src="assets/Download%20the%20App.png" class="w-full"> 
+                        </div>                         
+                        <div class="backdrop-blur-md bg-gray-800 bg-opacity-80 fade-in flex flex-col-reverse flex-none gap-10 h-auto justify-between max-w-xs overflow-hidden p-5 rounded-3xl snap-start w-full"> 
+                            <div class="flex flex-col gap-2 text-center"> 
+                                <h6 class="font-semibold text-2xl text-white">Create or Import Wallet</h6> 
+                                <p class="font-medium text-white">Open the app and follow the instructions to create a new wallet or import an existing one.</p> 
+                            </div>                             
+                            <img src="assets/Create%20New%20Wallet.png" class="w-full"> 
+                        </div>                         
+                        <div class="backdrop-blur-md bg-gray-800 bg-opacity-80 fade-in flex flex-col flex-none gap-10 h-auto justify-between max-w-xs overflow-hidden p-5 rounded-3xl snap-start w-full"> 
+                            <div class="flex flex-col gap-2 text-center"> 
+                                <h6 class="font-semibold text-2xl text-white">Locate Settings</h6> 
+                                <p class="font-medium text-white">Find the gear icon at the top right corner of the app to access settings.</p> 
+                            </div>                             
+                            <img src="assets/Open%20Settings.png" class="w-full"> 
+                        </div>                         
+                        <div class="backdrop-blur-md bg-gray-800 bg-opacity-80 fade-in flex flex-col-reverse flex-none gap-10 h-auto justify-between max-w-xs overflow-hidden p-5 rounded-3xl snap-start w-full"> 
+                            <div class="flex flex-col gap-2 text-center"> 
+                                <h6 class="font-semibold text-2xl text-white">Navigate to Battery</h6> 
+                                <p class="font-medium text-white">In settings, navigate to the Battery section to manage your Tonkeeper Battery.</p> 
+                            </div>                             
+                            <img src="assets/Open%20Battery.png" class="w-full"> 
+                        </div>                         
+                        <div class="backdrop-blur-md bg-gray-800 bg-opacity-80 fade-in flex flex-col flex-none gap-10 h-auto justify-between max-w-xs overflow-hidden p-5 rounded-3xl snap-start w-full"> 
+                            <div class="flex flex-col gap-2 text-center"> 
+                                <h6 class="font-semibold text-2xl text-white">In-App Purchase</h6> 
+                                <p class="font-medium text-white">Top up your battery using in-app purchases, TON, USDt etc. to cover transaction fees.</p> 
+                            </div>                             
+                            <img src="assets/Inapp%20purchase.png" class="w-full"> 
+                        </div>                         
+                        <div class="backdrop-blur-md bg-gray-800 bg-opacity-80 fade-in flex flex-col-reverse flex-none gap-10 h-auto justify-between max-w-xs overflow-hidden p-5 rounded-3xl snap-start w-full"> 
+                            <div class="flex flex-col gap-2 text-center"> 
+                                <h6 class="font-semibold text-2xl text-white">Start Using Tonkeeper Battery</h6> 
+                                <p class="font-medium text-white">Make transactions without gas fees. Enjoy a hassle-free experience.</p> 
+                            </div>                             
+                            <img src="assets/Purchase.png" class="w-full"> 
+                        </div>                         
+                    </div>                     
+                    <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-3 rounded-full z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" onclick="customScrollRight()"> <i class="fas fa-chevron-right"></i> 
+                    </button>                     
                 </div>
             </section>
-            <section class="flex flex-col gap-20 h-screen items-center justify-center justify-items-center max-w-6xl p-5 w-screen md:flex-row"></section>
-        </main>         
+            <section class="flex h-auto max-w-6xl my-10 p-5 w-screen" data-pg-name="CTA"> 
+                <div class="flex flex-col gap-10 items-stretch justify-items-start justify-start w-full"> 
+                    <div class="flex flex-col gap-5"> 
+                        <h3 class="fade-in-scroll font-bold text-4xl text-gray-50">Start Using Tonkeeper Battery</h3> 
+                    </div>                     
+                    <div class="flex flex-col gap-10 items-stretch justify-between md:flex-row"> 
+                        <div class="backdrop-blur-md bg-gray-100 bg-opacity-10 border border-opacity-20 border-white fade-in-scroll h-60 overflow-hidden p-5 rounded-lg shadow-lg w-full"> 
+                            <div class="flex flex-col gap-3 h-full w-full"> 
+                                <h6 class="font-semibold text-gray-100 text-xl">Unlock Seamless Transactions</h6> 
+                                <p class="text-gray-100">Experience the ease of gasless payments and seamless transactions, download Tonkeeper now.</p> 
+                                <div class="duration-300 flex gap-5 justify-start mt-auto transition-all sm:flex-row"> 
+                                    <button class="animate-spin bg-gray-400 bg-opacity-30 duration-300 hover:bg-opacity-100 p-2 rounded-full shadow-2xl transition-all"> 
+                                        <img src="assets/logo/android-color-svgrepo-com.svg" alt="Google Play" width="30" class="md:block"> 
+                                    </button>                                     
+                                    <button class="animate-spin bg-gray-400 bg-opacity-30 duration-300 hover:bg-opacity-100 p-2 rounded-full shadow-2xl transition-all"> 
+                                        <img src="assets/logo/playstore-svgrepo-com.svg" alt="App Store" width="30" class="md:block"> 
+                                    </button>                                     
+                                    <button class="animate-spin bg-gray-400 bg-opacity-30 duration-300 hover:bg-opacity-100 p-2 rounded-full shadow-2xl transition-all"> 
+                                        <img src="assets/logo/App-Store-Logo.png" alt="App Store" width="30" class="md:block"> 
+                                    </button>                                     
+                                    <button class="animate-spin bg-gray-400 bg-opacity-30 duration-300 hover:bg-opacity-100 p-2 rounded-full shadow-2xl transition-all"> 
+                                        <img src="assets/brave-svgrepo-com.svg" alt="Brave Browser" width="30" class="md:block"> 
+                                    </button>                                     
+                                    <button class="animate-spin bg-gray-400 bg-opacity-30 duration-300 hover:bg-opacity-100 p-2 rounded-full shadow-2xl transition-all"> 
+                                        <img src="assets/logo/edge-svgrepo-com.svg" alt="Microsoft Edge" width="30" class="md:block"> 
+                                    </button>                                     
+                                    <button class="animate-spin bg-gray-400 bg-opacity-30 duration-300 hover:bg-opacity-100 p-2 rounded-full shadow-2xl transition-all"> 
+                                        <img src="assets/logo/firefox-svgrepo-com.svg" alt="Mozilla Firefox" width="30" class="md:block"> 
+                                    </button>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                        <div class="backdrop-blur-md bg-gray-100 bg-opacity-10 border border-opacity-20 border-white fade-in-scroll h-60 overflow-hidden p-5 rounded-lg shadow-lg w-full"> 
+                            <div class="flex flex-col gap-3 h-full w-full"> 
+                                <h6 class="font-semibold text-gray-100 text-xl">Join Our Community</h6> 
+                                <p class="text-gray-100">Become a part of our growing community and explore new opportunities.</p> 
+                                <div class="duration-300 flex gap-5 justify-start mt-auto transition-all sm:flex-row"> 
+                                    <button class="bg-blue-200 duration-300 font-semibold hover:bg-blue-100 px-6 py-2 rounded-full text-gray-900 transition-all"><i class="fab fa-twitter fa-fw mr-1"></i>Twitter
+                                    </button>                                     
+                                    <button class="bg-blue-200 duration-300 font-semibold hover:bg-blue-100 px-6 py-2 rounded-full text-gray-900 transition-all"><i class="fab fa-telegram-plane fa-fw mr-1"></i>Telegram
+                                    </button>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                </div>                 
+            </section>
+        </main>
+        <footer class="backdrop-blur-lg bg-gray-900 bg-opacity-10 fade-in-scroll flex justify-center w-screen"> 
+            <div class="max-w-6xl p-5 w-full"> 
+                <div class="flex flex-wrap justify-between"> 
+                    <!-- Company Section -->                     
+                    <div class="w-full sm:w-1/2 md:w-1/4 mb-6"> 
+                        <h5 class="text-xl font-bold mb-2 text-gray-50">Company</h5> 
+                        <ul class="space-y-2"> 
+                            <li> <a href="#" class="duration-300 hover:text-blue-200 text-gray-50 transition-colors">News</a> 
+                            </li>                             
+                            <li> <a href="#" class="duration-300 hover:text-blue-200 text-gray-50 transition-colors">Chat</a> 
+                            </li>                             
+                            <li> <a href="#" class="duration-300 hover:text-blue-200 text-gray-50 transition-colors">Twitter</a> 
+                            </li>                             
+                        </ul>                         
+                    </div>                     
+                    <!-- Resources Section -->                     
+                    <div class="w-full sm:w-1/2 md:w-1/4 mb-6"> 
+                        <h5 class="text-xl font-bold mb-2 text-gray-50">Resources</h5> 
+                        <ul class="space-y-2"> 
+                            <li> <a href="#" class="duration-300 hover:text-blue-200 text-gray-50 transition-colors">FAQ</a> 
+                            </li>                             
+                            <li> <a href="#" class="duration-300 hover:text-blue-200 text-gray-50 transition-colors">Support</a> 
+                            </li>                             
+                            <li> <a href="#" class="duration-300 hover:text-blue-200 text-gray-50 transition-colors">Suggest a Feature</a> 
+                            </li>                             
+                        </ul>                         
+                    </div>                     
+                    <!-- Developers Section -->                     
+                    <div class="w-full sm:w-1/2 md:w-1/4 mb-6"> 
+                        <h5 class="text-xl font-bold mb-2 text-gray-50">Developers</h5> 
+                        <ul class="space-y-2"> 
+                            <li> <a href="#" class="duration-300 hover:text-blue-200 text-gray-50 transition-colors">Documentation</a> 
+                            </li>                             
+                            <li> <a href="#" class="duration-300 hover:text-blue-200 text-gray-50 transition-colors">Bug Bounty</a> 
+                            </li>                             
+                            <li> <a href="#" class="duration-300 hover:text-blue-200 text-gray-50 transition-colors">GitHub</a> 
+                            </li>                             
+                        </ul>                         
+                    </div>                     
+                    <!-- Legal Section -->                     
+                    <div class="w-full sm:w-1/2 md:w-1/4 mb-6"> 
+                        <h5 class="text-xl font-bold mb-2 text-gray-50">Legal</h5> 
+                        <ul class="space-y-2"> 
+                            <li> <a href="#" class="duration-300 hover:text-blue-200 text-gray-50 transition-colors">Terms</a> 
+                            </li>                             
+                            <li> <a href="#" class="duration-300 hover:text-blue-200 text-gray-50 transition-colors">Privacy</a> 
+                            </li>                             
+                        </ul>                         
+                    </div>                     
+                </div>                 
+                <div class="flex flex-row-reverse flex-wrap items-center justify-between mt-8"> 
+                    <p class="text-sm text-gray-200">&copy; 2024 Tonkeeper. All rights reserved. All trademarks are the property of their respective owners.</p> <a href="#" class="animate-bounce mr-auto sm:mr-0"><img src="assets/logo/Tonkeeper-logo.svg" alt="Tonkeeper-logo" width="35"></a> 
+                </div>                 
+            </div>             
+        </footer>
     </body>     
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -327,4 +419,33 @@ function customScrollRight() {
     container.scrollBy({ left: 500, behavior: 'smooth' });
 }
 </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Trigger page load animations
+            document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right, .fade-in-down, .fade-in-up').forEach(el => {
+                el.classList.add('opacity-100');
+            });
+
+            // Observer for scroll animations
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observerCallback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    } else {
+                        entry.target.classList.remove('visible');
+                    }
+                });
+            };
+
+            const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+            document.querySelectorAll('.fade-in-scroll, .fade-in-left-scroll, .fade-in-right-scroll, .fade-in-down-scroll, .fade-in-up-scroll').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
 </html>

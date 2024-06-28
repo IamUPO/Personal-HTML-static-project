@@ -7,7 +7,7 @@ This project is a custom-designed of a frontend social media platform just like 
 
 ## View Live
 
-You can view the live version of this project on GitHub Pages: [Social WebApp](https://iamupo.github.io/Personal-HTML-static-project/Social-WebApp/)
+You can view the live version of this project on GitHub Pages: [Social WebApp](https://upovibe.github.io/Personal-HTML-static-project/Social-WebApp/)
 
 ## Connect with Me
 

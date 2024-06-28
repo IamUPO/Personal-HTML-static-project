@@ -29,14 +29,14 @@ The MyTask project is a static HTML project that allows users to manage tasks. I
 
 ## Live Site
 
-You can access the live version of MyTask [here](https://iamupo.github.io/Personal-HTML-static-project/MyTask/index.html).
+You can access the live version of MyTask [here](https://upovibe.github.io/Personal-HTML-static-project/MyTask/index.html).
 
 ## Connect with Me
 
 Feel free to connect with me on:
 
-- [LinkedIn](https://www.linkedin.com/in/iamupo/)
-- [x](https://www.x.com/iamupo/)
+- [LinkedIn](https://www.linkedin.com/in/upovibe/)
+- [x](https://www.x.com/upovibe/)
 
 ## How to Use
 

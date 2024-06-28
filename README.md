@@ -4,10 +4,10 @@ This repository contains my solutions to various static HTML projects I've creat
 
 ## Projects
 
-1. [Ghana@67](https://github.com/iamupo/Personal-HTML-static-project/tree/main/Ghana%4067)
-2. [MyTask](https://github.com/iamupo/Personal-HTML-static-project/tree/main/MyTask)
-3. [Rock-Paper-Scissors](https://github.com/iamupo/Personal-HTML-static-project/tree/main/Rock-Paper-Scissors)
-4. [Social-WebApp](https://github.com/iamupo/Personal-HTML-static-project/tree/main/Social-WebApp)
+1. [Ghana@67](https://github.com/upovibe/Personal-HTML-static-project/tree/main/Ghana%4067)
+2. [MyTask](https://github.com/upovibe/Personal-HTML-static-project/tree/main/MyTask)
+3. [Rock-Paper-Scissors](https://github.com/upovibe/Personal-HTML-static-project/tree/main/Rock-Paper-Scissors)
+4. [Social-WebApp](https://github.com/upovibe/Personal-HTML-static-project/tree/main/Social-WebApp)
 
 ## Purpose
 

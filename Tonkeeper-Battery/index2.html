@@ -5,84 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
         <title>New page</title>         
         <script src="https://cdn.tailwindcss.com/"></script>         
-        <style>
-        /* Keyframes for different animations */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @keyframes fadeInFromLeft {
-            from { transform: translateX(-100%); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-
-        @keyframes fadeInFromRight {
-            from { transform: translateX(100%); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-
-        @keyframes fadeInFromDown {
-            from { transform: translateY(100%); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-
-        @keyframes fadeInFromUp {
-            from { transform: translateY(-100%); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-
-        /* Page load animations */
-        .fade-in {
-            animation: fadeIn 1s ease-out forwards;
-        }
-
-        .fade-in-left {
-            animation: fadeInFromLeft 1s ease-out forwards;
-        }
-
-        .fade-in-right {
-            animation: fadeInFromRight 1s ease-out forwards;
-        }
-
-        .fade-in-down {
-            animation: fadeInFromDown 1s ease-out forwards;
-        }
-
-        .fade-in-up {
-            animation: fadeInFromUp 1s ease-out forwards;
-        }
-
-        /* Scroll animations */
-        .fade-in-scroll, .fade-in-left-scroll, .fade-in-right-scroll, .fade-in-down-scroll, .fade-in-up-scroll {
-            opacity: 0;
-        }
-
-        .fade-in-scroll.visible {
-            animation: fadeIn 1s ease-out forwards;
-            opacity: 1;
-        }
-
-        .fade-in-left-scroll.visible {
-            animation: fadeInFromLeft 1s ease-out forwards;
-            opacity: 1;
-        }
-
-        .fade-in-right-scroll.visible {
-            animation: fadeInFromRight 1s ease-out forwards;
-            opacity: 1;
-        }
-
-        .fade-in-down-scroll.visible {
-            animation: fadeInFromDown 1s ease-out forwards;
-            opacity: 1;
-        }
-
-        .fade-in-up-scroll.visible {
-            animation: fadeInFromUp 1s ease-out forwards;
-            opacity: 1;
-        }
-    </style>
+        <style>/* Keyframes for different animations */@keyframes fadeIn { from {  opacity: 0; }  to {  opacity: 1; } } @keyframes fadeInFromLeft { from {  transform: translateX(-100%);  opacity: 0; }  to {  transform: translateX(0);  opacity: 1; } } @keyframes fadeInFromRight { from {  transform: translateX(100%);  opacity: 0; }  to {  transform: translateX(0);  opacity: 1; } } @keyframes fadeInFromDown { from {  transform: translateY(100%);  opacity: 0; }  to {  transform: translateY(0);  opacity: 1; } } @keyframes fadeInFromUp { from {  transform: translateY(-100%);  opacity: 0; }  to {  transform: translateY(0);  opacity: 1; } } /* Page load animations */.fade-in { animation: fadeIn 1s ease-out forwards; } .fade-in-left { animation: fadeInFromLeft 1s ease-out forwards; } .fade-in-right { animation: fadeInFromRight 1s ease-out forwards; } .fade-in-down { animation: fadeInFromDown 1s ease-out forwards; } .fade-in-up { animation: fadeInFromUp 1s ease-out forwards; } /* Scroll animations */.fade-in-scroll, .fade-in-left-scroll, .fade-in-right-scroll, .fade-in-down-scroll, .fade-in-up-scroll { opacity: 0; } .fade-in-scroll.visible { animation: fadeIn 1s ease-out forwards; opacity: 1; } .fade-in-left-scroll.visible { animation: fadeInFromLeft 1s ease-out forwards; opacity: 1; } .fade-in-right-scroll.visible { animation: fadeInFromRight 1s ease-out forwards; opacity: 1; } .fade-in-down-scroll.visible { animation: fadeInFromDown 1s ease-out forwards; opacity: 1; } .fade-in-up-scroll.visible { animation: fadeInFromUp 1s ease-out forwards; opacity: 1; } @keyframes rotate { 0% {  transform: rotate(0deg); }  100% {  transform: rotate(360deg); } } .gradient-border { position: relative; display: inline-block; padding: 10px;  /* Adjust padding as needed */ border-radius: 10px;  /* Adjust border-radius as needed */ } .gradient-border::before { content: ''; position: absolute; top: -2px; left: -2px; right: -2px; bottom: -2px; z-index: -1; background: linear-gradient(45deg, #ff6ec4, #7873f5, #1fc8db, #f9f586); background-size: 400% 400%; border-radius: inherit; animation: gradient-animation 5s linear infinite, rotate 10s linear infinite; } @keyframes gradient-animation { 0% {  background-position: 0% 50%; }  50% {  background-position: 100% 50%; }  100% {  background-position: 0% 50%; } }</style>
     </head>
     <body class="bg-grey-900 text-white">
         <!-- Elements with page load animations -->
@@ -97,6 +20,9 @@
         <div class="fade-in-right-scroll p-4 m-4 bg-yellow-500">Fade In From Right on Scroll</div>
         <div class="fade-in-down-scroll p-4 m-4 bg-red-500">Fade In From Down on Scroll</div>
         <div class="fade-in-up-scroll p-4 m-4 bg-purple-500">Fade In From Up on Scroll</div>
+        <div class="gradient-border">
+            Your content here
+</div>
         <script>
         document.addEventListener('DOMContentLoaded', () => {
             // Trigger page load animations

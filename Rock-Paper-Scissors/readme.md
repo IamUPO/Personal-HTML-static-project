@@ -61,8 +61,8 @@ Contributions are welcome! If you have any suggestions, bug fixes, or enhancemen
 
 Feel free to connect with me on:
 
-- [LinkedIn](https://www.linkedin.com/in/iamupo/)
-- [x](https://www.x.com/iamupo/)
+- [LinkedIn](https://www.linkedin.com/in/upovibe/)
+- [x](https://www.x.com/upovibe/)
 
 ## License
 

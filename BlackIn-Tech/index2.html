@@ -1,0 +1,364 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+        <title>New page</title>         
+        <script src="https://cdn.tailwindcss.com/"></script>         
+    </head>     
+    <body>
+        <header class="bg-slate-100 flex items-center justify-center p-3 md:py-0 shadow text-blue-950 dark:bg-slate-900 dark:text-slate-300">
+            <div class="container flex items-center justify-between">
+                <div class="flex items-center space-x-5"><a href="#"> <img class="xl:block hidden w-[100px] min-w-[100px]" src="img/logo/large-screen-logo.png" alt="logo"> <img class="block xl:hidden w-[50px] min-w-[50px]" src="img/logo/small-screen-logo.png" alt="logo"> </a>
+                    <form> 
+                        <div class="bg-gray-200 border border-transparent flex gap-2 items-center overflow-hidden p-1 rounded-full w-full dark:bg-opacity-75 dark:bg-slate-600"> 
+                            <button type="submit" class="bg-opacity-50 bg-slate-400 duration-200 ease-in-out inline-block outline-none px-2 py-1 rounded-full text-center text-white transition-all focus:ring-4 focus:ring-inset focus:ring-opacity-20 focus:ring-slate-950 hover:bg-opacity-50 hover:bg-slate-600"> <i class="fa-fw fa-search fas"></i> 
+                            </button>                             
+                            <input class="appearance-none bg-slate-50 block border-transparent flex-1 font-semibold outline-none px-5 py-1 ring-2 ring-transparent rounded-full text-black text-opacity-80 w-full dark:bg-opacity-50 dark:bg-slate-950 dark:text-white focus:border-transparent focus:ring-2 focus:ring-inset focus:ring-opacity-50 focus:ring-slate-900" placeholder="Search here..." type="text" required/> 
+                        </div>                         
+                    </form>
+                </div>
+                <div class="flex items-center justify-between">
+                    <nav class="border-opacity-20 border-r-2 border-slate-900 pr-6 dark:border-slate-800">
+                        <ul class="duration-200 ease-linear gap-10 hidden items-center justify-between transition-all md:flex"> 
+                            <li class="flex justify-center w-14"> <a href="#" class="border-b-2 border-solid border-transparent duration-300 ease-linear flex flex-col font-medium gap-1 items-center py-3 text-sm transition-all w-full hover:border-b-2 hover:border-blue-950 hover:text-blue-950"> <i class="fas fa-home fa-fw fa-lg"></i>Home </a> 
+                            </li>                             
+                            <li class="flex justify-center w-14"> <a href="#" class="border-b-2 border-solid border-transparent duration-300 ease-linear flex flex-col font-medium gap-1 items-center py-3 text-sm transition-all w-full hover:border-b-2 hover:border-blue-950 hover:text-blue-950"> <i class="fas fa-briefcase fa-fw fa-lg"></i>Jobs </a> 
+                            </li>                             
+                            <li class="flex justify-center w-14"> <a href="#" class="border-b-2 border-solid border-transparent duration-300 ease-linear flex flex-col font-medium gap-1 items-center py-3 text-sm transition-all w-full hover:border-b-2 hover:border-blue-950 hover:text-blue-950"> <i class="fas fa-bullhorn fa-fw fa-lg"></i>Events </a> 
+                            </li>                             
+                            <li class="flex justify-center w-14"> <a href="#" class="border-b-2 border-solid border-transparent duration-300 ease-linear flex flex-col font-medium gap-1 items-center py-3 text-sm transition-all w-full hover:border-b-2 hover:border-blue-950 hover:text-blue-950"> <i class="fas fa-users fa-fw fa-lg"></i>Connect </a> 
+                            </li>                             
+                            <li class="flex justify-center w-14"> <a href="#" class="border-b-2 border-solid border-transparent duration-300 ease-linear flex flex-col font-medium gap-1 items-center py-3 text-sm transition-all w-full hover:border-b-2 hover:border-blue-950 hover:text-blue-950"> <i class="fas fa-paper-plane fa-fw fa-lg"></i>Message </a> 
+                            </li>                             
+                        </ul>
+                    </nav>
+                    <div class="flex h-10 items-center justify-center pl-6 w-32">
+                        <div class="flex gap-2 items-center justify-end justify-items-center relative w-full"><a href=""><i class="fa-envelope fa-fw fa-lg fas"></i></a><a href=""><i class="fa-bell fa-fw fa-lg fas"></i></a>
+                            <img src="https://images.unsplash.com/photo-1535931737580-a99567967ddc?ixid=M3wyMDkyMnwwfDF8c2VhcmNofDUwfHxtYWxlJTIwdXNlcnxlbnwwfHx8fDE3MjQyNzg5MDV8MA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1000&h=1000&fit=crop" alt="avatar" loading="lazy" class="cursor-pointer drop-shadow-lg duration-300 ease-in-out ring-2 ring-opacity-50 ring-slate-500 rounded-full transition-all hover:ring-opacity-100" width="35">
+                            <div class="absolute bg-slate-200 border-2 border-opacity-50 border-slate-500 hidden p-2 right-0 rounded-xl shadow-xl top-14 w-64 z-30 dark:bg-slate-800">
+                                <ul class="flex flex-col"> 
+                                    <li class="w-full"> <a href="#" class="duration-300 ease-in-out flex items-center p-3 rounded-lg transition-all w-full dark:hover:bg-slate-700 dark:hover:text-slate-100 hover:bg-slate-300"> <i class="fa-fw fa-lg fa-user-circle fas mr-2"></i>Profile </a> 
+                                    </li>                                     
+                                    <li class="w-full"> <a href="#" class="duration-300 ease-in-out flex items-center p-3 rounded-lg transition-all w-full dark:hover:bg-slate-700 dark:hover:text-slate-100 hover:bg-slate-300"> <i class="fa-cog fa-fw fa-lg fas mr-2"></i>Settings </a> 
+                                    </li>                                     
+                                    <li class="w-full"> <a href="#" class="duration-300 ease-in-out flex items-center p-3 rounded-lg transition-all w-full dark:hover:bg-slate-700 dark:hover:text-slate-100 hover:bg-slate-300"> <i class="fa-bell fa-fw fa-lg fas mr-2"></i>Notifications </a> 
+                                    </li>                                     
+                                    <hr class="border-opacity-50 border-slate-500 mx-auto my-2 w-full dark:border-slate-100"> 
+                                    <li class="w-full"> 
+                                        <button class="duration-300 ease-in-out flex items-center p-3 rounded-lg transition-all w-full dark:hover:bg-slate-700 dark:hover:text-slate-100 hover:bg-slate-300"> <i class="fa-fw fa-lg fa-sign-out-alt fas mr-2"></i>Logout
+                                        </button>                                         
+                                    </li>                                     
+                                </ul>
+                            </div>
+                        </div>
+                        <!--  <a href="#" class="bg-gradient-to-r duration-300 ease-in-out flex font-medium from-blue-950 gap-1 h-full items-center justify-center rounded-full shadow-indigo-200 shadow-md text-gray-100 to-blue-700 transition-all w-full hover:shadow-blue-300 hover:shadow-lg"> 
+                        Sign In <i class="fas fa-sign-in-alt fa-lg"></i> </a>  -->
+                    </div>
+                </div>
+                <div class="gap-5 hidden items-center"> 
+                    <div class="block relative md:hidden"> 
+                        <div class="MobileMenu cursor-pointer flex flex-col gap-1 items-end p-1 group"> 
+                            <div class="bg-blue-950 h-[3px] rounded-[50px] w-4 group-hover:w-6 transition-all duration-300"></div>                             
+                            <div class="bg-blue-950 h-[3px] rounded-sm w-6"></div>                             
+                            <div class="bg-blue-950 h-[3px] rounded-sm w-4 group-hover:w-6 transition-all duration-300"></div>                             
+                        </div>                         
+                        <div class="absolute bg-slate-50 border border-blue-950 border-opacity-30 border-solid overflow-hidden right-0 rounded shadow top-14 w-60"> 
+                            <ul class="flex flex-col"> 
+                                <li class="flex"> <a href="#" class="border-b duration-300 ease-linear flex flex-row font-medium gap-2 items-center p-5 transition-all w-full hover:bg-slate-200"> <i class="fas fa-home fa-fw fa-lg"></i>Home </a> 
+                                </li>                                 
+                                <li class="flex"> <a href="#" class="border-b duration-300 ease-linear flex flex-row font-medium gap-2 items-center p-5 transition-all w-full hover:bg-slate-200"> <i class="fas fa-briefcase fa-fw fa-lg"></i>Jobs </a> 
+                                </li>                                 
+                                <li class="flex"> <a href="#" class="border-b duration-300 ease-linear flex flex-row font-medium gap-2 items-center p-5 transition-all w-full hover:bg-slate-200"> <i class="fas fa-bullhorn fa-fw fa-lg"></i>Events </a> 
+                                </li>                                 
+                                <li class="flex"> <a href="#" class="border-b duration-300 ease-linear flex flex-row font-medium gap-2 items-center p-5 transition-all w-full hover:bg-slate-200"> <i class="fas fa-users fa-fw fa-lg"></i>Connect </a> 
+                                </li>                                 
+                                <li class="flex"> <a href="#" class="border-b duration-300 ease-linear flex flex-row font-medium gap-2 items-center p-5 transition-all w-full hover:bg-slate-200"> <i class="fas fa-paper-plane fa-fw fa-lg"></i>Message </a> 
+                                </li>                                 
+                                <li class="flex"> <a href="#" class="border-b duration-300 ease-linear flex flex-row font-medium gap-2 items-center p-5 transition-all w-full hover:bg-slate-200"> <i class="fas fa-user-circle fa-fw fa-lg"></i>Profile </a> 
+                                </li>                                 
+                            </ul>                             
+                        </div>                         
+                    </div>                     
+                </div>
+            </div>
+        </header>
+        <main class="bg-white flex items-center justify-center text-slate-900 dark:bg-slate-900 dark:text-slate-100">
+            <section class="bg-white flex items-center justify-center w-screen">
+                <div class="gap-3 grid grid-cols-2 place-items-center place-self-center self-center md:grid-cols-3 lg:grid-cols-4"> 
+                    <!-- Card 1 -->                     
+                    <div style="width: 180px; height: 260px;" class="border-2 border-opacity-30 border-slate-400 cursor-pointer flex flex-col group overflow-hidden rounded-xl shadow hover:duration-300 hover:ease-in-out hover:shadow-md hover:transition-all"> 
+                        <div class="bg-center bg-cover h-20 min-h-20 overflow-hidden w-full" style="background-image: url('img/icons/photo-1724123301969-22859c2a3823.jpeg');"></div>                         
+                        <div class="flex flex-col flex-grow items-center justify-between relative"> 
+                            <div class="-translate-y-9 border-4 border-white h-1/6 min-h-20 min-w-20 overflow-hidden rounded-full size-20"> 
+                                <img src="https://images.unsplash.com/photo-1723945785190-b6f91da9eceb?ixid=M3wyMDkyMnwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNjg4MTIwNHw&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1000&h=1000&fit=crop"> 
+                            </div>                             
+                            <div class="absolute bottom-0 flex flex-col flex-grow h-5/6 justify-between size-full"> 
+                                <div class="p-3 size-full text-black"> 
+                                    <h2 class="antialiased font-bold leading-tight text-center truncate">FullName</h2> 
+                                    <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                </div>                                 
+                                <div class="absolute bg-gradient-to-t bg-slate-100 bottom-0 duration-300 ease-in-out flex flex-grow from-slate-400 h-1/2 items-center justify-center opacity-0 p-3 size-full to-slate-50 transition-opacity via-slate-200 group-hover:opacity-100"> 
+                                    <button class="flex items-centerjustify-center gap-2 border-2 border-slate-600/25 duration-300 ease-in-out font-semibold p-2 rounded-full text-slate-950 text-sm transition-all w-full hover:bg-slate-800 hover:text-white/80">Click me!</button>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </div>
+                    <div style="width: 180px; height: 260px;" class="border-2 border-opacity-30 border-slate-400 cursor-pointer flex flex-col group overflow-hidden rounded-xl shadow hover:duration-300 hover:ease-in-out hover:shadow-md hover:transition-all"> 
+                        <div class="bg-center bg-cover h-20 min-h-20 overflow-hidden w-full" style="background-image: url('img/icons/photo-1724123301969-22859c2a3823.jpeg');"></div>                         
+                        <div class="flex flex-col flex-grow items-center justify-between relative"> 
+                            <div class="-translate-y-9 border-4 border-white h-1/6 min-h-20 min-w-20 overflow-hidden rounded-full size-20"> 
+                                <img src="https://images.unsplash.com/photo-1723945785190-b6f91da9eceb?ixid=M3wyMDkyMnwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNjg4MTIwNHw&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1000&h=1000&fit=crop"> 
+                            </div>                             
+                            <div class="absolute bottom-0 flex flex-col flex-grow h-5/6 justify-between size-full"> 
+                                <div class="p-3 size-full text-black"> 
+                                    <h2 class="antialiased font-bold leading-tight text-center truncate">FullName</h2> 
+                                    <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                </div>                                 
+                                <div class="absolute bg-gradient-to-t bg-slate-100 bottom-0 duration-300 ease-in-out flex flex-grow from-slate-400 h-1/2 items-center justify-center opacity-0 p-3 size-full to-slate-50 transition-opacity via-slate-200 group-hover:opacity-100"> 
+                                    <button class="border-2 border-slate-600/25 duration-300 ease-in-out font-semibold p-2 rounded-full text-slate-950 text-sm transition-all w-full hover:bg-slate-800 hover:text-white/80">Click me!</button>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </div>
+                    <div style="width: 180px; height: 260px;" class="border-2 border-opacity-30 border-slate-400 cursor-pointer flex flex-col group overflow-hidden rounded-xl shadow hover:duration-300 hover:ease-in-out hover:shadow-md hover:transition-all"> 
+                        <div class="bg-center bg-cover h-20 min-h-20 overflow-hidden w-full" style="background-image: url('img/icons/photo-1724123301969-22859c2a3823.jpeg');"></div>                         
+                        <div class="flex flex-col flex-grow items-center justify-between relative"> 
+                            <div class="-translate-y-9 border-4 border-white h-1/6 min-h-20 min-w-20 overflow-hidden rounded-full size-20"> 
+                                <img src="https://images.unsplash.com/photo-1723945785190-b6f91da9eceb?ixid=M3wyMDkyMnwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNjg4MTIwNHw&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1000&h=1000&fit=crop"> 
+                            </div>                             
+                            <div class="absolute bottom-0 flex flex-col flex-grow h-5/6 justify-between size-full"> 
+                                <div class="p-3 size-full text-black"> 
+                                    <h2 class="antialiased font-bold leading-tight text-center truncate">FullName</h2> 
+                                    <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                </div>                                 
+                                <div class="absolute bg-gradient-to-t bg-slate-100 bottom-0 duration-300 ease-in-out flex flex-grow from-slate-400 h-1/2 items-center justify-center opacity-0 p-3 size-full to-slate-50 transition-opacity via-slate-200 group-hover:opacity-100"> 
+                                    <button class="border-2 border-slate-600/25 duration-300 ease-in-out font-semibold p-2 rounded-full text-slate-950 text-sm transition-all w-full hover:bg-slate-800 hover:text-white/80">Click me!</button>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </div>
+                    <div style="width: 180px; height: 260px;" class="border-2 border-opacity-30 border-slate-400 cursor-pointer flex flex-col group overflow-hidden rounded-xl shadow hover:duration-300 hover:ease-in-out hover:shadow-md hover:transition-all"> 
+                        <div class="bg-center bg-cover h-20 min-h-20 overflow-hidden w-full" style="background-image: url('img/icons/photo-1724123301969-22859c2a3823.jpeg');"></div>                         
+                        <div class="flex flex-col flex-grow items-center justify-between relative"> 
+                            <div class="-translate-y-9 border-4 border-white h-1/6 min-h-20 min-w-20 overflow-hidden rounded-full size-20"> 
+                                <img src="https://images.unsplash.com/photo-1723945785190-b6f91da9eceb?ixid=M3wyMDkyMnwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNjg4MTIwNHw&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1000&h=1000&fit=crop"> 
+                            </div>                             
+                            <div class="absolute bottom-0 flex flex-col flex-grow h-5/6 justify-between size-full"> 
+                                <div class="p-3 size-full text-black"> 
+                                    <h2 class="antialiased font-bold leading-tight text-center truncate">FullName</h2> 
+                                    <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                </div>                                 
+                                <div class="absolute bg-gradient-to-t bg-slate-100 bottom-0 duration-300 ease-in-out flex flex-grow from-slate-400 h-1/2 items-center justify-center opacity-0 p-3 size-full to-slate-50 transition-opacity via-slate-200 group-hover:opacity-100"> 
+                                    <button class="border-2 border-slate-600/25 duration-300 ease-in-out font-semibold p-2 rounded-full text-slate-950 text-sm transition-all w-full hover:bg-slate-800 hover:text-white/80">Click me!</button>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </div>
+                    <div style="width: 180px; height: 260px;" class="border-2 border-opacity-30 border-slate-400 cursor-pointer flex flex-col group overflow-hidden rounded-xl shadow hover:duration-300 hover:ease-in-out hover:shadow-md hover:transition-all"> 
+                        <div class="bg-center bg-cover h-20 min-h-20 overflow-hidden w-full" style="background-image: url('img/icons/photo-1724123301969-22859c2a3823.jpeg');"></div>                         
+                        <div class="flex flex-col flex-grow items-center justify-between relative"> 
+                            <div class="-translate-y-9 border-4 border-white h-1/6 min-h-20 min-w-20 overflow-hidden rounded-full size-20"> 
+                                <img src="https://images.unsplash.com/photo-1723945785190-b6f91da9eceb?ixid=M3wyMDkyMnwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNjg4MTIwNHw&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1000&h=1000&fit=crop"> 
+                            </div>                             
+                            <div class="absolute bottom-0 flex flex-col flex-grow h-5/6 justify-between size-full"> 
+                                <div class="p-3 size-full text-black"> 
+                                    <h2 class="antialiased font-bold leading-tight text-center truncate">FullName</h2> 
+                                    <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                </div>                                 
+                                <div class="absolute bg-gradient-to-t bg-slate-100 bottom-0 duration-300 ease-in-out flex flex-grow from-slate-400 h-1/2 items-center justify-center opacity-0 p-3 size-full to-slate-50 transition-opacity via-slate-200 group-hover:opacity-100"> 
+                                    <button class="border-2 border-slate-600/25 duration-300 ease-in-out font-semibold p-2 rounded-full text-slate-950 text-sm transition-all w-full hover:bg-slate-800 hover:text-white/80">Click me!</button>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </div>
+                    <div style="width: 180px; height: 260px;" class="border-2 border-opacity-30 border-slate-400 cursor-pointer flex flex-col group overflow-hidden rounded-xl shadow hover:duration-300 hover:ease-in-out hover:shadow-md hover:transition-all"> 
+                        <div class="bg-center bg-cover h-20 min-h-20 overflow-hidden w-full" style="background-image: url('img/icons/photo-1724123301969-22859c2a3823.jpeg');"></div>                         
+                        <div class="flex flex-col flex-grow items-center justify-between relative"> 
+                            <div class="-translate-y-9 border-4 border-white h-1/6 min-h-20 min-w-20 overflow-hidden rounded-full size-20"> 
+                                <img src="https://images.unsplash.com/photo-1723945785190-b6f91da9eceb?ixid=M3wyMDkyMnwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNjg4MTIwNHw&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1000&h=1000&fit=crop"> 
+                            </div>                             
+                            <div class="absolute bottom-0 flex flex-col flex-grow h-5/6 justify-between size-full"> 
+                                <div class="p-3 size-full text-black"> 
+                                    <h2 class="antialiased font-bold leading-tight text-center truncate">FullName</h2> 
+                                    <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                </div>                                 
+                                <div class="absolute bg-gradient-to-t bg-slate-100 bottom-0 duration-300 ease-in-out flex flex-grow from-slate-400 h-1/2 items-center justify-center opacity-0 p-3 size-full to-slate-50 transition-opacity via-slate-200 group-hover:opacity-100"> 
+                                    <button class="border-2 border-slate-600/25 duration-300 ease-in-out font-semibold p-2 rounded-full text-slate-950 text-sm transition-all w-full hover:bg-slate-800 hover:text-white/80">Click me!</button>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </div>
+                    <div style="width: 180px; height: 260px;" class="border-2 border-opacity-30 border-slate-400 cursor-pointer flex flex-col group overflow-hidden rounded-xl shadow hover:duration-300 hover:ease-in-out hover:shadow-md hover:transition-all"> 
+                        <div class="bg-center bg-cover h-20 min-h-20 overflow-hidden w-full" style="background-image: url('img/icons/photo-1724123301969-22859c2a3823.jpeg');"></div>                         
+                        <div class="flex flex-col flex-grow items-center justify-between relative"> 
+                            <div class="-translate-y-9 border-4 border-white h-1/6 min-h-20 min-w-20 overflow-hidden rounded-full size-20"> 
+                                <img src="https://images.unsplash.com/photo-1723945785190-b6f91da9eceb?ixid=M3wyMDkyMnwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNjg4MTIwNHw&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1000&h=1000&fit=crop"> 
+                            </div>                             
+                            <div class="absolute bottom-0 flex flex-col flex-grow h-5/6 justify-between size-full"> 
+                                <div class="p-3 size-full text-black"> 
+                                    <h2 class="antialiased font-bold leading-tight text-center truncate">FullName</h2> 
+                                    <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                </div>                                 
+                                <div class="absolute bg-gradient-to-t bg-slate-100 bottom-0 duration-300 ease-in-out flex flex-grow from-slate-400 h-1/2 items-center justify-center opacity-0 p-3 size-full to-slate-50 transition-opacity via-slate-200 group-hover:opacity-100"> 
+                                    <button class="border-2 border-slate-600/25 duration-300 ease-in-out font-semibold p-2 rounded-full text-slate-950 text-sm transition-all w-full hover:bg-slate-800 hover:text-white/80">Click me!</button>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </div>
+                    <div style="width: 180px; height: 260px;" class="border-2 border-opacity-30 border-slate-400 cursor-pointer flex flex-col group overflow-hidden rounded-xl shadow hover:duration-300 hover:ease-in-out hover:shadow-md hover:transition-all"> 
+                        <div class="bg-center bg-cover h-20 min-h-20 overflow-hidden w-full" style="background-image: url('img/icons/photo-1724123301969-22859c2a3823.jpeg');"></div>                         
+                        <div class="flex flex-col flex-grow items-center justify-between relative"> 
+                            <div class="-translate-y-9 border-4 border-white h-1/6 min-h-20 min-w-20 overflow-hidden rounded-full size-20"> 
+                                <img src="https://images.unsplash.com/photo-1723945785190-b6f91da9eceb?ixid=M3wyMDkyMnwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNjg4MTIwNHw&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1000&h=1000&fit=crop"> 
+                            </div>                             
+                            <div class="absolute bottom-0 flex flex-col flex-grow h-5/6 justify-between size-full"> 
+                                <div class="p-3 size-full text-black"> 
+                                    <h2 class="antialiased font-bold leading-tight text-center truncate">FullName</h2> 
+                                    <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                </div>                                 
+                                <div class="absolute bg-gradient-to-t bg-slate-100 bottom-0 duration-300 ease-in-out flex flex-grow from-slate-400 h-1/2 items-center justify-center opacity-0 p-3 size-full to-slate-50 transition-opacity via-slate-200 group-hover:opacity-100"> 
+                                    <button class="border-2 border-slate-600/25 duration-300 ease-in-out font-semibold p-2 rounded-full text-slate-950 text-sm transition-all w-full hover:bg-slate-800 hover:text-white/80">Click me!</button>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </div>
+                    <div style="width: 180px; height: 260px;" class="border-2 border-opacity-30 border-slate-400 cursor-pointer flex flex-col group overflow-hidden rounded-xl shadow hover:duration-300 hover:ease-in-out hover:shadow-md hover:transition-all"> 
+                        <div class="bg-center bg-cover h-20 min-h-20 overflow-hidden w-full" style="background-image: url('img/icons/photo-1724123301969-22859c2a3823.jpeg');"></div>                         
+                        <div class="flex flex-col flex-grow items-center justify-between relative"> 
+                            <div class="-translate-y-9 border-4 border-white h-1/6 min-h-20 min-w-20 overflow-hidden rounded-full size-20"> 
+                                <img src="https://images.unsplash.com/photo-1723945785190-b6f91da9eceb?ixid=M3wyMDkyMnwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNjg4MTIwNHw&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1000&h=1000&fit=crop"> 
+                            </div>                             
+                            <div class="absolute bottom-0 flex flex-col flex-grow h-5/6 justify-between size-full"> 
+                                <div class="p-3 size-full text-black"> 
+                                    <h2 class="antialiased font-bold leading-tight text-center truncate">FullName</h2> 
+                                    <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                </div>                                 
+                                <div class="absolute bg-gradient-to-t bg-slate-100 bottom-0 duration-300 ease-in-out flex flex-grow from-slate-400 h-1/2 items-center justify-center opacity-0 p-3 size-full to-slate-50 transition-opacity via-slate-200 group-hover:opacity-100"> 
+                                    <button class="border-2 border-slate-600/25 duration-300 ease-in-out font-semibold p-2 rounded-full text-slate-950 text-sm transition-all w-full hover:bg-slate-800 hover:text-white/80">Click me!</button>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                    <!-- Repeat the above div structure for each card -->                     
+                </div>
+                <!-- <div class="container flex h-screen items-center justify-start w-screen">
+                    <div class="flex flex-wrap items-start justify-between p-2">
+                        <div style="width: 180px; height: 260px;" class="border-2 border-opacity-30 border-slate-400 cursor-pointer flex flex-col group mb-5 overflow-hidden rounded-xl shadow w-full hover:duration-300 hover:ease-in-out hover:shadow-md hover:transition-all"> 
+                            <div class="bg-center bg-cover h-20 min-h-20 overflow-hidden w-full" style="background-image: url('img/icons/photo-1724123301969-22859c2a3823.jpeg');"></div>                             
+                            <div class="flex flex-col flex-grow items-center justify-between relative"> 
+                                <div class="-translate-y-9 border-4 border-white h-1/6 min-h-20 min-w-20 overflow-hidden rounded-full size-20"> 
+                                    <img src="https://images.unsplash.com/photo-1723945785190-b6f91da9eceb?ixid=M3wyMDkyMnwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNjg4MTIwNHw&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1000&h=1000&fit=crop"> 
+                                </div>                                 
+                                <div class="absolute bottom-0 flex flex-col flex-grow h-5/6 justify-between size-full"> 
+                                    <div class="p-3 size-full text-black"> 
+                                        <h2 class="antialiased font-bold leading-tight text-center truncate">FullName</h2> 
+                                        <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                        <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                        <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                        <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                        <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                        <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                    </div>                                     
+                                    <div class="absolute bg-gradient-to-t bg-slate-100 bottom-0 duration-300 ease-in-out flex flex-grow from-slate-400 h-1/2 items-center justify-center opacity-0 p-3 size-full to-slate-50 transition-opacity via-slate-200 group-hover:opacity-100"> 
+                                        <button class="border-2 border-slate-600/25 duration-300 ease-in-out font-semibold p-2 rounded-full text-slate-950 text-sm transition-all w-full hover:bg-slate-800 hover:text-white/80">Click me!</button>                                         
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>
+                        <div style="width: 180px; height: 260px;" class="border-2 border-opacity-30 border-slate-400 cursor-pointer flex flex-col group mb-5 overflow-hidden rounded-xl shadow hover:duration-300 hover:ease-in-out hover:shadow-md hover:transition-all"> 
+                            <div class="bg-center bg-cover h-20 min-h-20 overflow-hidden w-full" style="background-image: url('img/icons/photo-1724123301969-22859c2a3823.jpeg');"></div>                             
+                            <div class="flex flex-col flex-grow items-center justify-between relative"> 
+                                <div class="-translate-y-9 border-4 border-white h-1/6 min-h-20 min-w-20 overflow-hidden rounded-full size-20"> 
+                                    <img src="https://images.unsplash.com/photo-1723945785190-b6f91da9eceb?ixid=M3wyMDkyMnwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNjg4MTIwNHw&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1000&h=1000&fit=crop"> 
+                                </div>                                 
+                                <div class="absolute bottom-0 flex flex-col flex-grow h-5/6 justify-between size-full"> 
+                                    <div class="p-3 size-full text-black"> 
+                                        <h2 class="antialiased font-bold leading-tight text-center truncate">FullName</h2> 
+                                        <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                        <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                        <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                        <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                        <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                        <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                    </div>                                     
+                                    <div class="absolute bg-gradient-to-t bg-slate-100 bottom-0 duration-300 ease-in-out flex flex-grow from-slate-400 h-1/2 items-center justify-center opacity-0 p-3 size-full to-slate-50 transition-opacity via-slate-200 group-hover:opacity-100"> 
+                                        <button class="border-2 border-slate-600/25 duration-300 ease-in-out font-semibold p-2 rounded-full text-slate-950 text-sm transition-all w-full hover:bg-slate-800 hover:text-white/80">Click me!</button>                                         
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>
+                        <div style="width: 180px; height: 260px;" class="border-2 border-opacity-30 border-slate-400 cursor-pointer flex flex-col group mb-5 overflow-hidden rounded-xl shadow hover:duration-300 hover:ease-in-out hover:shadow-md hover:transition-all"> 
+                            <div class="bg-center bg-cover h-20 min-h-20 overflow-hidden w-full" style="background-image: url('img/icons/photo-1724123301969-22859c2a3823.jpeg');"></div>                             
+                            <div class="flex flex-col flex-grow items-center justify-between relative"> 
+                                <div class="-translate-y-9 border-4 border-white h-1/6 min-h-20 min-w-20 overflow-hidden rounded-full size-20"> 
+                                    <img src="https://images.unsplash.com/photo-1723945785190-b6f91da9eceb?ixid=M3wyMDkyMnwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNjg4MTIwNHw&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1000&h=1000&fit=crop"> 
+                                </div>                                 
+                                <div class="absolute bottom-0 flex flex-col flex-grow h-5/6 justify-between size-full"> 
+                                    <div class="p-3 size-full text-black"> 
+                                        <h2 class="antialiased font-bold leading-tight text-center truncate">FullName</h2> 
+                                        <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                        <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                        <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                        <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                        <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                        <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                    </div>                                     
+                                    <div class="absolute bg-gradient-to-t bg-slate-100 bottom-0 duration-300 ease-in-out flex flex-grow from-slate-400 h-1/2 items-center justify-center opacity-0 p-3 size-full to-slate-50 transition-opacity via-slate-200 group-hover:opacity-100"> 
+                                        <button class="border-2 border-slate-600/25 duration-300 ease-in-out font-semibold p-2 rounded-full text-slate-950 text-sm transition-all w-full hover:bg-slate-800 hover:text-white/80">Click me!</button>                                         
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>
+                        <div style="width: 180px; height: 260px;" class="border-2 border-opacity-30 border-slate-400 cursor-pointer flex flex-col group mb-5 overflow-hidden rounded-xl shadow hover:duration-300 hover:ease-in-out hover:shadow-md hover:transition-all"> 
+                            <div class="bg-center bg-cover h-20 min-h-20 overflow-hidden w-full" style="background-image: url('img/icons/photo-1724123301969-22859c2a3823.jpeg');"></div>                             
+                            <div class="flex flex-col flex-grow items-center justify-between relative"> 
+                                <div class="-translate-y-9 border-4 border-white h-1/6 min-h-20 min-w-20 overflow-hidden rounded-full size-20"> 
+                                    <img src="https://images.unsplash.com/photo-1723945785190-b6f91da9eceb?ixid=M3wyMDkyMnwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNjg4MTIwNHw&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1000&h=1000&fit=crop"> 
+                                </div>                                 
+                                <div class="absolute bottom-0 flex flex-col flex-grow h-5/6 justify-between size-full"> 
+                                    <div class="p-3 size-full text-black"> 
+                                        <h2 class="antialiased font-bold leading-tight text-center truncate">FullName</h2> 
+                                        <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                        <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                        <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                        <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                        <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                        <p class="font-normal leading-tight text-center text-sm truncate">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p> 
+                                    </div>                                     
+                                    <div class="absolute bg-gradient-to-t bg-slate-100 bottom-0 duration-300 ease-in-out flex flex-grow from-slate-400 h-1/2 items-center justify-center opacity-0 p-3 size-full to-slate-50 transition-opacity via-slate-200 group-hover:opacity-100"> 
+                                        <button class="border-2 border-slate-600/25 duration-300 ease-in-out font-semibold p-2 rounded-full text-slate-950 text-sm transition-all w-full hover:bg-slate-800 hover:text-white/80">Click me!</button>                                         
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>
+                    </div>
+                </div> -->
+            </section>             
+            <script>
+function changeActiveTab(event, tabID) {
+    let element = event.target;
+    while(element.nodeName !== "A") {
+        element = element.parentNode;
+    }
+    let ulElement = element.parentNode.parentNode;
+    let aElements = ulElement.querySelectorAll("li > a");
+    let tabContents = document.querySelectorAll(".tab-content > div");
+
+    aElements.forEach(a => {
+        a.classList.remove("text-blue-500", "font-bold");
+        a.classList.add("text-slate-100");
+    });
+
+    tabContents.forEach(content => {
+        content.classList.add("hidden");
+    });
+
+    document.getElementById(tabID).classList.remove("hidden");
+    document.getElementById(tabID).classList.add("block");
+    element.classList.add("text-blue-500", "border-blue-500", "bg-blue-500", "bg-opacity-10");
+}
+</script>
+        </main>         
+    </body>     
+</html>

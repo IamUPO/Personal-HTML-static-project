@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+        <title>New page</title>         
+        <script src="https://cdn.tailwindcss.com/"></script>         
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
+    </head>     
+    <body>
+        <section class="bg-slate-100 flex flex-col h-screen items-center justify-center min-h-screen space-y-8flex w-full dark:bg-slate-900"> 
+            <div class="container mx-auto px-4">
+                <div class="mx-auto md:w-9/12 xl:w-5/12">
+                    <div class="bg-white px-6 py-12 w-full sm:px-12 lg:py-16">
+                        <h2 class="font-medium mb-2 text-3xl text-gray-900">Sign In</h2>
+                        <p class="mb-6">Use this awesome form to sign in users.</p>
+                        <form> 
+                            <div class="flex mb-4 rounded-md text-sm w-full focus:outline focus:outline-slate-500">
+                                <input type="email" class="border-b border-l border-opacity-50 border-slate-500 border-t p-2 rounded-l-md w-full dark:bg-slate-800 dark:text-gray-200 focus:outline focus:outline-slate-500" placeholder="Email" aria-label="Email" required>
+                                <button class="border-b border-opacity-50 border-r border-slate-500 border-t px-3 py-2 rounded-r-md dark:bg-slate-800 dark:text-gray-200 focus:outline focus:outline-slate-500"><i class="fa-eye fas"></i>
+                                </button>
+                            </div>
+                            <div class="flex mb-4 text-sm">
+                                <input type="password" class="block border-gray-300 flex-1 px-3 py-2 w-full" placeholder="Password" aria-label="Password" required><span class="bg-gray-50 border-gray-300 inline-flex items-center px-3 py-2 text-gray-600"></span>
+                            </div>                             
+                            <div class="flex items-center mb-4">
+                                <input id="remember_me" name="remember_me" type="checkbox" class="border-gray-300 focus:ring-indigo-500 h-4 rounded text-indigo-600 w-4">
+                                <label for="remember_me" class="block ml-2 text-sm">Remember me</label>
+                            </div>
+                            <button type="submit" class="bg-blue-600 font-medium hover:bg-blue-700 inline-block px-6 py-2 rounded-md text-center text-white w-full">Sign In</button>                             
+                        </form>
+                    </div>
+                </div>                 
+            </div>
+            <section class="bg-gray-50 py-24 text-gray-500">
+</section>
+            <div class="bg-white border-2 border-opacity-25 border-slate-500 p-4 rounded-lg shadow-md dark:bg-slate-800"> 
+                <img src="img/logo/large-screen-logo.png" alt="logo" width="100" class="mb-5 mx-auto"> 
+                <p class="font-semibold mb-10 text-center text-slate-900 dark:text-slate-100">Welcome back! Please sign in to BlackIn Tech</p> 
+                <form class="space-y-8"> 
+                    <button class="bg-slate-50 border-2 border-opacity-25 border-slate-500 duration-300 ease-in-out gap-3 inline-flex items-center justify-center p-2 rounded-lg transition-all w-full dark:bg-slate-800 dark:text-gray-200 focus:outline focus:outline-slate-500 hover:shadow"> 
+                        <img src="img/icons/google.png" alt="google-login" width="18"> Google
+                    </button>                     
+                    <div class="flex items-center justify-center my-8"> 
+                        <hr class="flex-grow border-t border-slate-300 dark:border-slate-600"> <span class="px-4 text-slate-500 dark:text-slate-400">or</span> 
+                        <hr class="flex-grow border-t border-slate-300 dark:border-slate-600"> 
+                    </div>                     
+                    <div class="space-y-9"> 
+                        <div class="space-y-4"> 
+                            <div class="flex gap-5 items-center justify-between">
+                                <div class="space-y-2"> 
+                                    <label class="block font-semibold dark:text-gray-200">First Name</label>                                     
+                                    <input type="text" class="border border-opacity-50 border-slate-500 p-2 rounded-md w-full dark:bg-slate-800 dark:text-gray-200 focus:outline focus:outline-slate-500"/> 
+                                </div>
+                                <div class="space-y-2"> 
+                                    <label class="block font-semibold dark:text-gray-200">Last Name</label>                                     
+                                    <input type="text" class="border border-opacity-50 border-slate-500 p-2 rounded-md w-full dark:bg-slate-800 dark:text-gray-200 focus:outline focus:outline-slate-500"/> 
+                                </div>
+                            </div>                             
+                            <div class="space-y-2"> 
+                                <label class="block font-semibold dark:text-gray-200">Email</label>                                 
+                                <input type="email" class="border border-opacity-50 border-slate-500 p-2 rounded-md w-full dark:bg-slate-800 dark:text-gray-200 focus:outline focus:outline-slate-500"/> 
+                            </div>
+                            <div class="space-y-2"> 
+                                <label class="block font-semibold dark:text-gray-200">Password:</label>                                 
+                                <input type="password" class="border border-opacity-50 border-slate-500 p-2 rounded-md w-full dark:bg-slate-800 dark:text-gray-200 focus:outline focus:outline-slate-500"/> 
+                            </div>                             
+                        </div>                         
+                        <button class="bg-gradient-to-r duration-200 ease-out flex font-normal from-blue-800 to-blue-600 gap-2 w-full items-center justify-center rounded-xl shadow-md text-white px-4 py-2 transition-all hover:from-blue-700 hover:to-blue-500 hover:shadow-lg"> 
+                            Login <i class="fa-arrow-alt-circle-right fas"></i> 
+                        </button>                         
+                    </div>                     
+                </form>                 
+                <p class="flex font-semibold gap-3 justify-center mb-10 text-slate-900 dark:text-slate-100"> 
+            Don’t have an account? <a href="#" class="text-blue-400">Sign up</a> </p> 
+            </div>             
+        </section>         
+    </body>     
+</html>
